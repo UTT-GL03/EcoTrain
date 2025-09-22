@@ -21,6 +21,12 @@ Les applications ne sont pas nécessaires à l'emploi des solutions de transport
 - Achat des billets
 - Meilleure compréhension et gain de temps
 
+
+SNCF connect, c'est un parcours utilisateur qui a entièrement été repensé ces dernières années pour le simplifier, et améliorer l'aisance d'utilisation.
+
+Ces applications se substituent partiellement aux billets papier achetés en guichet, et aux informations papier affichées en gare. En effet, ces autres canaux sont toujours disponibles, mais davantage utilisés en second temps.
+
+
 En somme, les applications permettent une plus forte fréquentation des services, grâce à la facilitation des démarches liées aux déplacements longue distance
 
 ## Effets de la numérisation
