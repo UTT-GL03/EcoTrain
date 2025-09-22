@@ -10,3 +10,6 @@ Les transports longue distance jouent un rôle clé dans la lutte contre l'isole
 Dans ce contexte, les applications liées aux services de transports en commun favorisent l'accès aux informations permettant de bénéficier du service (localisation des arrêts, planification des trajets, horaires, achats de tickets, ...)
 
 ## Effets de la numérisation
+- Gain de temps
+- Augmentation de la fréquentation
+- Meilleur accès à l'information
