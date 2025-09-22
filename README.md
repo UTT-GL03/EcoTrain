@@ -8,17 +8,18 @@
 ## Utilité sociale
 ### Des transports longue distance
 Les transports longue distance jouent un rôle clé pour favoriser la mobilité douce.
-Accès à l'emploi (exemple : habitant de Romilly qui travaille à Troyes ou Paris)
-Favorise l'accès aux services publics
-Crée des liens entre les territoires
-Favorise la décentralisation
+- Accès à l'emploi (exemple : habitant de Romilly qui travaille à Troyes ou Paris)
+- Favorise l'accès aux services publics
+- Crée des liens entre les territoires
+- Favorise la décentralisation
 
 ### Des applications (SNCF Connect)
 Les applications ne sont pas nécessaires à l'emploi des solutions de transport. En revanche, elles contribuent fortement à la simplification des démarches :
 - Planification simplifiée
 - Visibilité des offres de réduction
-- Accès aux informations (horaires
-- Gain de temps
+- Accès aux informations (horaires)
+- Achat des billets
+- Meilleure compréhension et gain de temps
 
 En somme, les applications permettent une plus forte fréquentation des services, grâce à la facilitation des démarches liées aux déplacements longue distance
 
