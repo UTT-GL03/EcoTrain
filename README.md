@@ -6,11 +6,20 @@
 - TGV français, 122 millions de voyageurs en 2023
   
 ## Utilité sociale
-Les transports longue distance jouent un rôle clé dans la lutte contre l'isolement.
-Dans ce contexte, les applications liées aux services de transports en commun favorisent l'accès aux informations permettant de bénéficier du service (localisation des arrêts, planification des trajets, horaires, achats de tickets, ...)
+### Des transports longue distance
+Les transports longue distance jouent un rôle clé pour favoriser la mobilité douce.
+Accès à l'emploi (exemple : habitant de Romilly qui travaille à Troyes ou Paris)
+Favorise l'accès aux services publics
+Crée des liens entre les territoires
+Favorise la décentralisation
+
+### Des applications (SNCF Connect)
+Les applications ne sont pas nécessaires à l'emploi des solutions de transport. En revanche, elles contribuent fortement à la simplification des démarches :
+- Planification simplifiée
+- Visibilité des offres de réduction
+- Accès aux informations (horaires
+- Gain de temps
+
+En somme, les applications permettent une plus forte fréquentation des services, grâce à la facilitation des démarches liées aux déplacements longue distance
 
 ## Effets de la numérisation
-- Gain de temps
-- Augmentation de la fréquentation
-- Meilleur accès à l'information
-- Flexibilité
