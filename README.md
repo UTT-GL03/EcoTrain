@@ -1,4 +1,4 @@
-# Réduction de l'impact environnemental des applications de transports en commun
+# Réduction de l'impact environnemental des applications de trains longue distance (TER, TGV, ...)
 
 ## Choix du sujet
 - Service d'utilité publique
