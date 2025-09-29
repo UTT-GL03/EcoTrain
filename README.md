@@ -33,9 +33,10 @@ Nous imaginons deux scénarios d'utilisation correspondant aux utilisations majo
 
 
 ### Scénario 1 : "Achat d'un billet de train"
-1. bbb
-2. bbb
-3. bbb
+1. L'utilisateur renseigne ses gares de départ et de destination, ainsi que la date du voyage.
+2. Ensuite, il sélectionne le voyage de son choix parmi ceux proposés.
+3. Puis il sélectionne les options de son voyage (seconde ou première classe, option vélo, siège)
+4. Enfin, il valide le voyage et passe au paiement
 
 
 ### Scénario 2 : "Consultation des billets"
