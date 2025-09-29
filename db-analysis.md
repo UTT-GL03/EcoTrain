@@ -48,6 +48,7 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
+|https://int.bahn.de/fr |E 🟠   |32.37/100|3.53    |2.35       |159           |1705 (4641)             |779          |
 
 
 ## L'écoconception
