@@ -23,11 +23,11 @@ Nous utilisons le référentiel [EcoIndex](https://www.ecoindex.fr/) proposé pa
 L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible d'évoluer : la quantification des impacts environnementaux présentée ci-dessous est une photographie réalisée à un instant T.
 
 ## Evaluation de l'impact des 5 pages les plus visitées du site
-### Page 1 : https://www.sncf-connect.com/
+### Page 1 : https://int.bahn.de/
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
-|E 🟠|26.47/100|3.71|2.47|98|2063 (4408)|1454|
+|E 🟠 |32.37/100|3.53    |2.35       |159           |1705 (4641)             |779          |
 
 ### Page 2 : 
 
@@ -44,15 +44,16 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 * **Objectif du parcours** : not required
 * **Parcours cible** : not required
 
-|Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
-|-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
-|https://www.sncf-connect.com/|E 🟠|26.47/100|3.71    |2.47       |98            |2063 (4408)             |1454         |
-|https://www.sncf-connect.com/home/shop/results/outward|F 🔴   |23.49/100|3.80    |2.53       |192           |2053 (5281)             |1029         |
-|https://www.sncf-connect.com/cart/services|E 🟠|27.15/100|3.69    |2.46       |260           |2607 (6294)             |743          |
-|https://www.sncf-connect.com/cart|F  🔴|22.73/100|3.82    |2.55       |196           |2793 (4336)             |967          |
+|Page |Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
+|-----------------------|-----|---------|--------|-----------|--------------|------------------------|-------------|
+|https://int.bahn.de/fr |E 🟠   |32.37/100|3.53    |2.35       |159           |1705 (4641)             |779          |
+|https://int.bahn.de/fr/buchung/fahrplan/suche|F 🔴   |17.47/100|3.98    |2.65       |232           |2260 (4345)             |1308         |
+|https://int.bahn.de/fr/buchung/fahrplan/angebotsauswahl |E 🟠   |28.54/100|3.64    |2.43       |219           |1704 (5095)             |817          |
+|https://int.bahn.de/fr/buchung/fahrplan/kundendaten |E 🟠   |31.34/100|3.56    |2.37       |212           |1528 (4777)             |748          |
+|https://int.bahn.de/fr/buchung/fahrplan/zahlung|E 🟠   |31.09/100|3.57    |2.38       |221           |1511 (4732)             |752          |
 
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.80 (soit 4 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.26 (soit un trajet de 10 kms en voiture à énergie thermique).
+* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : XX.XX (soit 4 packs d'eau minérale).
+* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : XX.XX (soit un trajet de 10 kms en voiture à énergie thermique).
 
 ### Parcours 2 : Consulter ses billets
 * **Objectif du parcours** : not required
@@ -60,8 +61,6 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
-
-
 
 
 * Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.80 (soit 4 packs d'eau minérale).
