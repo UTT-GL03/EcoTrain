@@ -59,6 +59,7 @@ Nous avons choisi de comparer l'impact des scénarios sur les plateformes de ré
 |1.2.Train|   |   |   | 
 |Omio|   |   |   | 
 |Eurostar|   |   |   | 
+
 Tab.1 : Mesure de l'EcoIndex moyen de divers services de réservation de trains.
 
 Les mesures de l'impact moyen de ces services (cf. Tab.1) révèlent des classes EcoIndex très faibles pour la plupart (E ou F) et médiocres pour certains (D).
