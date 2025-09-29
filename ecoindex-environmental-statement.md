@@ -3,7 +3,7 @@
 Mesure effectuée le Mon Sep 29 2025.
 
 ## Niveau d’écoconception du site web
-![Note E](https://raw.githubusercontent.com/cnumr/lighthouse-plugin-ecoindex/598d9d1bf10a90448d815fd0bf50ebdc712c3b0d/assets/Note-E.webp)
+![Note X](https://raw.githubusercontent.com/cnumr/lighthouse-plugin-ecoindex/598d9d1bf10a90448d815fd0bf50ebdc712c3b0d/assets/Note-E.webp)
 * Note Ecoindex : **XX/100**
 * Consommation d'eau moyenne rapportée à 1 000 utilisateurs (en litres) : **XX.XX litres, (soit X packs d'eau minérale).***
 * Émission de Gaz à Effet de Serre (GES) moyenne rapportée à 1 000 utilisateurs (kilos CO2e) : **X.XX kilos CO2e (soit un trajet de XX kms en voiture à énergie thermique).***
@@ -23,11 +23,11 @@ Nous utilisons le référentiel [EcoIndex](https://www.ecoindex.fr/) proposé pa
 L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible d'évoluer : la quantification des impacts environnementaux présentée ci-dessous est une photographie réalisée à un instant T.
 
 ## Evaluation de l'impact des 5 pages les plus visitées du site
-### Page 1 :
+### Page 1 : https://www.sncf-connect.com/
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
-|F|10/100|41.90|2.80|215|2660.328|3599|
+|E 🟠|26.47/100|3.71|2.47|98|2063 (4408)|1454|
 
 
 * Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 41.90 (soit 5 packs d'eau minérale).
