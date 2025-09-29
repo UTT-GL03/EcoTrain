@@ -29,29 +29,15 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |---|---|---|---|---|---|---|
 |E 🟠|26.47/100|3.71|2.47|98|2063 (4408)|1454|
 
-
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 41.90 (soit 5 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.80 (soit un trajet de 13 kms en voiture à énergie thermique).
-
 ### Page 2 : 
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
-|E|39/100|33.30|2.22|69|210.010|1684|
-
-
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.30 (soit 4 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.22 (soit un trajet de 10 kms en voiture à énergie thermique).
 
 ### Page 3 : 
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
-|D|50/100|30.10|2.01|24|148.461|1634|
-
-
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 30.10 (soit 3 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.01 (soit un trajet de 9 kms en voiture à énergie thermique).
 
 ## Evaluation de l'impact pour 5 parcours utilisateurs sur le site
 ### Parcours 1 : Achat d'un billet de train
