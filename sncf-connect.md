@@ -3,8 +3,8 @@
 Mesure effectuée le Mon Sep 29 2025.
 
 ## Niveau d’écoconception du site web
-![Note X](https://raw.githubusercontent.com/cnumr/lighthouse-plugin-ecoindex/598d9d1bf10a90448d815fd0bf50ebdc712c3b0d/assets/Note-E.webp)
-* Note Ecoindex : **XX/100**
+![Note E](https://raw.githubusercontent.com/cnumr/lighthouse-plugin-ecoindex/598d9d1bf10a90448d815fd0bf50ebdc712c3b0d/assets/Note-E.webp)
+* Note Ecoindex : **26/100**
 * Consommation d'eau moyenne rapportée à 1 000 utilisateurs (en litres) : **XX.XX litres, (soit X packs d'eau minérale).***
 * Émission de Gaz à Effet de Serre (GES) moyenne rapportée à 1 000 utilisateurs (kilos CO2e) : **X.XX kilos CO2e (soit un trajet de XX kms en voiture à énergie thermique).***
 ## Méthode d'évaluation
@@ -27,17 +27,7 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
-|E 🟠|26.47/100|3.71|2.47|98|2063 (4408)|1454|
-
-### Page 2 : 
-
-|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|
-
-### Page 3 : 
-
-|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|
+|E 🟠|26/100|3.71|2.47|98|2063 (4408)|1454|
 
 ## Evaluation de l'impact pour 5 parcours utilisateurs sur le site
 ### Parcours 1 : Achat d'un billet de train
@@ -46,10 +36,10 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
-|https://www.sncf-connect.com/|E 🟠|26.47/100|3.71    |2.47       |98            |2063 (4408)             |1454         |
-|https://www.sncf-connect.com/home/shop/results/outward|F 🔴   |23.49/100|3.80    |2.53       |192           |2053 (5281)             |1029         |
-|https://www.sncf-connect.com/cart/services|E 🟠|27.15/100|3.69    |2.46       |260           |2607 (6294)             |743          |
-|https://www.sncf-connect.com/cart|F  🔴|22.73/100|3.82    |2.55       |196           |2793 (4336)             |967          |
+|https://www.sncf-connect.com/|E 🟠|26/100|3.71    |2.47       |98            |2063 (4408)             |1454         |
+|https://www.sncf-connect.com/home/shop/results/outward|F 🔴   |23/100|3.80    |2.53       |192           |2053 (5281)             |1029         |
+|https://www.sncf-connect.com/cart/services|E 🟠|27/100|3.69    |2.46       |260           |2607 (6294)             |743          |
+|https://www.sncf-connect.com/cart|F  🔴|23/100|3.82    |2.55       |196           |2793 (4336)             |967          |
 
 * Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.80 (soit 4 packs d'eau minérale).
 * Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.26 (soit un trajet de 10 kms en voiture à énergie thermique).
@@ -137,5 +127,3 @@ Vous êtes un professionnel du numérique et vous souhaitez réduire l’impact 
 
 * [En savoir plus sur le référentiel EcoIndex](https://www.ecoindex.fr/comment-ca-marche/)
 * [Accéder au site web EcoIndex](https://www.ecoindex.fr/)
-
-_*Moyenne de l’impact environnemental des 5 pages les plus visitées ce site web._
