@@ -23,7 +23,7 @@ Nous utilisons le référentiel [EcoIndex](https://www.ecoindex.fr/) proposé pa
 L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible d'évoluer : la quantification des impacts environnementaux présentée ci-dessous est une photographie réalisée à un instant T.
 
 ## Evaluation de l'impact des 5 pages les plus visitées du site
-### Page 1 : https://www.lefigaro.fr/
+### Page 1 :
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
@@ -33,7 +33,7 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 * Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 41.90 (soit 5 packs d'eau minérale).
 * Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.80 (soit un trajet de 13 kms en voiture à énergie thermique).
 
-### Page 2 : https://www.lefigaro.fr/sciences/l-ue-juge-l-objectif-climatique-de-la-chine-clairement-decevant-20250925
+### Page 2 : 
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
@@ -43,7 +43,7 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 * Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.30 (soit 4 packs d'eau minérale).
 * Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.22 (soit un trajet de 10 kms en voiture à énergie thermique).
 
-### Page 3 : https://www.lefigaro.fr/sciences/les-bacteries-cauchemardesques-resistantes-aux-antibiotiques-en-forte-hausse-aux-etats-unis-20250923
+### Page 3 : 
 
 |Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
 |---|---|---|---|---|---|---|
@@ -58,24 +58,26 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 * **Objectif du parcours** : not required
 * **Parcours cible** : not required
 
-|Page|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|---|
+|Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
+|-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
+|https://www.sncf-connect.com/|E 🟠|26.47/100|3.71    |2.47       |98            |2063 (4408)             |1454         |
+|https://www.sncf-connect.com/home/shop/results/outward|F 🔴   |23.49/100|3.80    |2.53       |192           |2053 (5281)             |1029         |
+|https://www.sncf-connect.com/cart/services|E 🟠|27.15/100|3.69    |2.46       |260           |2607 (6294)             |743          |
+|https://www.sncf-connect.com/cart|F  🔴|22.73/100|3.82    |2.55       |196           |2793 (4336)             |967          |
 
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 34.33 (soit 4 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.29 (soit un trajet de 11 kms en voiture à énergie thermique).
+* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.80 (soit 4 packs d'eau minérale).
+* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.26 (soit un trajet de 10 kms en voiture à énergie thermique).
 
-### Parcours 2 : Lire des articles d&#x27;une rubrique donnée
+### Parcours 2 : Consulter ses billets
 * **Objectif du parcours** : not required
 * **Parcours cible** : not required
 
-
-
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
-|https://www.sncf-connect.com/|E    |26.47/100|3.71    |2.47       |98            |2063 (4408)             |1454         |
-|https://www.sncf-connect.com/home/shop/results/outward|F    |23.49/100|3.80    |2.53       |192           |2053 (5281)             |1029         |
-|https://www.sncf-connect.com/cart/services|E    |27.15/100|3.69    |2.46       |260           |2607 (6294)             |743          |
-|https://www.sncf-connect.com/cart|F    |22.73/100|3.82    |2.55       |196           |2793 (4336)             |967          |
+
+
+
+
 * Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.80 (soit 4 packs d'eau minérale).
 * Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.26 (soit un trajet de 10 kms en voiture à énergie thermique).
 
