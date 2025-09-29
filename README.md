@@ -55,11 +55,11 @@ Nous avons choisi de comparer l'impact des scénarios sur les plateformes de ré
 
 |Service|Score (sur 100)|Classe|Détail des mesures|
 |---|---|---|---|
-|SNCF Connect| 23  | F 🔴  | ...[https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/SNCF%20Connect/declaration-environnementale.md]  |
-|DB| 32 | E 🟡 | ...[https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Deutsche%20Bahn/declaration-environnementale.md]  | 
-|1.2.Train|82|  A 🔵 | ...[https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/1.2.Train/declaration-environnementale.md]  | 
-|Omio| 40  | D 🟠  | ...[https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Omio/declaration-environnementale.md]  | 
-|Eurostar| 15  | F 🔴 | ...[https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Eurostar/declaration-environnementale.md]  | 
+|SNCF Connect| 23  | F 🔴  | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/SNCF%20Connect/declaration-environnementale.md)  |
+|DB| 32 | E 🟡 | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Deutsche%20Bahn/declaration-environnementale.md)  | 
+|1.2.Train|82|  A 🔵 | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/1.2.Train/declaration-environnementale.md)  | 
+|Omio| 40  | D 🟠  | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Omio/declaration-environnementale.md)  | 
+|Eurostar| 15  | F 🔴 | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Eurostar/declaration-environnementale.md)  | 
 
 Tab.1 : Mesure de l'EcoIndex moyen de divers services de réservation de trains.
 
