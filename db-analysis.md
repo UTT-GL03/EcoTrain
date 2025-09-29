@@ -3,10 +3,9 @@
 Mesure effectuée le Mon Sep 29 2025.
 
 ## Niveau d’écoconception du site web
-![Note X](https://raw.githubusercontent.com/cnumr/lighthouse-plugin-ecoindex/598d9d1bf10a90448d815fd0bf50ebdc712c3b0d/assets/Note-E.webp)
-* Note Ecoindex : **XX/100**
-* Consommation d'eau moyenne rapportée à 1 000 utilisateurs (en litres) : **XX.XX litres, (soit X packs d'eau minérale).***
-* Émission de Gaz à Effet de Serre (GES) moyenne rapportée à 1 000 utilisateurs (kilos CO2e) : **X.XX kilos CO2e (soit un trajet de XX kms en voiture à énergie thermique).***
+![Note E](https://raw.githubusercontent.com/cnumr/lighthouse-plugin-ecoindex/598d9d1bf10a90448d815fd0bf50ebdc712c3b0d/assets/Note-E.webp)
+* Note Ecoindex : **32/100**
+
 ## Méthode d'évaluation
 Comme toute production numérique, ce site web a un impact environnemental que nous vous présentons sur cette page à l’aide d’indicateurs standardisés.
 
@@ -29,17 +28,7 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |---|---|---|---|---|---|---|
 |E 🟠 |32.37/100|3.53    |2.35       |159           |1705 (4641)             |779          |
 
-### Page 2 : 
-
-|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|
-
-### Page 3 : 
-
-|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|
-
-## Evaluation de l'impact pour 5 parcours utilisateurs sur le site
+## Evaluation de l'impact pour 2 parcours utilisateurs sur le site
 ### Parcours 1 : Achat d'un billet de train
 * **Objectif du parcours** : not required
 * **Parcours cible** : not required
@@ -52,8 +41,6 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |https://int.bahn.de/fr/buchung/fahrplan/kundendaten |E 🟠   |31.34/100|3.56    |2.37       |212           |1528 (4777)             |748          |
 |https://int.bahn.de/fr/buchung/fahrplan/zahlung|E 🟠   |31.09/100|3.57    |2.38       |221           |1511 (4732)             |752          |
 
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : XX.XX (soit 4 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : XX.XX (soit un trajet de 10 kms en voiture à énergie thermique).
 
 ### Parcours 2 : Consulter ses billets
 * **Objectif du parcours** : not required
@@ -62,9 +49,6 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
 
-
-* Consommation d'eau rapportée à 1 000 utilisateurs (en litres) : 33.80 (soit 4 packs d'eau minérale).
-* Émission de GES rapportée à 1 000 utilisateurs (kilos CO2e) : 2.26 (soit un trajet de 10 kms en voiture à énergie thermique).
 
 ## L'écoconception
 
