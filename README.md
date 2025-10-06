@@ -1,4 +1,4 @@
-# Réduction de l'impact environnemental des applications de trains longue distance (TER, TGV, ...)
+# Réduction de l'impact environnemental des plateformes de réservation de billets de trains
 
 ## Choix du sujet
 - On s'en sert régulièrement pour planifier nos déplacements en transports en commun et réserver nos billets
