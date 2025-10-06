@@ -80,7 +80,7 @@ Il y a plusieurs offreurs pour acheter le même billet de train. Le produit est 
 |---|---|---|
 |Part sur les ventes de billets[^2]|0,90€|3966|
 
-[^1]: Basé sur le coût total employeur du salaire médian 2025 soit 3569€ environ (source : URSSAF)
+[^1]: Basé sur le coût total employeur du salaire médian 2025 soit 3569€ environ (source : [URSSAF](https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net))
 [^2]: Estimation sur la base de 2% des billets dédiée à la plateforme, les billets étant à 45€ en moyenne
 
 
