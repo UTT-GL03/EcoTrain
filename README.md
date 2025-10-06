@@ -64,7 +64,7 @@ Comme nous l'avons vu dans la section précédente, parmi les choix de conceptio
 
 |Service|XXX|
 |---|---|
-|SNCF Connect||
+|SNCF Connect|
 |DB||
 |1.2.Train||
 |Omio||
@@ -72,7 +72,15 @@ Comme nous l'avons vu dans la section précédente, parmi les choix de conceptio
 
 Tab. 2 : Offre des services de réservation de billets de train.
 
-### Structure de concurrence
 Il y a plusieurs offreurs pour acheter le même billet de train. Le produit est le même mais les services diffèrent. On a bien des plateformes de substitution : il est possible de passer par SNCF Connect, Omio, ou encore 1.2.Train pour acheter le même billet de train.
+
+1.2.Train dispose d'un modèle économique fragile, mais le site est déjà suffisamment sobre pour que l'on ne se penche pas dessus dans ce projet. Nous trvavaillerons donc sur SNCF Connect, dont le modèle économique est déjà solide. Il n'y a pas de publicité sur la plateforme, qui semble uniquement se financer par une partie des revenus générés par la vente de billets.
+
+|Source possible de revenus|Montant unitaire|Quantité nécessaire pour financer un salaire|
+|---|---|---|
+|Subvention société mère (vente de billets à 45€ en moyenne, 2% du prix du billet)|0,90€|3966|
+
+Basé sur le coût total employeur du salaire médian 2025 soit 3569€ environ (source : URSSAF) ↩
+
 
 
