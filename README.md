@@ -71,3 +71,8 @@ Comme nous l'avons vu dans la section précédente, parmi les choix de conceptio
 |Eurostar||
 
 Tab. 2 : Offre des services de réservation de billets de train.
+
+## Structure de concurrence
+Il y a plusieurs offreurs pour acheter le même billet de train. Le produit est le même mais les services diffèrent. On a bien des plateformes de substitution : il est possible de passer par SNCF Connect, Omio, ou encore 1.2.Train pour acheter le même billet de train.
+
+
