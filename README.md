@@ -76,11 +76,12 @@ Il y a plusieurs offreurs pour acheter le même billet de train. Le produit est 
 
 1.2.Train dispose d'un modèle économique fragile, mais le site est déjà suffisamment sobre pour que l'on ne se penche pas dessus dans ce projet. Nous trvavaillerons donc sur SNCF Connect, dont le modèle économique est déjà solide. Il n'y a pas de publicité sur la plateforme, qui semble uniquement se financer par une partie des revenus générés par la vente de billets.
 
-|Source possible de revenus|Montant unitaire|Quantité nécessaire pour financer un salaire|
+|Source possible de revenus|Montant unitaire|Quantité nécessaire pour financer un salaire[^1]|
 |---|---|---|
-|Subvention société mère (vente de billets à 45€ en moyenne, 2% du prix du billet)|0,90€|3966|
+|Part sur les ventes de billets[^2]|0,90€|3966|
 
-Basé sur le coût total employeur du salaire médian 2025 soit 3569€ environ (source : URSSAF) ↩
+[^1]: Basé sur le coût total employeur du salaire médian 2025 soit 3569€ environ (source : URSSAF)
+[^2]: Estimation sur la base de 2% des billets dédiée à la plateforme, les billets étant à 45€ en moyenne
 
 
 
