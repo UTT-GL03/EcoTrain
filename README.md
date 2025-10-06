@@ -62,13 +62,13 @@ Les mesures de l'impact moyen de ces services (cf. Tab.1) révèlent des classes
 ## Modèle économique
 Comme nous l'avons vu dans la section précédente, parmi les choix de conception ayant le plus d'impact environnemental, la plupart sont directement liés au modèle économique du service. C'est pourquoi il est nécessaire à ce stade d'analyser leur modèle économique et de définir notre propre modèle permettant une conception plus frugale.
 
-|Service|XXX|
+|Service|Source de revenus|
 |---|---|
-|SNCF Connect|
-|DB||
-|1.2.Train||
-|Omio||
-|Eurostar||
+|SNCF Connect|Vente de billets|
+|DB|Vente de billets|
+|1.2.Train|Commissions|
+|Omio|Commissions|
+|Eurostar|Vente de billets|
 
 Tab. 2 : Offre des services de réservation de billets de train.
 
