@@ -72,9 +72,9 @@ Comme nous l'avons vu dans la section précédente, parmi les choix de conceptio
 
 Tab. 2 : Offre des services de réservation de billets de train.
 
-Il y a plusieurs offreurs pour acheter le même billet de train. Le produit est le même mais les services diffèrent. On a bien des plateformes de substitution : il est possible de passer par SNCF Connect, Omio, ou encore 1.2.Train pour acheter le même billet de train.
+Notre marché semble être structuré en oligopôle : il y a plusieurs offreurs pour acheter le même billet de train. Le billet vendu est le même sur les différentes plateformes mais ces plateformes ne sont pas entièrement identiques : fluidité, interface, expérience utilisateur. Les services de réservation sont substituables entre eux : si l'on ne souhaite pas acheter son billet de train sur SNCF Connect, on peut l'acheter sur 1.2.Train ou sur Omio.
 
-1.2.Train dispose d'un modèle économique fragile, mais le site est déjà suffisamment sobre pour que l'on ne se penche pas dessus dans ce projet. Nous trvavaillerons donc sur SNCF Connect, dont le modèle économique est déjà solide. Il n'y a pas de publicité sur la plateforme, qui semble uniquement se financer par une partie des revenus générés par la vente de billets.
+1.2.Train dispose d'un modèle économique fragile qu'il serait pertinent de renforcer, mais le site web est déjà suffisamment sobre pour que l'on ne se penche pas sur ce cas dans le cadre de notre projet. Nous trvavaillerons donc sur SNCF Connect. Il n'y a pas de publicité sur la plateforme, qui semble uniquement se financer grâce aux revenus des ventes de billets de train (service annexe). Nous voyons donc peu d'autres modèles économiques pertinents, sachant que celui-ci semble largement viable.
 
 |Source possible de revenus|Montant unitaire|Quantité nécessaire pour financer un salaire[^1]|
 |---|---|---|
