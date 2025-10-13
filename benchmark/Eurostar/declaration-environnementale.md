@@ -48,7 +48,8 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
 |https://www.eurostar.com/|F 🔴   |15.33   |404     |2.69       |169           |2285                  |1856         |
-
+|https://www.eurostar.com/customer-dashboard/fr/booking|F 🔴  |23.11   |381     |2.54       |98            |4341                    |1423         |
+|https://www.eurostar.com/customer-dashboard/fr/bookings-upcoming?market=fr-fr    |D 🟡  |44.14   |318     |2.12       |70            |2166                    |752          |
 
 ## L'écoconception
 
