@@ -3,7 +3,7 @@
 ## Choix du sujet
 On utilise presque tous le site ou l’application de la SNCF pour regarder un horaire ou acheter un billet. C’est devenu un réflexe du quotidien, un service que beaucoup considèrent comme indispensable, surtout quand on sait que 122 millions de voyageurs ont pris le TGV en 2023. On parle souvent du train comme d’un moyen de transport écologique, mais on oublie que tout commence en ligne. 
 Est-ce que l’outil numérique qu’on utilise pour voyager est vraiment aussi « vert » qu’on le pense ? 
-Même si tout paraît immatériel, chaque clic consomme de l’énergie. Mon objectif est donc simple : mesurer l’impact environnemental de l’application web de la SNCF, pour voir si la face numérique du train est aussi propre que ses rails.
+Même si tout paraît immatériel, chaque clic consomme de l’énergie. Notre objectif est donc simple : mesurer l’impact environnemental de l’application web de la SNCF, pour voir si la face numérique du train est aussi propre que ses rails.
   
 ## Utilité sociale
 ### Des transports longue distance
@@ -97,7 +97,7 @@ Notre marché semble être structuré en oligopôle : il y a plusieurs offreurs 
 Au vu des différents services comparés, des exigences environnementales exprimées plus haut et des scénarios retenus, nous avons défini pour notre prototype une maquette de l'interface et un échantillon de données réalistes.
 
 Les ressources Web possédant une représentation sur notre application seront de deux types :
-- Un trajet proposé (avec une HTTP-URI ayant pour chemin /{id})
+- Un voyage proposé (avec une HTTP-URI ayant pour chemin /{id})
 - Les résultats de recherche de voyage (avec pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 
 ![](https://placehold.co/200x400)
