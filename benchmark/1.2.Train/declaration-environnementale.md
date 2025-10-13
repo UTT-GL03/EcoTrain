@@ -49,6 +49,8 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
 |https://www.12train.com |A 🔵  |81.65   |205     |1.37       |13            |202                   |318          |
+|https://www.12train.co/ticket/list |A 🔵  |94   |122     |1.11       |13            |122                   |33          |
+
 
 
 ## L'écoconception
