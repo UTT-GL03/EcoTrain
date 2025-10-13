@@ -93,5 +93,10 @@ Notre marché semble être structuré en oligopôle : il y a plusieurs offreurs 
 [^1]: Basé sur le coût total employeur du salaire médian 2025 soit 3569€ environ (source : [URSSAF](https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net))
 [^2]: Estimation sur la base de 2% des billets dédiée à la plateforme, les billets étant à 45€ en moyenne
 
+## Maquette de l'interface et échantillon de données
+Au vu des différents services comparés, des exigences environnementales exprimées plus haut et des scénarios retenus, nous avons défini pour notre prototype une maquette de l'interface et un échantillon de données réalistes.
 
+Les ressources Web possédant une représentation sur notre application seront de deux types :
+- Un trajet proposé (avec une HTTP-URI ayant pour chemin /{id})
+- Les résultats de recherche de voyage (avec pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 
