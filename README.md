@@ -106,7 +106,7 @@ Fig.1: Maquette de l'interface du prototype
 
 Dans un objectif de sobriété environnementale, les résultats de recherche se limiterons à ceux du jour sélectionné.
 
-Pour des raisons de respect des droits d'auteurs, nous utilisons des données générées (avec [dummy-json](https://dummyjson.com/)). Bien que fictives, ces données correspondent à la structure des services concurrents : les articles comportent un titre possiblement long, un auteur et une rubrique (voir modèle de données).
+Pour des raisons de respect des droits d'auteurs, nous utilisons des données générées (avec [dummy-json](https://dummyjson.com/)). Bien que fictives, ces données correspondent à la structure des services concurrents : les voyages comportent une gare de départ et d'arrivée, une date, une heure de départ et d'arrivée, et un ou plusieurs tarifs.
 
 
 
