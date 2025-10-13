@@ -29,8 +29,7 @@ En somme, les applications permettent une plus forte fréquentation des services
 Ces applications se substituent partiellement aux billets papier achetés en guichet, et aux informations papier affichées en gare. En effet, ces autres canaux sont toujours disponibles, mais utilisés en second temps.
 
 ## Scénarios d'usage et impacts
-Nous imaginons deux scénarios d'utilisation correspondant aux utilisations majoritaires des applications de réservation de trains. Le premier scénario sera l'achat d'un billet de train, le second étant la consultation des billets achetés.
-
+Nous imaginons deux scénarios d'utilisation des applications de réservation de trains : l'achat d'un billet de train et la consultation de son billet. D'autres scénarios peuvent être envisagés, comme la consultation des horaires, mais ce scénario ressemble fortement au scénario de réservation de billet.
 
 ### Scénario 1 : "Achat d'un billet de train"
 1. L'utilisateur renseigne ses gares de départ et de destination, ainsi que la date du voyage.
@@ -38,8 +37,13 @@ Nous imaginons deux scénarios d'utilisation correspondant aux utilisations majo
 3. Puis il sélectionne les options de son voyage (seconde ou première classe, option vélo, siège)
 4. Enfin, il valide le voyage et passe au paiement
 
+### Scénario 2 : "Consultation de billets de train"
+1. L'utilisateur se connecte à son espace.
+2. Il sélectionne le voyage à venir concerné.
+3. Il accède au billet, et peut par exemple le télécharger.
 
-## Impact de l'exécution des scénarios auprès de différents services concurrents
+
+## Impact de l'exécution du scénario auprès de différents services concurrents
 L'EcoIndex d'une page (de A à G) est calculé (sources : EcoIndex, Octo, GreenIT) en fonction du positionnement de cette page parmi les pages mondiales concernant :
 - le nombre de requêtes lancées,
 - le poids des téléchargements,
