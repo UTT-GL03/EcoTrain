@@ -30,7 +30,9 @@ Ces applications permettent de favoriser l'accès à l'information. Dans le cas 
 En somme, les applications permettent une plus forte fréquentation des services, grâce à la facilitation des démarches liées aux déplacements longue distance
 
 ## Effets de la numérisation
-Ces applications se substituent partiellement aux billets papier achetés en guichet, et aux informations papier affichées en gare. En effet, ces autres canaux sont toujours disponibles, mais utilisés en second temps.
+Les applications numériques de la SNCF remplacent en partie les billets papier achetés au guichet ainsi que les informations affichées en gare. Ces alternatives « physiques » existent toujours, mais elles sont désormais utilisées en solution de secours, plutôt qu’en premier réflexe.
+
+Par exemple, de nombreuses gares ont réduit leurs horaires d’ouverture ou fermé certains guichets, obligeant les usagers à passer par l’application ou les bornes automatiques. Dans certaines petites gares, il n’y a même plus aucun personnel sur place : sans smartphone ou connexion Internet, acheter un billet devient un véritable parcours du combattant.
 
 ## Scénarios d'usage et impacts
 Nous imaginons deux scénarios d'utilisation des applications de réservation de trains : l'achat d'un billet de train et la consultation de son billet. D'autres scénarios peuvent être envisagés, comme la consultation des horaires, mais ce scénario ressemble fortement au scénario de réservation de billet.
