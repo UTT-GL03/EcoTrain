@@ -50,7 +50,7 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
 | https://www.omio.fr/ | D 🟡 | 40.37 | 3.29 | 2.19 | 67 | 1160 | 1132 |
-
+|https://www.omio.fr/gcs-proxy/omio-fc-assets/illustrations/header-your-bookings.svg| A 🟢|90.79   |1.78    |1.18       |1             |8                       |159          |
 
 ## L'écoconception
 
