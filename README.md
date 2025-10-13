@@ -98,7 +98,7 @@ Au vu des différents services comparés, des exigences environnementales exprim
 
 Les ressources Web possédant une représentation sur notre application seront de deux types :
 - Un voyage proposé (avec une HTTP-URI ayant pour chemin /{id})
-- Les résultats de recherche de voyage (avec pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
+- Les résultats de recherche de voyage (avec une HTTP-URI ayant pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 
 ![](https://placehold.co/200x400)
 
