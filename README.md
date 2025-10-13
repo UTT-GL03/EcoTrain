@@ -101,6 +101,7 @@ Les ressources Web possédant une représentation sur notre application seront d
 - Les résultats de recherche de voyage (avec pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 
 ![](https://placehold.co/600x400)
+
 Fig.1: Maquette de l'interface du prototype : a. type de page pour les "titres" (du jour ou d'une rubrique), b. type de page d'un article.
 
 Dans un objectif de sobriété environnementale, les résultats de recherche se limiterons à ceux du jour sélectionné.
