@@ -1,17 +1,21 @@
 # Réduction de l'impact environnemental des plateformes de réservation de billets de trains
 
 ## Choix du sujet
-- On s'en sert régulièrement pour planifier nos déplacements en transports en commun et réserver nos billets
-- Service d'utilité publique
-- TGV français, 122 millions de voyageurs en 2023
+On utilise presque tous le site ou l’application de la SNCF pour regarder un horaire ou acheter un billet. C’est devenu un réflexe du quotidien, un service que beaucoup considèrent comme indispensable, surtout quand on sait que 122 millions de voyageurs ont pris le TGV en 2023. On parle souvent du train comme d’un moyen de transport écologique, mais on oublie que tout commence en ligne. 
+Est-ce que l’outil numérique qu’on utilise pour voyager est vraiment aussi « vert » qu’on le pense ? 
+Même si tout paraît immatériel, chaque clic consomme de l’énergie. Mon objectif est donc simple : mesurer l’impact environnemental de l’application web de la SNCF, pour voir si la face numérique du train est aussi propre que ses rails.
   
 ## Utilité sociale
 ### Des transports longue distance
-Les transports longue distance jouent un rôle clé pour favoriser la mobilité douce.
-- Accès à l'emploi (exemple : habitant de Romilly qui travaille à Troyes ou Paris)
-- Favorise l'accès aux services publics
-- Crée des liens entre les territoires
-- Favorise la décentralisation
+Les transports longue distance, comme ceux proposés par la SNCF, sont bien plus qu’un simple moyen de se déplacer : ils contribuent directement à une mobilité plus durable et accessible pour tous.
+
+**Accès à l’emploi** : par exemple, un habitant de Romilly peut travailler à Troyes ou même à Paris grâce aux liaisons ferroviaires régulières. Sans ces trajets, certaines carrières seraient tout simplement impossibles.
+
+**Accès aux services publics** : santé, éducation, administration… tout devient plus atteignable, même quand on vit loin des grandes villes.
+
+**Lien entre les territoires** : le train connecte des régions parfois isolées, créant un sentiment d’appartenance nationale.
+
+**Outil de décentralisation** : il rend moins nécessaire de vivre dans les grandes métropoles pour avoir les mêmes opportunités.
 
 ### Des applications (SNCF Connect)
 Les applications ne sont pas nécessaires à l'emploi des solutions de transport. En revanche, elles contribuent fortement à la simplification des démarches :
