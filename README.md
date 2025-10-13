@@ -100,3 +100,12 @@ Les ressources Web possédant une représentation sur notre application seront d
 - Un trajet proposé (avec une HTTP-URI ayant pour chemin /{id})
 - Les résultats de recherche de voyage (avec pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 
+![](https://placehold.co/600x400)
+Fig.1: Maquette de l'interface du prototype : a. type de page pour les "titres" (du jour ou d'une rubrique), b. type de page d'un article.
+
+Dans un objectif de sobriété environnementale, les résultats de recherche se limiterons à ceux du jour sélectionné.
+
+Pour des raisons de respect des droits d'auteurs, nous utilisons des données générées (avec dummy-json). Bien que fictives, ces données correspondent à la structure des services concurrents : les articles comportent un titre possiblement long, un auteur et une rubrique (voir modèle de données).
+
+
+
