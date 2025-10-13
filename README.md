@@ -1,4 +1,4 @@
-# Réduction de l'impact environnemental des plateformes de réservation de billets de trains
+# Réduction de l'impact environnemental des plateformes de réservation de trains
 
 ## Choix du sujet
 On utilise presque tous le site ou l’application de la SNCF pour regarder un horaire ou acheter un billet. C’est devenu un réflexe du quotidien, un service que beaucoup considèrent comme indispensable, surtout quand on sait que 122 millions de voyageurs ont pris le TGV en 2023. On parle souvent du train comme d’un moyen de transport écologique, mais on oublie que tout commence en ligne. 
