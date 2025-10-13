@@ -100,7 +100,7 @@ Les ressources Web possédant une représentation sur notre application seront d
 - Un trajet proposé (avec une HTTP-URI ayant pour chemin /{id})
 - Les résultats de recherche de voyage (avec pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 
-![](https://placehold.co/600x400)
+![](https://placehold.co/400x200)
 
 Fig.1: Maquette de l'interface du prototype
 
