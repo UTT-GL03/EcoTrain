@@ -30,8 +30,6 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 
 ## Evaluation de l'impact pour 5 parcours utilisateurs sur le site
 ### Parcours 1 : Achat d'un billet de train
-* **Objectif du parcours** : not required
-* **Parcours cible** : not required
 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
@@ -41,13 +39,12 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |https://www.sncf-connect.com/cart|F  🔴|23/100|3.82    |2.55       |196           |2793 (4336)             |967          |
 
 ### Parcours 2 : Consulter ses billets
-* **Objectif du parcours** : not required
-* **Parcours cible** : not required
 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
 |https://www.sncf-connect.com/|F 🔴|23/100|3.71|2.47|98|2063 (4408)|1454|
-
+|https://www.sncf-connect.com/trips|C 🟡|55/100|3.71|2.84|98|287|987|
+|https://www.sncf-connect.com/trips/detail|C 🟡|56/100|3.71|2.78|98|276|970|
 
 ## L'écoconception
 
