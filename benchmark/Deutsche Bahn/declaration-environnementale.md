@@ -49,7 +49,8 @@ L'analyse indiquée a été effectuée le Mon Sep 29 2025, elle est susceptible 
 |Page|Grade|Ecoindex |Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la course (Ko)|Taille du DOM|
 |-------|-----|---------|--------|-----------|--------------|------------------------|-------------|
 |https://int.bahn.de/fr |E 🟠   |32.37/100|3.53    |2.35       |159           |1705 (4641)             |779          |
-
+|https://int.bahn.de/fr/buchung/reiseuebersicht|E 🟠  |31.07/100|3.57    |2.38       |219           |1776                    |721          |
+|https://int.bahn.de/fr/buchung/reiseuebersicht?2|F 🔴  |24.70/100|3.76    |2.51       |306           |2046                    |868          |
 
 ## L'écoconception
 
