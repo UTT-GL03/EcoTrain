@@ -97,8 +97,8 @@ Notre marché semble être structuré en oligopôle : il y a plusieurs offreurs 
 Au vu des différents services comparés, des exigences environnementales exprimées plus haut et des scénarios retenus, nous avons défini pour notre prototype une maquette de l'interface et un échantillon de données réalistes.
 
 Les ressources Web possédant une représentation sur notre application seront de deux types :
-- Un voyage proposé (avec une HTTP-URI ayant pour chemin /{id})
 - Les résultats de recherche de voyage (avec une HTTP-URI ayant pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
+- Un voyage proposé (avec une HTTP-URI ayant pour chemin /{id})
 
 ![](https://placehold.co/200x400)
 
