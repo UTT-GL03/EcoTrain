@@ -1,0 +1,50 @@
+{
+  "trips": [
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Culmont-Chalindrey",
+        "date": "2025-02-05",
+        "time_departure": "09:56",
+        "time_arrival":"07:22",
+        "trip_id":"991573",
+        "available_tickets": [
+          "ticket_type": Business class,
+          "services": [
+          Free drinks,
+          Meal included
+          ],
+          "price": "24.35€"],
+          "ticket_type": 1st class,
+          "services": [
+          Meal included,
+          Free drinks,
+          Meal included
+          ],
+          "price": "72.44€"]
+ 
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Bar-sur-Aube",
+        "date": "2025-01-02",
+        "time_departure": "17:41",
+        "time_arrival":"20:50",
+        "trip_id":"315100",
+        "available_tickets": [
+          "ticket_type": 1st class,
+          "services": [
+          Meal included
+          ],
+          "price": "35.38€"],
+          "ticket_type": Business class,
+          "services": [
+          Free drinks,
+          Free WiFi,
+          Meal included,
+          Meal included
+          ],
+          "price": "34.90€"]
+ 
+      }
+  ]
+  }
