@@ -2,22 +2,25 @@
   "trips": [
     {{#repeat min=2 max=5}}
       {
-        "discount_card": "{{random 'Aucune' 'Carte avantage' 'Carte Fluo'}}",
         "station_departure": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Bar-sur-Aube' 'Nogent-sur-Seine' 'Culmont-Chalindrey' 'Mulhouse'}}",
         "station_arrival": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Bar-sur-Aube' 'Nogent-sur-Seine' 'Culmont-Chalindrey' 'Mulhouse'}}",
         "date": "{{date '2025-01-01' '2025-12-31' 'YYYY-MM-dd'}}",
         "time_departure": "{{time '06:00' '22:00' 'HH:mm'}}",
         "time_arrival":"{{time '06:00' '22:00' 'HH:mm'}}",
         "trip_id":"{{int 1 999999}}",
-        "available_tickets": [
-          {{#repeat min=1 max=2}}
-          "ticket_type": {{random "Business class" "1st class" "2nd class"}},
+      }
+    {{/repeat}}
+  ],
+  "trip_prices":[
+      {{#repeat min=2 max=5}}
+      {
+          "trip_id":"{{int 1 999999}}",
+          "trip_class": "{{random '1' '2'}}",
+          "discount_card": "{{random 'Full price' 'Carte avantage' 'Carte Fluo'}}"
+          "price": "{{float 1 100 '00.00'}}€"
           "services": [
           {{#repeat min=1 max=4}}
-          {{random "Meal included" "Bigger seats" "TV" "Free WiFi" "Free drinks"}}
-          {{/repeat}}
-          ],
-          "price": "{{float 1 100 '00.00'}}€"],
+          {{random "Meal included" "Bigger seats" "Free WiFi" "Free drinks"}}
           {{/repeat}}
       }
     {{/repeat}}

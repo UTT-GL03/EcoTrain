@@ -2,49 +2,57 @@
   "trips": [
       {
         "station_departure": "Nogent-sur-Seine",
-        "station_arrival": "Culmont-Chalindrey",
-        "date": "2025-02-05",
-        "time_departure": "09:56",
-        "time_arrival":"07:22",
-        "trip_id":"991573",
-        "available_tickets": [
-          "ticket_type": Business class,
-          "services": [
-          Free drinks,
-          Meal included
-          ],
-          "price": "24.35€"],
-          "ticket_type": 1st class,
-          "services": [
-          Meal included,
-          Free drinks,
-          Meal included
-          ],
-          "price": "72.44€"]
- 
+        "station_arrival": "Bar-sur-Aube",
+        "date": "2025-09-04",
+        "time_departure": "16:39",
+        "time_arrival":"12:13",
+        "trip_id":"239486",
       },
       {
         "station_departure": "Paris",
-        "station_arrival": "Bar-sur-Aube",
-        "date": "2025-01-02",
-        "time_departure": "17:41",
-        "time_arrival":"20:50",
-        "trip_id":"315100",
-        "available_tickets": [
-          "ticket_type": 1st class,
+        "station_arrival": "Paris",
+        "date": "2025-10-00",
+        "time_departure": "13:14",
+        "time_arrival":"09:29",
+        "trip_id":"439206",
+      },
+      {
+        "station_departure": "Bar-sur-Aube",
+        "station_arrival": "Culmont-Chalindrey",
+        "date": "2025-02-02",
+        "time_departure": "08:19",
+        "time_arrival":"17:02",
+        "trip_id":"12825",
+      },
+      {
+        "station_departure": "Mulhouse",
+        "station_arrival": "Troyes",
+        "date": "2025-09-01",
+        "time_departure": "16:40",
+        "time_arrival":"11:18",
+        "trip_id":"86312",
+      }
+  ],
+  "trip_prices":[
+      {
+          "trip_id":"99527",
+          "trip_class": "1",
+          "discount_card": "Carte avantage"
+          "price": "97.22€"
           "services": [
-          Meal included
-          ],
-          "price": "35.38€"],
-          "ticket_type": Business class,
+          Meal included,
+          Free WiFi
+      },
+      {
+          "trip_id":"905464",
+          "trip_class": "2",
+          "discount_card": "Carte avantage"
+          "price": "68.13€"
           "services": [
           Free drinks,
-          Free WiFi,
           Meal included,
-          Meal included
-          ],
-          "price": "34.90€"]
- 
+          Bigger seats,
+          Bigger seats
       }
   ]
   }
