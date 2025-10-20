@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import SearchBar from "./components/SearchBar";
 import './App.css'
 import data from './assets/sample_data.json'
@@ -13,7 +12,7 @@ function App() {
       </h1>
     </header>
 
-    <main className="container">
+    <main>
     <SearchBar></SearchBar>
       
       {data.trips.map((x,i) =>
@@ -24,16 +23,16 @@ function App() {
   );
 }
 
-function TripsList({station_departure, station_arrival, date, time_departure, time_arrival}) {
+function TripsList({station_departure, station_arrival, time_departure, time_arrival, price}) {
 return(
   <div>
-    <header>
+    <section>
       <span> {station_departure} </span>
       <span> {station_arrival} </span>
-      <span> {date} </span>
       <time> {time_departure} </time>
       <time> {time_arrival} </time>
-    </header>
+      <span> {price}€ </span>
+    </section>
   </div>
 )
 
