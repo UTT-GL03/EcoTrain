@@ -1,9 +1,9 @@
 {
   "trips": [
-    {{#repeat min=2 max=8}}
+    {{#repeat min=20 max=50}}
       {
-        "station_departure": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Bar-sur-Aube' 'Nogent-sur-Seine' 'Culmont-Chalindrey' 'Mulhouse'}}",
-        "station_arrival": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Bar-sur-Aube' 'Nogent-sur-Seine' 'Culmont-Chalindrey' 'Mulhouse'}}",
+        "station_departure": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Nogent-sur-Seine'}}",
+        "station_arrival": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Nogent-sur-Seine'}}",
         "date": "{{date '2025-01-01' '2025-12-31' 'YYYY-MM-dd'}}",
         "time_departure": "{{time '06:00' '22:00' 'HH:mm'}}",
         "time_arrival":"{{time '06:00' '22:00' 'HH:mm'}}",

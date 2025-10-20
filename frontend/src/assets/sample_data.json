@@ -3,50 +3,290 @@
       {
         "station_departure": "Troyes",
         "station_arrival": "Paris",
-        "date": "2025-09-05",
-        "time_departure": "18:20",
-        "time_arrival":"13:01",
-        "trip_id":"635885"
+        "date": "2025-09-02",
+        "time_departure": "20:43",
+        "time_arrival":"20:16",
+        "trip_id":"850430"
       },
       {
-        "station_departure": "Nogent-sur-Seine",
-        "station_arrival": "Troyes",
-        "date": "2025-01-01",
-        "time_departure": "19:29",
-        "time_arrival":"13:16",
-        "trip_id":"393743"
-      },
-      {
-        "station_departure": "Mulhouse",
-        "station_arrival": "Bar-sur-Aube",
-        "date": "2025-03-00",
-        "time_departure": "19:01",
-        "time_arrival":"08:13",
-        "trip_id":"940358"
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-10-03",
+        "time_departure": "09:27",
+        "time_arrival":"06:30",
+        "trip_id":"634107"
       },
       {
         "station_departure": "Paris",
-        "station_arrival": "Mulhouse",
-        "date": "2025-06-04",
-        "time_departure": "11:15",
-        "time_arrival":"15:58",
-        "trip_id":"361110"
+        "station_arrival": "Paris",
+        "date": "2025-02-03",
+        "time_departure": "11:38",
+        "time_arrival":"10:06",
+        "trip_id":"441539"
       },
       {
-        "station_departure": "Culmont-Chalindrey",
-        "station_arrival": "Mulhouse",
-        "date": "2025-06-04",
-        "time_departure": "15:00",
-        "time_arrival":"18:27",
-        "trip_id":"385399"
+        "station_departure": "Paris",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-08-01",
+        "time_departure": "17:22",
+        "time_arrival":"12:30",
+        "trip_id":"34896"
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Troyes",
+        "date": "2025-08-01",
+        "time_departure": "08:22",
+        "time_arrival":"12:41",
+        "trip_id":"948486"
       },
       {
         "station_departure": "Troyes",
         "station_arrival": "Romilly-sur-Seine",
-        "date": "2025-10-01",
-        "time_departure": "06:54",
-        "time_arrival":"14:13",
-        "trip_id":"978371"
+        "date": "2025-10-03",
+        "time_departure": "11:28",
+        "time_arrival":"18:11",
+        "trip_id":"640278"
+      },
+      {
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-03-01",
+        "time_departure": "13:22",
+        "time_arrival":"09:58",
+        "trip_id":"5521"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Paris",
+        "date": "2025-03-02",
+        "time_departure": "05:35",
+        "time_arrival":"19:10",
+        "trip_id":"444984"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Paris",
+        "date": "2025-11-03",
+        "time_departure": "07:53",
+        "time_arrival":"05:44",
+        "trip_id":"723098"
+      },
+      {
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Troyes",
+        "date": "2025-05-06",
+        "time_departure": "08:29",
+        "time_arrival":"19:57",
+        "trip_id":"313575"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-12-02",
+        "time_departure": "13:35",
+        "time_arrival":"16:59",
+        "trip_id":"822084"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-04-04",
+        "time_departure": "12:44",
+        "time_arrival":"11:44",
+        "trip_id":"286831"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Troyes",
+        "date": "2025-08-03",
+        "time_departure": "07:28",
+        "time_arrival":"10:03",
+        "trip_id":"691"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-04-04",
+        "time_departure": "18:29",
+        "time_arrival":"17:02",
+        "trip_id":"548100"
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-12-06",
+        "time_departure": "05:29",
+        "time_arrival":"19:11",
+        "trip_id":"182896"
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Paris",
+        "date": "2025-12-03",
+        "time_departure": "15:58",
+        "time_arrival":"09:41",
+        "trip_id":"656414"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Paris",
+        "date": "2025-11-01",
+        "time_departure": "15:59",
+        "time_arrival":"11:51",
+        "trip_id":"648318"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-03-06",
+        "time_departure": "12:42",
+        "time_arrival":"13:02",
+        "trip_id":"878822"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-05-05",
+        "time_departure": "17:51",
+        "time_arrival":"12:30",
+        "trip_id":"363749"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Troyes",
+        "date": "2025-03-02",
+        "time_departure": "09:13",
+        "time_arrival":"18:20",
+        "trip_id":"614312"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-08-06",
+        "time_departure": "12:48",
+        "time_arrival":"05:13",
+        "trip_id":"451464"
+      },
+      {
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Paris",
+        "date": "2025-01-02",
+        "time_departure": "17:53",
+        "time_arrival":"15:30",
+        "trip_id":"288505"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Nogent-sur-Seine",
+        "date": "2025-04-05",
+        "time_departure": "07:04",
+        "time_arrival":"08:16",
+        "trip_id":"316201"
+      },
+      {
+        "station_departure": "Troyes",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-10-00",
+        "time_departure": "18:55",
+        "time_arrival":"19:23",
+        "trip_id":"515583"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Troyes",
+        "date": "2025-01-06",
+        "time_departure": "09:10",
+        "time_arrival":"10:02",
+        "trip_id":"443872"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-10-06",
+        "time_departure": "16:07",
+        "time_arrival":"16:17",
+        "trip_id":"240200"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Troyes",
+        "date": "2025-10-05",
+        "time_departure": "15:29",
+        "time_arrival":"09:18",
+        "trip_id":"484069"
+      },
+      {
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Troyes",
+        "date": "2025-08-06",
+        "time_departure": "13:36",
+        "time_arrival":"08:56",
+        "trip_id":"95864"
+      },
+      {
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Paris",
+        "date": "2025-12-04",
+        "time_departure": "20:19",
+        "time_arrival":"15:26",
+        "trip_id":"728854"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-05-01",
+        "time_departure": "08:23",
+        "time_arrival":"14:16",
+        "trip_id":"276367"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Troyes",
+        "date": "2025-10-06",
+        "time_departure": "15:48",
+        "time_arrival":"17:21",
+        "trip_id":"87000"
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-04-01",
+        "time_departure": "15:42",
+        "time_arrival":"17:57",
+        "trip_id":"992645"
+      },
+      {
+        "station_departure": "Nogent-sur-Seine",
+        "station_arrival": "Paris",
+        "date": "2025-04-03",
+        "time_departure": "06:46",
+        "time_arrival":"07:22",
+        "trip_id":"694919"
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Troyes",
+        "date": "2025-12-04",
+        "time_departure": "13:14",
+        "time_arrival":"08:49",
+        "trip_id":"208240"
+      },
+      {
+        "station_departure": "Romilly-sur-Seine",
+        "station_arrival": "Troyes",
+        "date": "2025-01-03",
+        "time_departure": "17:13",
+        "time_arrival":"17:13",
+        "trip_id":"575090"
+      },
+      {
+        "station_departure": "Paris",
+        "station_arrival": "Romilly-sur-Seine",
+        "date": "2025-02-01",
+        "time_departure": "19:17",
+        "time_arrival":"15:14",
+        "trip_id":"981668"
       }
   ]
   }
