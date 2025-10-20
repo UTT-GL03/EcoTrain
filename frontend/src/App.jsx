@@ -13,10 +13,27 @@ function App() {
         EcoTrain
       </h1>
     </header>
-    <main>
+    <main className="container">
+      {data.trips.map((x,i) =>
+      <TripsList {...x} key={i} />
+  )}
     </main>
     </>
   );
+}
+
+function TripsList({station_departure, station_arrival, date, time_departure, time_arrival}) {
+return(
+  <div>
+    <header>
+      <span> {station_departure}</span>
+      <span> {station_arrival}</span>
+      <time> {time_departure}</time>
+      <time> {time_arrival}</time>
+    </header>
+  </div>
+)
+
 }
 
 export default App
