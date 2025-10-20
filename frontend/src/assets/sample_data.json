@@ -6,7 +6,7 @@
         "date": "2025-09-05",
         "time_departure": "18:20",
         "time_arrival":"13:01",
-        "trip_id":"635885",
+        "trip_id":"635885"
       },
       {
         "station_departure": "Nogent-sur-Seine",
@@ -14,7 +14,7 @@
         "date": "2025-01-01",
         "time_departure": "19:29",
         "time_arrival":"13:16",
-        "trip_id":"393743",
+        "trip_id":"393743"
       },
       {
         "station_departure": "Mulhouse",
@@ -22,7 +22,7 @@
         "date": "2025-03-00",
         "time_departure": "19:01",
         "time_arrival":"08:13",
-        "trip_id":"940358",
+        "trip_id":"940358"
       },
       {
         "station_departure": "Paris",
@@ -30,7 +30,7 @@
         "date": "2025-06-04",
         "time_departure": "11:15",
         "time_arrival":"15:58",
-        "trip_id":"361110",
+        "trip_id":"361110"
       },
       {
         "station_departure": "Culmont-Chalindrey",
@@ -38,7 +38,7 @@
         "date": "2025-06-04",
         "time_departure": "15:00",
         "time_arrival":"18:27",
-        "trip_id":"385399",
+        "trip_id":"385399"
       },
       {
         "station_departure": "Troyes",
@@ -46,7 +46,7 @@
         "date": "2025-10-01",
         "time_departure": "06:54",
         "time_arrival":"14:13",
-        "trip_id":"978371",
+        "trip_id":"978371"
       }
   ]
   }
