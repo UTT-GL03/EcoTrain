@@ -9,14 +9,18 @@ function App() {
     <>
       <header>
         <h1>
-          EcoTrain
+          🚊 EcoTrain
         </h1>
       </header>
 
       <main>
-        {data.trips.map((x, i) =>
-          <TripsList {...x} key={i} />
-        )}
+        <section className="container">
+          <SearchBar></SearchBar>
+          <h2>Votre recherche : STATION_DEPARTURE - STATION_ARRIVAL le JJ/MM/AAAA</h2>
+          {data.trips.map((x, i) =>
+            <TripsList {...x} key={i} />
+          )}
+        </section>
       </main>
     </>
   )
