@@ -12,7 +12,10 @@ function App() {
         EcoTrain
       </h1>
     </header>
+
     <main className="container">
+    <SearchBar></SearchBar>
+      
       {data.trips.map((x,i) =>
       <TripsList {...x} key={i} />
   )}
