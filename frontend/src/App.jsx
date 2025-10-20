@@ -5,7 +5,6 @@ import data from './assets/sample_data.json'
 
 function App() {
 
-
   return (
     <>
     <header>
@@ -26,10 +25,11 @@ function TripsList({station_departure, station_arrival, date, time_departure, ti
 return(
   <div>
     <header>
-      <span> {station_departure}</span>
-      <span> {station_arrival}</span>
-      <time> {time_departure}</time>
-      <time> {time_arrival}</time>
+      <span> {station_departure} </span>
+      <span> {station_arrival} </span>
+      <span> {date} </span>
+      <time> {time_departure} </time>
+      <time> {time_arrival} </time>
     </header>
   </div>
 )

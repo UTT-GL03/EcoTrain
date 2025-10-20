@@ -1,6 +1,6 @@
 {
   "trips": [
-    {{#repeat min=2 max=5}}
+    {{#repeat min=2 max=8}}
       {
         "station_departure": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Bar-sur-Aube' 'Nogent-sur-Seine' 'Culmont-Chalindrey' 'Mulhouse'}}",
         "station_arrival": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Bar-sur-Aube' 'Nogent-sur-Seine' 'Culmont-Chalindrey' 'Mulhouse'}}",
@@ -8,20 +8,6 @@
         "time_departure": "{{time '06:00' '22:00' 'HH:mm'}}",
         "time_arrival":"{{time '06:00' '22:00' 'HH:mm'}}",
         "trip_id":"{{int 1 999999}}",
-      }
-    {{/repeat}}
-  ],
-  "trip_prices":[
-      {{#repeat min=2 max=5}}
-      {
-          "trip_id":"{{int 1 999999}}",
-          "trip_class": "{{random '1' '2'}}",
-          "discount_card": "{{random 'Full price' 'Carte avantage' 'Carte Fluo'}}"
-          "price": "{{float 1 100 '00.00'}}€"
-          "services": [
-          {{#repeat min=1 max=4}}
-          {{random "Meal included" "Bigger seats" "Free WiFi" "Free drinks"}}
-          {{/repeat}}
       }
     {{/repeat}}
   ]
