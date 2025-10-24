@@ -99,10 +99,11 @@ Au vu des différents services comparés, des exigences environnementales exprim
 Les ressources Web possédant une représentation sur notre application seront de deux types :
 - Les résultats de recherche de voyage (avec une HTTP-URI ayant pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 - Un voyage proposé (avec une HTTP-URI ayant pour chemin /{id})
+  
+<img src="https://github.com/UTT-GL03/EcoTrain/blob/main/docs/mockup_search.JPG" alt="maquette de la page de recherche" height="500"/>   <img src="https://github.com/UTT-GL03/EcoTrain/blob/main/docs/mockup_tripdetails.JPG" alt="maquette de la page de résultats" height="500"/>
 
-![](https://placehold.co/200x400)
 
-Fig.1: Maquette de l'interface du prototype
+Fig.1: Maquette de la page de recherche // Fig.2: Maquette de la page de résultats de recherche
 
 Dans un objectif de sobriété environnementale, les résultats de recherche se limiterons à ceux du jour sélectionné.
 
