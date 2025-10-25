@@ -1,52 +1,38 @@
-import SearchBar from "./components/SearchBar";
-import './App.css'
-import data from './assets/sample_data.json'
+import { Link } from 'react-router'
 import { BrowserRouter, Routes, Route } from 'react-router'
+import './App.css'
+import TripDetails from './TripDetails'
+import Trips from './SearchResults'
+import HomePage from './HomePage'
+
 
 function App() {
 
   return (
     <>
-      <header>
-        <h1>
-          🚊 EcoTrain
-        </h1>
-      </header>
+      <BrowserRouter>
 
-      <main>
-        <section className="container">
-          <SearchBar></SearchBar>
-          <h2>Votre recherche : STATION_DEPARTURE - STATION_ARRIVAL le JJ/MM/AAAA</h2>
-          {data.trips.map((x, i) =>
-            <TripsList {...x} key={i} />
-          )}
-        </section>
-      </main>
+        <header>
+          <Link to="/">
+            <h1>
+              EcoTrain
+            </h1>
+          </Link>
+        </header>
+
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/trips" element={<Trips />} />
+            <Route path="/trips/:trip_id" element={<TripDetails />} />
+          </Routes>
+        </main>
+
+      </BrowserRouter >
     </>
+
   )
 };
 
-function TripsList({ station_departure, station_arrival, time_departure, time_arrival, price }) {
-  return (
-    <BrowserRouter>
-      <div>
-        <section className="container">
-          <span> {station_departure} </span>
-          <time> {time_departure} </time>
-          <br />
-          <span> {station_arrival} </span>
-          <time> {time_arrival} </time>
-          <br />
-          <span> {price}€ </span>
-        </section>
-        <br />
-      </div>
-    </BrowserRouter >
-  )
-}
-
-<Routes>
-  <Route path="/" element={<TripsList />} />
-</Routes>
 
 export default App
