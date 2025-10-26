@@ -13,11 +13,12 @@ function App() {
       <BrowserRouter>
 
         <header>
-          <Link to="/">
-            <h1>
+          <h1>
+            <Link to="/">
               EcoTrain
-            </h1>
-          </Link>
+            </Link>
+          </h1>
+
         </header>
 
         <main>

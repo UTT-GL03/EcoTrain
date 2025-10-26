@@ -8,7 +8,7 @@ dayjs.extend(localizedFormat);
 function SearchResults({}) {
   return (
     <section className="container">
-      <h2>Votre recherche : STATION_DEPARTURE - STATION_ARRIVAL le JJ/MM/AAAA</h2>
+      <h2>Voyages trouvés :</h2>
       {data.trips.map((x, i) => <SearchResult {...x} key={i} />)}
     </section>
   )

@@ -1,10 +1,16 @@
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
 import { Link } from 'react-router'
+import { useState } from 'react';
 
 dayjs.extend(localizedFormat);
 
 function SearchBar() {
+  const [passengers, setPassengers] = useState([]);
+
+  const addPassenger = () => {
+    setPassengers([...passengers, <InfoVoyageur key={passengers.length} />]);
+  };
   return (
     <form>
       <h3>Informations du trajet</h3>
@@ -50,10 +56,19 @@ function SearchBar() {
           </select>
         </div>
       </div>
+      <h3>Informations voyageur</h3>
       <InfoVoyageur></InfoVoyageur>
-      <Link to="/trips">
-        <button type="submit">Rechercher un trajet</button>
-      </Link>
+      <div>
+        {passengers}
+      </div>
+      <div>
+        <button type="button" className="outline" id="addPassenger" onClick={addPassenger}>Ajouter un passager</button>
+      </div>
+      <div>
+        <Link to="/trips">
+          <button type="submit">Rechercher un trajet</button>
+        </Link>
+      </div>
     </form>
   )
 };
@@ -61,7 +76,6 @@ function SearchBar() {
 function InfoVoyageur() {
   return (
     <fieldset>
-      <h3>Informations voyageur</h3>
       <div className="grid">
         <div>
           <select name="category" required>
