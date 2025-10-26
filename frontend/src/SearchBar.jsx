@@ -64,12 +64,11 @@ function InfoVoyageur() {
       <h3>Informations voyageur</h3>
       <div className="grid">
         <div>
-          <select name="category" placeholder="Catégorie" required>
-            <option value="">Sélectionnez</option>
+          <select name="category" required>
             <option value="bebe">Bébé (0-3 ans)</option>
             <option value="enfant">Enfant (4-11 ans)</option>
             <option value="jeune">Jeune (12-25 ans)</option>
-            <option value="adulte">Adulte (26-59 ans)</option>
+            <option selected value="adulte">Adulte (26-59 ans)</option>
             <option value="senior">Senior (60 ans ou plus)</option>
           </select>
         </div>
