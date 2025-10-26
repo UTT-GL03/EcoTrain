@@ -18,9 +18,7 @@ function SearchBar() {
         <input type="text" name="departureStation" placeholder="Gare de départ" required />
       </div>
       <div>
-        <label>
           <input type="text" name="arrivalStation" placeholder="Gare d'arrivée" required />
-        </label>
       </div>
       <div className="grid">
         <div width="67%">
