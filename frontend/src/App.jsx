@@ -4,21 +4,26 @@ import './App.css'
 import TripDetails from './TripDetails'
 import Trips from './SearchResults'
 import HomePage from './HomePage'
-
+import Cart from './Cart';
+import { CartProvider } from './CartContext';
 
 function App() {
 
   return (
-    <>
+    <CartProvider>
       <BrowserRouter>
-
+      
         <header>
-          <h1>
-            <Link to="/">
-              EcoTrain
-            </Link>
-          </h1>
-
+          <div className="header-title">
+            <h1>
+              <Link to="/">
+                🚊 EcoTrain
+              </Link>
+            </h1>
+          </div>
+          <div className="header-right">
+            <Link to="/cart" className="cart-link">Voir le panier</Link>
+          </div>
         </header>
 
         <main>
@@ -26,12 +31,12 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/trips" element={<Trips />} />
             <Route path="/trips/:trip_id" element={<TripDetails />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </main>
 
       </BrowserRouter >
-    </>
-
+    </CartProvider>
   )
 };
 

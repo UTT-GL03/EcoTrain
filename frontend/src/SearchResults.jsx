@@ -19,10 +19,9 @@ function SearchResult({ station_departure, station_arrival, datetime_departure, 
   const datetimedeparture = dayjs(datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
 
-  // Calcul des heures et des minutes
   const hours = Math.floor(durationInMinutes / 60);
   const minutes = durationInMinutes % 60;
-  const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`; // Format HHhmm
+  const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
 
   return (
     <article>

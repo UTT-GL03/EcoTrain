@@ -36,3 +36,11 @@ form {
   margin:10px 10px;
   padding:10px 10px;
 }
+
+.header-title > h1 > a, .back-button {
+  --pico-text-decoration: none;
+}
+
+.pay-button {
+  text-align:center
+}
