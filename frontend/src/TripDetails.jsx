@@ -5,13 +5,11 @@ import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
+import { useNavigate } from 'react-router-dom';
 
 dayjs.extend(localizedFormat);
 
-function TripDetails({ }) {
-  const { trip_id } = useParams();
-  const { addToCart } = useContext(CartContext);
-  const trip = data.trips.find(x => trip_id === x.trip_id);
+export function calculateTripTimes(trip) {
   const datetimearrival = dayjs(trip.datetime_arrival);
   const datetimedeparture = dayjs(trip.datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
@@ -19,6 +17,18 @@ function TripDetails({ }) {
   const hours = Math.floor(durationInMinutes / 60);
   const minutes = durationInMinutes % 60;
   const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
+
+  return { datetimearrival, datetimedeparture, formattedDuration };
+}
+
+function TripDetails({ }) {
+  const { trip_id } = useParams();
+  const { addToCart } = useContext(CartContext);
+  const navigate = useNavigate();
+
+  const trip = data.trips.find(x => trip_id === x.trip_id);
+
+  const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
 
   if (!trip) {
     return (
@@ -32,7 +42,7 @@ function TripDetails({ }) {
 
   const handleAddToCart = () => {
     addToCart(trip);
-    alert('Billet ajouté au panier !');
+    navigate('../cart');
   };
 
   return (
@@ -72,4 +82,4 @@ function TripDetails({ }) {
   );
 }
 
-export default TripDetails;
+export default TripDetails

@@ -44,3 +44,8 @@ form {
 .pay-button {
   text-align:center
 }
+
+.search-bar {
+  max-width: 800px;
+  margin: 0 auto;
+}
