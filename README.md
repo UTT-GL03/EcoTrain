@@ -109,5 +109,55 @@ Dans un objectif de sobriété environnementale, les résultats de recherche se 
 
 Pour des raisons de respect des droits d'auteurs, nous utilisons des données générées (avec [dummy-json](https://dummyjson.com/)). Bien que fictives, ces données correspondent à la structure des services concurrents : les voyages comportent une gare de départ et d'arrivée, une date, une heure de départ et d'arrivée, et un ou plusieurs tarifs.
 
+## Prototype n°1 : Fonctionnalités pour le scénario prioritaire avec données chargées de manière statique
+Pour cette première version du prototype :
+- l'échantillon de données est encore chargé dans le code de manière statique,
+- les fonctionnalités implémentées ne sont que celles nécessaires pour suivre le scénario prioritaire ("Acheter un billet de train").
+
+Ce scénario nécessite de pouvoir naviguer entre plusieurs pages : 
+- la page de recherche de voyage, où il est possible de rechercher des trajets
+- la page de résultats, où s'affichent les trajets correspondant aux critères
+
+### Page de recherche de voyage
+La page d'accueil renvoie un formulaire permettant de renseigner ses critères de recherche de voyage.
+
+PLACEHOLDER
+Fig.3: Prototype de la page de recherche de voyage
+
+Pour l'instant, nous avons choisi un framework de mise en page minimaliste (PicoCSS). Dans la suite du projet, nous verrons si l'impact environnemental du passage à un framework de mise en page plus puissant (comme Bootstrap) est acceptable.
+
+Nous avons également fait le choix de ne pas inclure de photographies, celles-ci n'état pas nécessaires à la réservation d'un billet de train.
+
+Dans l'état actuel du prototype, il est possible d'avoir une première idée de l'impact environnemental du frontend. Bien entendu, il manque encore le chargement dynamique des données, mais nous pouvons déjà évaluer l'impact de l'affichage des données et du framework (au sens large : React, PicoCSS). Cette évaluation de l'impact (cf. Tab.4) est déjà encourageante en mode "développement" mais encore plus en mode "pré-production". Nous mesurons ici l'effet positif de l'adoption d'outils de développement Web intégrant la ["minification"](https://fr.wikipedia.org/wiki/Minification) (cf. Wikipédia) du code et la concaténation du code d'une part et des feuilles de style d'autre part.
+
+| |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
+|---|---|---|---|---|---|
+|Mode "développement"|79|1.42|81|29|1873|
+|Mode "pré-production"|91|1.18|78|6|145|
+
+Tab.4 Mesure de l'EcoIndex moyen de notre prototype, dans le cadre du scénario n°1
+
+### Page de résultats
+
+Les pages des voyages ont pour HTTP-URI /trips/{id}. Dans notre jeu de données, chaque voyage dispose d'un ID unique qui est réemployé dans l'URI.
+
+De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fig. 4) conformément à ce que prévoyait la maquette.
+
+Fig.4 Prototype de la page de détails sur le trajet choisi
+
+### Page du panier
 
 
+Fig.5 Prototype de la page du panier
+
+
+### Impacts du scénario prioritaire
+
+| |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
+|---|---|---|---|---|---|
+|1. Consulter la page de recherche de trajet |91|1.18|78|6|145|
+|2. Consulter les trajets disponibles selon les critères renseignés||||||
+|3. Consulter les détails d'un trajet||||||
+|4. Consulter son panier et acéder au paiement||||||
+
+Tab.5: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1.
