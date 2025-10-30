@@ -100,7 +100,7 @@ Les ressources Web possédant une représentation sur notre application seront d
 - Les résultats de recherche de voyage (avec une HTTP-URI ayant pour chemin /?depart={gare_depart}&arrivee={gare_arrivee}&date={date})
 - Un voyage proposé (avec une HTTP-URI ayant pour chemin /{id})
   
-<img src="https://github.com/UTT-GL03/EcoTrain/blob/main/docs/mockup_search.JPG" alt="maquette de la page de recherche" height="500"/>   <img src="https://github.com/UTT-GL03/EcoTrain/blob/main/docs/mockup_tripdetails.JPG" alt="maquette de la page de résultats" height="500"/>
+<img src="./docs/mockup_search.jpg" alt="maquette de la page de recherche" height="500"/>   <img src="./docs/mockup_tripdetails.JPG" alt="maquette de la page de résultats" height="500"/>
 
 
 Fig.1: Maquette de la page de recherche // Fig.2: Maquette de la page de résultats de recherche
@@ -121,7 +121,7 @@ Ce scénario nécessite de pouvoir naviguer entre plusieurs pages :
 ### Page de recherche de voyage
 La page d'accueil renvoie un formulaire permettant de renseigner ses critères de recherche de voyage.
 
-PLACEHOLDER
+<img src="./docs/searchpage_screenshot.png" alt="prototype de la page de recherche"/>
 Fig.3: Prototype de la page de recherche de voyage
 
 Pour l'instant, nous avons choisi un framework de mise en page minimaliste (PicoCSS). Dans la suite du projet, nous verrons si l'impact environnemental du passage à un framework de mise en page plus puissant (comme Bootstrap) est acceptable.
@@ -132,32 +132,42 @@ Dans l'état actuel du prototype, il est possible d'avoir une première idée de
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
-|Mode "développement"|79|1.42|81|29|1873|
-|Mode "pré-production"|91|1.18|78|6|145|
+|Mode "développement"|🟢 79|1.42|81|29|1873|
+|Mode "pré-production"|🔵 91|1.18|78|6|145|
 
 Tab.4 Mesure de l'EcoIndex moyen de notre prototype, dans le cadre du scénario n°1
 
-### Page de résultats
+### Page de résultats de recherche
+
+La page de résultats de recherche a pour HTTP-URI /trips, et affiche actuellement l'ensemble des données factices de façon statique. À plus long terme, une requête GET sera ajoutée à la suite de /trips afin d'afficher dynamiquement les résultats selon les informations renseignées dans le formulaire de la page précédente.
+
+Depuis cette page, il est possible d'accéder aux détails de l'un des trajets afin de le réserver, ou bien de retourner à la page d'accueil en cliquant sur le titre de la page ("EcoTrain").
+
+<img src="./docs/tripslist_screenshot.png" alt="prototype de la page de résultats de recherche"/>
+Fig.4 Prototype de la page de résultats de recherche
+
+### Page de détails du trajet
 
 Les pages des voyages ont pour HTTP-URI /trips/{id}. Dans notre jeu de données, chaque voyage dispose d'un ID unique qui est réemployé dans l'URI.
 
 De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fig. 4) conformément à ce que prévoyait la maquette.
 
-Fig.4 Prototype de la page de détails sur le trajet choisi
+<img src="./docs/tripdetails_screenshot.png" alt="prototype de la page de détails sur le trajet sélectionné"/>
+Fig.5 Prototype de la page de détails sur le trajet choisi
 
 ### Page du panier
 
-
-Fig.5 Prototype de la page du panier
+<img src="./docs/cart_screenshot.png" alt="prototype de la page du panier"/>
+Fig.6 Prototype de la page du panier
 
 
 ### Impacts du scénario prioritaire
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
-|1. Consulter la page de recherche de trajet |91|1.18|78|6|145|
-|2. Consulter les trajets disponibles selon les critères renseignés||||||
-|3. Consulter les détails d'un trajet||||||
-|4. Consulter son panier et acéder au paiement||||||
+|1. Consulter la page de recherche de trajet |🔵 91|1.18|78|6|145|
+|2. Consulter les trajets disponibles selon les critères renseignés|🟢 75|1.50|43|6|145|
+|3. Consulter les détails d'un trajet|🔵 94|1.12|47|6|145|
+|4. Consulter son panier et acéder au paiement|🔵 94|1.13|43|6|145|
 
 Tab.5: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1.
