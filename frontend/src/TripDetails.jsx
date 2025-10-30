@@ -3,9 +3,6 @@ import data from './assets/sample_data.json'
 import { useParams } from 'react-router'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
-import { useContext } from 'react';
-import { CartContext } from './CartContext';
-import { useNavigate } from 'react-router-dom';
 
 dayjs.extend(localizedFormat);
 
@@ -23,27 +20,10 @@ export function calculateTripTimes(trip) {
 
 function TripDetails({ }) {
   const { trip_id } = useParams();
-  const { addToCart } = useContext(CartContext);
-  const navigate = useNavigate();
 
   const trip = data.trips.find(x => trip_id === x.trip_id);
 
   const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
-
-  if (!trip) {
-    return (
-      <div className="trip-not-found">
-        <h2>Trajet non trouvé</h2>
-        <p>Nous n'avons pas trouvé de voyage correspondant au voyage n°{trip_id}</p>
-        <Link to="/">Retour à la page d'accueil</Link>
-      </div>
-    );
-  }
-
-  const handleAddToCart = () => {
-    addToCart(trip);
-    navigate('../cart');
-  };
 
   return (
     <div>
@@ -72,7 +52,7 @@ function TripDetails({ }) {
       <br/>
       <div className="grid">
         <div>
-          <button onClick={handleAddToCart}>Ajouter au panier</button>
+          <button>Ajouter au panier</button>
         </div>
         <div>
           <button className="outline"><Link to="../trips" className="back-button">Retour à la page précédente</Link></button>
