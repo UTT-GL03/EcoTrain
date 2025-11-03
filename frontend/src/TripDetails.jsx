@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import data from './assets/sample_data.json'
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
@@ -21,8 +21,15 @@ export function calculateTripTimes(trip) {
 function TripDetails({ }) {
   const { trip_id } = useParams();
 
-  const trip = data.trips.find(x => trip_id === x.trip_id);
+  const [trip, setTrip] = useState ({})
 
+  useEffect(() => {
+    fetch('/sample_data.json')
+    .then (x => x.json())
+    .then(data => {
+      setTrip(data.trips.find(x => trip_id === x.trip_id))
+    },[trip_id])  })
+  
   const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
 
   return (

@@ -1,20 +1,29 @@
 import { Link } from 'react-router'
-import data from './assets/sample_data.json'
+import { useState, useEffect } from 'react'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
 
 dayjs.extend(localizedFormat);
 
 function SearchResults({}) {
+  const [results, setResults] = useState([])
+
+  useEffect(() => {
+    fetch('/sample_data.json')
+      .then(x => x.json())
+      .then(data => {
+        setResults(data.trips)
+    })
+}, [])
   return (
     <section className="container">
       <h2>Voyages trouvés :</h2>
-      {data.trips.map((x, i) => <SearchResult {...x} key={i} />)}
+      {results.map((x, i) => <SearchResult {...x} key={i} />)}
     </section>
   )
 }
 
-function SearchResult({ station_departure, station_arrival, datetime_departure, datetime_arrival, price, trip_id }) {
+function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price, trip_id}) {
   const datetimearrival = dayjs(datetime_arrival);
   const datetimedeparture = dayjs(datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');

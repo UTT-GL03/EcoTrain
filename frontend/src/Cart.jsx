@@ -2,20 +2,27 @@ import dayjs from 'dayjs';
 import { calculateTripTimes } from './TripDetails';
 import { Link } from 'react-router';
 import React from 'react';
-import data from './assets/sample_data.json';
+import { useState, useEffect } from 'react'
 
-const trips = data.trips;
-const randomIndex = Math.floor(Math.random() * trips.length);
-const item = trips[randomIndex];
-const datetimedeparture = dayjs(item.datetime_departure);
-const datetimearrival = dayjs(item.datetime_arrival);
+function Cart() {
+  const [trips, setResults] = useState([])
+
+  useEffect(() => {
+    fetch('/sample_data.json')
+      .then(x => x.json())
+      .then(data => {
+        setResults(data.trips[0])
+    })
+}, [])
+
+const datetimedeparture = dayjs(trips.datetime_departure);
+const datetimearrival = dayjs(trips.datetime_arrival);
 const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
 const hours = Math.floor(durationInMinutes / 60);
 const minutes = durationInMinutes % 60;
 const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
-const totalPrice = item.price;
+const totalPrice = trips.price;
 
-function Cart() {
   return (
     <section className="container">
       <h2>Panier</h2>
@@ -31,12 +38,12 @@ function Cart() {
                 <time>Durée : {formattedDuration}</time>
               </div>
               <div>
-                <span>{item.station_departure}</span>
+                <span>{trips.station_departure}</span>
                 <br />
-                <span>{item.station_arrival}</span>
+                <span>{trips.station_arrival}</span>
               </div>
               <div>
-                <strong>{item.price}€</strong>
+                <strong>{trips.price}€</strong>
               </div>
               <div>
                 <button className="remove-button outline contrast" disabled>🗑️</button>
