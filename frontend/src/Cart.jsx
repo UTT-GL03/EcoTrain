@@ -12,8 +12,9 @@ function Cart() {
       .then(x => x.json())
       .then(data => {
         setResults(data.trips[0])
-    })
-}, [])
+      }
+    )},[])
+  
 
 const datetimedeparture = dayjs(trips.datetime_departure);
 const datetimearrival = dayjs(trips.datetime_arrival);

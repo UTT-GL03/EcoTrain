@@ -28,7 +28,8 @@ function TripDetails({ }) {
     .then (x => x.json())
     .then(data => {
       setTrip(data.trips.find(x => trip_id === x.trip_id))
-    },[trip_id])  })
+    }
+  )},[trip_id])
   
   const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
 
