@@ -171,3 +171,16 @@ Fig.6 Prototype de la page du panier
 |4. Consulter son panier et acéder au paiement|🔵 94|1.13|43|6|145|
 
 Tab.5: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1.
+
+### Étape de prototypage : Données statiques chargées de manière dynamique
+
+Pour cette nouvelle version du prototype (v1.0.1), identique du point de vue fonctionnel, les données (toujours statiques) sont désormais chargées par le frontend à travers le réseau immédiatement après un premier affichage à vide. Ce comportement, plus réaliste, n'a pour effet qu'une requête supplémentaire par page affichée.
+
+Concernant l'évaluation de l'impact environnemental du scénario, par rapport au tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui est incrémenté de 1, les résultats sont strictement identiques.
+
+| |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
+|---|---|---|---|---|---|
+|1. Consulter la page de recherche de trajet |🔵 90.97|1.18|81|6|145|
+|2. Consulter les trajets disponibles selon les critères renseignés|🟢 74.64|1.51|501||193|
+|3. Consulter les détails d'un trajet|🔵 93.03|1.14|47|9|193|
+|4. Consulter son panier et acéder au paiement|🔵 93.12|1.14|43|10|193|
