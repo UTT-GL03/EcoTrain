@@ -56,3 +56,15 @@ footer {
   text-align:center;
   padding:1em
 }
+
+div > button {
+  text-align:center;
+  margin:auto;
+}
+
+.class-option.selected{
+  background: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-weight:600;
+}

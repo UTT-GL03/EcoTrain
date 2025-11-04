@@ -5,7 +5,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T05:43:33+02:00",
         "datetime_arrival": "2025-01-01T20:50:09+02:00",
-        "price":"55",
+        "price_second":"55",
+        "price_first":"110",
         "trip_id":"236563"
       },
       {
@@ -13,7 +14,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T00:39:03+02:00",
         "datetime_arrival": "2025-01-01T14:32:23+02:00",
-        "price":"143",
+        "price_second":"143",
+        "price_first":"286",
         "trip_id":"917543"
       },
       {
@@ -21,7 +23,8 @@
         "station_arrival": "Romilly-sur-Seine",
         "datetime_departure": "2025-01-01T04:00:29+02:00",
         "datetime_arrival": "2025-01-01T19:41:17+02:00",
-        "price":"124",
+        "price_second":"124",
+        "price_first":"248",
         "trip_id":"979604"
       },
       {
@@ -29,7 +32,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T10:39:13+02:00",
         "datetime_arrival": "2025-01-01T14:37:57+02:00",
-        "price":"114",
+        "price_second":"114",
+        "price_first":"228",
         "trip_id":"324807"
       },
       {
@@ -37,7 +41,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T10:22:15+02:00",
         "datetime_arrival": "2025-01-01T18:06:05+02:00",
-        "price":"23",
+        "price_second":"23",
+        "price_first":"46",
         "trip_id":"592864"
       },
       {
@@ -45,7 +50,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T08:06:05+02:00",
         "datetime_arrival": "2025-01-01T19:19:57+02:00",
-        "price":"68",
+        "price_second":"68",
+        "price_first":"136",
         "trip_id":"312250"
       },
       {
@@ -53,7 +59,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T03:44:12+02:00",
         "datetime_arrival": "2025-01-01T19:21:08+02:00",
-        "price":"34",
+        "price_second":"34",
+        "price_first":"68",
         "trip_id":"195807"
       },
       {
@@ -61,7 +68,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T07:26:25+02:00",
         "datetime_arrival": "2025-01-01T20:32:53+02:00",
-        "price":"149",
+        "price_second":"149",
+        "price_first":"298",
         "trip_id":"297116"
       },
       {
@@ -69,7 +77,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T02:20:43+02:00",
         "datetime_arrival": "2025-01-01T14:31:16+02:00",
-        "price":"23",
+        "price_second":"23",
+        "price_first":"46",
         "trip_id":"441741"
       },
       {
@@ -77,7 +86,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T04:43:47+02:00",
         "datetime_arrival": "2025-01-01T15:39:21+02:00",
-        "price":"34",
+        "price_second":"34",
+        "price_first":"68",
         "trip_id":"468670"
       },
       {
@@ -85,7 +95,8 @@
         "station_arrival": "Romilly-sur-Seine",
         "datetime_departure": "2025-01-01T02:34:33+02:00",
         "datetime_arrival": "2025-01-01T17:47:55+02:00",
-        "price":"34",
+        "price_second":"34",
+        "price_first":"68",
         "trip_id":"114272"
       },
       {
@@ -93,7 +104,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T06:59:07+02:00",
         "datetime_arrival": "2025-01-01T11:26:05+02:00",
-        "price":"46",
+        "price_second":"46",
+        "price_first":"92",
         "trip_id":"734571"
       },
       {
@@ -101,7 +113,8 @@
         "station_arrival": "Romilly-sur-Seine",
         "datetime_departure": "2025-01-01T10:08:22+02:00",
         "datetime_arrival": "2025-01-01T22:29:31+02:00",
-        "price":"42",
+        "price_second":"42",
+        "price_first":"84",
         "trip_id":"492845"
       },
       {
@@ -109,7 +122,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T01:04:45+02:00",
         "datetime_arrival": "2025-01-01T13:07:28+02:00",
-        "price":"77",
+        "price_second":"77",
+        "price_first":"154",
         "trip_id":"374669"
       },
       {
@@ -117,7 +131,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T07:26:22+02:00",
         "datetime_arrival": "2025-01-01T19:49:12+02:00",
-        "price":"36",
+        "price_second":"36",
+        "price_first":"72",
         "trip_id":"996609"
       },
       {
@@ -125,7 +140,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T06:21:56+02:00",
         "datetime_arrival": "2025-01-01T19:52:43+02:00",
-        "price":"40",
+        "price_second":"40",
+        "price_first":"80",
         "trip_id":"102171"
       },
       {
@@ -133,7 +149,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T01:35:46+02:00",
         "datetime_arrival": "2025-01-01T22:53:13+02:00",
-        "price":"132",
+        "price_second":"132",
+        "price_first":"264",
         "trip_id":"858618"
       },
       {
@@ -141,7 +158,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T02:19:47+02:00",
         "datetime_arrival": "2025-01-01T20:28:33+02:00",
-        "price":"28",
+        "price_second":"28",
+        "price_first":"56",
         "trip_id":"61938"
       },
       {
@@ -149,7 +167,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T10:03:09+02:00",
         "datetime_arrival": "2025-01-01T17:15:17+02:00",
-        "price":"12",
+        "price_second":"12",
+        "price_first":"24",
         "trip_id":"301782"
       },
       {
@@ -157,7 +176,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T07:31:54+02:00",
         "datetime_arrival": "2025-01-01T21:34:07+02:00",
-        "price":"123",
+        "price_second":"123",
+        "price_first":"246",
         "trip_id":"709753"
       },
       {
@@ -165,7 +185,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T03:02:51+02:00",
         "datetime_arrival": "2025-01-01T11:58:38+02:00",
-        "price":"54",
+        "price_second":"54",
+        "price_first":"108",
         "trip_id":"448989"
       },
       {
@@ -173,7 +194,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T06:28:14+02:00",
         "datetime_arrival": "2025-01-01T18:59:20+02:00",
-        "price":"142",
+        "price_second":"142",
+        "price_first":"284",
         "trip_id":"284931"
       },
       {
@@ -181,7 +203,8 @@
         "station_arrival": "Nogent-sur-Seine",
         "datetime_departure": "2025-01-01T00:51:23+02:00",
         "datetime_arrival": "2025-01-01T14:03:07+02:00",
-        "price":"87",
+        "price_second":"87",
+        "price_first":"174",
         "trip_id":"420307"
       },
       {
@@ -189,7 +212,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T07:44:13+02:00",
         "datetime_arrival": "2025-01-01T11:23:29+02:00",
-        "price":"102",
+        "price_second":"102",
+        "price_first":"204",
         "trip_id":"34277"
       },
       {
@@ -197,7 +221,8 @@
         "station_arrival": "Paris",
         "datetime_departure": "2025-01-01T06:27:36+02:00",
         "datetime_arrival": "2025-01-01T20:01:32+02:00",
-        "price":"43",
+        "price_second":"43",
+        "price_first":"86",
         "trip_id":"349795"
       },
       {
@@ -205,7 +230,8 @@
         "station_arrival": "Romilly-sur-Seine",
         "datetime_departure": "2025-01-01T05:58:09+02:00",
         "datetime_arrival": "2025-01-01T15:53:28+02:00",
-        "price":"78",
+        "price_second":"78",
+        "price_first":"156",
         "trip_id":"309041"
       },
       {
@@ -213,7 +239,8 @@
         "station_arrival": "Romilly-sur-Seine",
         "datetime_departure": "2024-12-31T23:39:03+02:00",
         "datetime_arrival": "2025-01-01T16:45:00+02:00",
-        "price":"130",
+        "price_second":"130",
+        "price_first":"260",
         "trip_id":"127935"
       },
       {
@@ -221,7 +248,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2024-12-31T23:38:35+02:00",
         "datetime_arrival": "2025-01-01T18:31:49+02:00",
-        "price":"59",
+        "price_second":"59",
+        "price_first":"118",
         "trip_id":"959516"
       },
       {
@@ -229,7 +257,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T08:51:41+02:00",
         "datetime_arrival": "2025-01-01T21:35:17+02:00",
-        "price":"54",
+        "price_second":"54",
+        "price_first":"108",
         "trip_id":"170282"
       },
       {
@@ -237,7 +266,8 @@
         "station_arrival": "Troyes",
         "datetime_departure": "2025-01-01T01:39:36+02:00",
         "datetime_arrival": "2025-01-01T15:10:09+02:00",
-        "price":"16",
+        "price_second":"16",
+        "price_first":"32",
         "trip_id":"92575"
       }
   ]

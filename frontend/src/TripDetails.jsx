@@ -23,6 +23,7 @@ function TripDetails({ }) {
   const { trip_id } = useParams();
 
   const [trip, setTrip] = useState ({})
+  const [selectedClass, setSelectedClass] = useState('second');
 
   useEffect(() => {
     fetch('/sample_data.json')
@@ -33,6 +34,14 @@ function TripDetails({ }) {
   )},[trip_id])
   
   const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
+  const priceSecond = Number(trip.price_second ?? 0);
+  const priceFirst = Number(trip.price_first ?? 0);
+  const displayedPrice = selectedClass === 'first' ? priceFirst : priceSecond;
+
+  const handleAddToCart = () => {
+    const params = new URLSearchParams({ trip_id: trip_id || '', class: selectedClass }).toString();
+    navigate(`/cart?${params}`);
+  };
 
   return (
     <div>
@@ -51,7 +60,31 @@ function TripDetails({ }) {
           <br />
           <div><strong>Durée : </strong>{formattedDuration}
             <br />
-            <div></div><strong>Prix:</strong> {trip.price}€</div>
+            <div>
+              <label><strong>Classe :</strong></label>
+              <div className="class-toggle" role="group" aria-label="Choix de la classe">
+                <button
+                  type="button"
+                  className={`class-option outline ${selectedClass === 'second' ? 'selected' : ''}`}
+                  aria-pressed={selectedClass === 'second'}
+                  onClick={() => setSelectedClass('second')}
+                >
+                  2nde classe — {priceSecond}€
+                </button>
+                <button
+                  type="button"
+                  className={`class-option outline ${selectedClass === 'first' ? 'selected' : ''}`}
+                  aria-pressed={selectedClass === 'first'}
+                  onClick={() => setSelectedClass('first')}
+                >
+                  1ère classe — {priceFirst}€
+                </button>
+              </div>
+            </div>
+            <div>
+              <strong>Prix :</strong> {displayedPrice}€
+            </div>
+          </div>
         </div>
         <div>
           <div className="station">{trip.station_departure}</div>
@@ -61,7 +94,7 @@ function TripDetails({ }) {
       <br/>
       <div className="grid">
         <div>
-          <button>Ajouter au panier</button>
+          <button onClick={handleAddToCart}>Ajouter au panier</button>
         </div>
         <div>
           <button className="outline" onClick={() => navigate(-1)}>Retour à la page précédente</button>

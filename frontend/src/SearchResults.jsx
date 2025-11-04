@@ -124,7 +124,7 @@ function SearchResults({}) {
   )
 }
 
-function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price, trip_id}) {
+function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, trip_id}) {
   const datetimearrival = dayjs(datetime_arrival);
   const datetimedeparture = dayjs(datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
@@ -151,7 +151,7 @@ function SearchResult({datetime_arrival, datetime_departure, station_arrival, st
           </div>
           <div>
             <Link to={trip_id}>
-              <button className="outline"> À partir de {price}€ </button>
+              <button className="outline"> À partir de {price_second ?? 0}€ </button>
             </Link>
           </div>
         </div>
