@@ -1,8 +1,8 @@
-import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router'
+import { useParams, useNavigate } from 'react-router'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
+
 
 dayjs.extend(localizedFormat);
 
@@ -19,6 +19,7 @@ export function calculateTripTimes(trip) {
 }
 
 function TripDetails({ }) {
+  const navigate = useNavigate();
   const { trip_id } = useParams();
 
   const [trip, setTrip] = useState ({})
@@ -63,7 +64,7 @@ function TripDetails({ }) {
           <button>Ajouter au panier</button>
         </div>
         <div>
-          <button className="outline"><Link to="../trips" className="back-button">Retour à la page précédente</Link></button>
+          <button className="outline" onClick={() => navigate(-1)}>Retour à la page précédente</button>
         </div>
       </div>
     </div>
