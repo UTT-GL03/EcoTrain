@@ -165,10 +165,10 @@ Fig.6 Prototype de la page du panier
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
-|1. Consulter la page de recherche de trajet |🔵 91|1.18|78|6|145|
-|2. Consulter les trajets disponibles selon les critères renseignés|🟢 75|1.50|43|6|145|
-|3. Consulter les détails d'un trajet|🔵 94|1.12|47|6|145|
-|4. Consulter son panier et acéder au paiement|🔵 94|1.13|43|6|145|
+|1. Consulter la page de recherche de trajet |A 🔵 91|1.18|78|6|145|
+|2. Consulter les trajets disponibles selon les critères renseignés|B 🟢 75|1.50|43|6|145|
+|3. Consulter les détails d'un trajet|A 🔵 94|1.12|47|6|145|
+|4. Consulter son panier et acéder au paiement|A 🔵 94|1.13|43|6|145|
 
 Tab.5: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1.
 
@@ -180,7 +180,7 @@ Concernant l'évaluation de l'impact environnemental du scénario, par rapport a
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
-|1. Consulter la page de recherche de trajet |🔵 90.97|1.18|81|6|145|
-|2. Consulter les trajets disponibles selon les critères renseignés|🟢 74.64|1.51|501||193|
-|3. Consulter les détails d'un trajet|🔵 93.03|1.14|47|9|193|
-|4. Consulter son panier et acéder au paiement|🔵 93.12|1.14|43|10|193|
+|1. Consulter la page de recherche de trajet |A 🔵 91|1.18|81|6|146|
+|2. Consulter les trajets disponibles selon les critères renseignés|B 🟢 75|1.51|501|9|146|
+|3. Consulter les détails d'un trajet|A 🔵 93|1.14|47|9|145|
+|4. Consulter son panier et acéder au paiement|A 🔵 93|1.14|43|10|146|
