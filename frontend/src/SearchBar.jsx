@@ -1,31 +1,75 @@
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
-import { Link } from 'react-router'
-import { useState } from 'react';
+import { useNavigate } from 'react-router'
+import { useState, useMemo } from 'react';
 
 dayjs.extend(localizedFormat);
 
 function SearchBar() {
+  const navigate = useNavigate();
   const [passengers, setPassengers] = useState([]);
+  const stations = useMemo(() => ([
+    'Paris',
+    'Nogent-sur-Seine',
+    'Romilly-sur-Seine',
+    'Troyes',
+  ]), []);
+  const [form, setForm] = useState({
+    departureStation: '',
+    arrivalStation: '',
+    date: '2025-01-01',
+    departureTime: '00h',
+  });
+
+  const onChange = (e) => {
+    const { name, value } = e.target;
+    setForm(prev => ({ ...prev, [name]: value }));
+  }
 
   const addPassenger = () => {
     setPassengers([...passengers, <InfoVoyageur key={passengers.length} />]);
   };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (!stations.includes(form.departureStation) || !stations.includes(form.arrivalStation)) {
+      alert('Veuillez sélectionner des gares valides dans la liste.');
+      return;
+    }
+    const params = new URLSearchParams({
+      departure: form.departureStation,
+      arrival: form.arrivalStation,
+      date: form.date,
+      time: form.departureTime,
+    }).toString();
+    navigate(`/trips?${params}`);
+  }
+
   return (
-    <form className="search-bar">
+    <form className="search-bar" onSubmit={onSubmit}>
       <h3>Informations du trajet</h3>
       <div>
-        <input type="text" name="departureStation" placeholder="Gare de départ" required />
+        <select name="departureStation" required value={form.departureStation} onChange={onChange}>
+          <option value="" disabled>Gare de départ</option>
+          {stations.map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
       </div>
       <div>
-        <input type="text" name="arrivalStation" placeholder="Gare d'arrivée" required />
+        <select name="arrivalStation" required value={form.arrivalStation} onChange={onChange}>
+          <option value="" disabled>Gare d'arrivée</option>
+          {stations.map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
       </div>
       <div className="grid">
         <div width="67%">
-          <input type="date" name="date" required />
+          <input type="date" name="date" required value={form.date} onChange={onChange} />
         </div>
         <div>
-          <select name="departureTime" required>
+          <select name="departureTime" required value={form.departureTime} onChange={onChange}>
             <option value="">Heure de départ</option>
             {Array.from({ length: 24 }, (_, i) => (
               <option key={i} value={`${i.toString().padStart(2, '0')}h`}>
@@ -44,20 +88,24 @@ function SearchBar() {
         <button type="button" className="outline" id="addPassenger" onClick={addPassenger}>Ajouter un passager</button>
       </div>
       <div>
-        <Link to="/trips">
-          <button type="submit">Rechercher un trajet</button>
-        </Link>
+        <button type="submit">Rechercher un trajet</button>
       </div>
     </form>
   )
 };
 
 function InfoVoyageur() {
+  const [category, setCategory] = useState('adulte');
+
+  const onCategoryChange = (e) => {
+    setCategory(e.target.value);
+  };
+
   return (
     <fieldset>
       <div className="grid">
         <div>
-          <select name="category" defaultValue="adulte" required>
+          <select name="category" value={category} onChange={onCategoryChange} required>
             <option value="bebe">Bébé (0-3 ans)</option>
             <option value="enfant">Enfant (4-11 ans)</option>
             <option value="jeune">Jeune (12-25 ans)</option>
@@ -66,15 +114,10 @@ function InfoVoyageur() {
           </select>
         </div>
         <div>
-          <input name="age" min="0" max="120" placeholder="Âge" required />
-        </div>
-        <div>
           <select placeholder="Carte de réduction" defaultValue="none">
-            <option value="none">Aucune</option>
+            <option value="none">Aucune carte</option>
             <option value="carteavantage">Carte Avantage</option>
-            <option value="carteavantagejeune">Carte Avantage Jeune</option>
             <option value="fluo">Carte Fluo</option>
-            <option value="fluojeune">Carte Fluo jeune</option>
           </select>
         </div>
       </div>
