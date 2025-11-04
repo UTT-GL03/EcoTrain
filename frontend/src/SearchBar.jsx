@@ -27,7 +27,12 @@ function SearchBar() {
   }
 
   const addPassenger = () => {
-    setPassengers([...passengers, <InfoVoyageur key={passengers.length} />]);
+    const id = Date.now() + Math.random();
+    setPassengers(prev => [...prev, id]);
+  };
+
+  const removePassenger = (idToRemove) => {
+    setPassengers(prev => prev.filter(id => id !== idToRemove));
   };
 
   const onSubmit = (e) => {
@@ -82,7 +87,14 @@ function SearchBar() {
       <h3>Informations voyageur</h3>
       <InfoVoyageur></InfoVoyageur>
       <div>
-        {passengers}
+        {passengers.map((id) => (
+          <div key={id}>
+            <InfoVoyageur />
+            <div>
+              <button type="button" className="contrast outline" onClick={() => removePassenger(id)}>Supprimer ce passager</button>
+            </div>
+          </div>
+        ))}
       </div>
       <div>
         <button type="button" className="outline" id="addPassenger" onClick={addPassenger}>Ajouter un passager</button>
@@ -102,26 +114,24 @@ function InfoVoyageur() {
   };
 
   return (
-    <fieldset>
-      <div className="grid">
-        <div>
-          <select name="category" value={category} onChange={onCategoryChange} required>
-            <option value="bebe">Bébé (0-3 ans)</option>
-            <option value="enfant">Enfant (4-11 ans)</option>
-            <option value="jeune">Jeune (12-25 ans)</option>
-            <option value="adulte">Adulte (26-59 ans)</option>
-            <option value="senior">Senior (60 ans ou plus)</option>
-          </select>
-        </div>
-        <div>
-          <select placeholder="Carte de réduction" defaultValue="none">
-            <option value="none">Aucune carte</option>
-            <option value="carteavantage">Carte Avantage</option>
-            <option value="fluo">Carte Fluo</option>
-          </select>
-        </div>
+    <div className="grid">
+      <div>
+        <select name="category" value={category} onChange={onCategoryChange} required>
+          <option value="bebe">Bébé (0-3 ans)</option>
+          <option value="enfant">Enfant (4-11 ans)</option>
+          <option value="jeune">Jeune (12-25 ans)</option>
+          <option value="adulte">Adulte (26-59 ans)</option>
+          <option value="senior">Senior (60 ans ou plus)</option>
+        </select>
       </div>
-    </fieldset>
+      <div>
+        <select placeholder="Carte de réduction" defaultValue="none">
+          <option value="none">Aucune carte</option>
+          <option value="carteavantage">Carte Avantage</option>
+          <option value="fluo">Carte Fluo</option>
+        </select>
+      </div>
+    </div>
   )
 }
 
