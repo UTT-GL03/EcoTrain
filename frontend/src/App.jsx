@@ -10,28 +10,44 @@ function App() {
 
   return (
     <BrowserRouter>
+      <body>
+        <header>
+          <div className="header-title">
+            <h1>
+              <Link to="/">
+                🚊 EcoTrain
+              </Link>
+            </h1>
+          </div>
+          <div className="header-right">
+            <Link to="/cart" className="cart-link">Voir le panier</Link>
+          </div>
+        </header>
 
-      <header>
-        <div className="header-title">
-          <h1>
-            <Link to="/">
-              🚊 EcoTrain
-            </Link>
-          </h1>
-        </div>
-        <div className="header-right">
-          <Link to="/cart" className="cart-link">Voir le panier</Link>
-        </div>
-      </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/trips" element={<Trips />} />
+            <Route path="/trips/:trip_id" element={<TripDetails />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </main>
 
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/trips" element={<Trips />} />
-          <Route path="/trips/:trip_id" element={<TripDetails />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </main>
+        <footer>
+          <div className="grid">
+            <div>
+              <Link to="/">
+                Page d'accueil
+              </Link>
+            </div>
+            <div>
+              <Link to="/cart" className="cart-link">
+                Voir le panier
+              </Link>
+            </div>
+          </div>
+        </footer>
+      </body>
 
     </BrowserRouter >
   )
