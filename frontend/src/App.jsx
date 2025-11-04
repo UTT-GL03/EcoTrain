@@ -19,9 +19,6 @@ function App() {
               </Link>
             </h1>
           </div>
-          <div className="header-right">
-            <Link to="/cart" className="cart-link">Voir le panier</Link>
-          </div>
         </header>
 
         <main>
