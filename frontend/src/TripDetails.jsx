@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router'
+import { useParams, useNavigate, useLocation } from 'react-router'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
 
@@ -21,6 +21,8 @@ export function calculateTripTimes(trip) {
 function TripDetails({ }) {
   const navigate = useNavigate();
   const { trip_id } = useParams();
+  const { search } = useLocation();
+  const passengers = Math.max(1, parseInt((new URLSearchParams(search)).get('passengers') || '1', 10));
 
   const [trip, setTrip] = useState ({})
   const [selectedClass, setSelectedClass] = useState('second');
@@ -37,9 +39,10 @@ function TripDetails({ }) {
   const priceSecond = Number(trip.price_second ?? 0);
   const priceFirst = Number(trip.price_first ?? 0);
   const displayedPrice = selectedClass === 'first' ? priceFirst : priceSecond;
+  const totalDisplayedPrice = displayedPrice * passengers;
 
   const handleAddToCart = () => {
-    const params = new URLSearchParams({ trip_id: trip_id || '', class: selectedClass }).toString();
+    const params = new URLSearchParams({ trip_id: trip_id || '', class: selectedClass, passengers: String(passengers) }).toString();
     navigate(`/cart?${params}`);
   };
 
@@ -83,6 +86,9 @@ function TripDetails({ }) {
             </div>
             <div>
               <strong>Prix :</strong> {displayedPrice}€
+            </div>
+            <div style={{ fontWeight: 700, fontSize: '1.15rem', marginTop: '0.25rem' }}>
+              Total pour {passengers} passager{passengers > 1 ? 's' : ''} : {totalDisplayedPrice}€
             </div>
           </div>
         </div>

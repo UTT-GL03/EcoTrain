@@ -8,6 +8,7 @@ function Cart() {
   const [selectedClass, setSelectedClass] = useState('second');
   const { search } = useLocation();
   const params = React.useMemo(() => Object.fromEntries(new URLSearchParams(search)), [search]);
+  const passengers = Math.max(1, parseInt(params.passengers || '1', 10));
 
   useEffect(() => {
     fetch('/sample_data.json')
@@ -29,7 +30,7 @@ const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
 const priceSecond = Number(trip.price_second ?? 0);
 const priceFirst = Number(trip.price_first ?? 0);
 const selectedPrice = selectedClass === 'first' ? priceFirst : priceSecond;
-const totalPrice = selectedPrice;
+const totalPrice = selectedPrice * passengers;
 
   return (
     <section className="container">
@@ -53,6 +54,7 @@ const totalPrice = selectedPrice;
               <div>
                 <div><strong>{selectedPrice}€</strong></div>
                 <div style={{ opacity: 0.7 }}>Classe: {selectedClass === 'first' ? '1ère' : '2nde'}</div>
+                <div style={{ opacity: 0.7 }}>Passagers: {passengers}</div>
               </div>
               <div>
                 <button className="remove-button outline contrast" disabled>🗑️</button>
@@ -62,7 +64,7 @@ const totalPrice = selectedPrice;
         </article>
       </ul>
       <div className="total-price">
-        <h3>Total : {totalPrice}€</h3>
+        <h2 style={{ fontWeight: 800 }}>Total : {totalPrice}€</h2>
       </div>
       <div className="pay-button">
         <button>Passer au paiement</button>

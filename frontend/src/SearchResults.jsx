@@ -14,6 +14,7 @@ function SearchResults({}) {
   const [results, setResults] = useState([])
   const query = useQuery();
   const navigate = useNavigate();
+  const passengers = Math.max(1, parseInt(query.passengers || '1', 10));
 
   const stations = useMemo(() => ([
     'Paris',
@@ -40,11 +41,13 @@ function SearchResults({}) {
       alert('Veuillez sélectionner des gares valides dans la liste.');
       return;
     }
+    const passengers = query.passengers || '1';
     const params = new URLSearchParams({
       departure: form.departureStation,
       arrival: form.arrivalStation,
       date: form.date,
       time: form.departureTime,
+      passengers,
     }).toString();
     navigate(`/trips?${params}`);
   }
@@ -119,12 +122,12 @@ function SearchResults({}) {
       </section>
       <h2>Voyages trouvés :</h2>
       {filtered.length === 0 && (<p>Aucun trajet ne correspond à votre recherche.</p>)}
-      {filtered.map((x, i) => <SearchResult {...x} key={i} />)}
+      {filtered.map((x, i) => <SearchResult {...x} key={i} passengers={passengers} />)}
     </section>
   )
 }
 
-function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, trip_id}) {
+function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, trip_id, passengers}) {
   const datetimearrival = dayjs(datetime_arrival);
   const datetimedeparture = dayjs(datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
@@ -132,6 +135,8 @@ function SearchResult({datetime_arrival, datetime_departure, station_arrival, st
   const hours = Math.floor(durationInMinutes / 60);
   const minutes = durationInMinutes % 60;
   const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
+  const perPassenger = Number(price_second ?? 0);
+  const totalAllPassengers = perPassenger * Math.max(1, parseInt(passengers || 1, 10));
 
   return (
     <article>
@@ -150,8 +155,11 @@ function SearchResult({datetime_arrival, datetime_departure, station_arrival, st
             <span> {station_arrival} </span>
           </div>
           <div>
-            <Link to={trip_id}>
-              <button className="outline"> À partir de {price_second ?? 0}€ </button>
+            <div style={{ marginBottom: '0.25rem', fontWeight: 700, fontSize: '1.1rem' }}>
+              Total pour {passengers} passager{passengers > 1 ? 's' : ''} : {totalAllPassengers}€
+            </div>
+            <Link to={`${trip_id}?passengers=${(new URLSearchParams(window.location.search)).get('passengers') || '1'}`}>
+              <button className="outline">À partir de {perPassenger}€ / passager</button>
             </Link>
           </div>
         </div>

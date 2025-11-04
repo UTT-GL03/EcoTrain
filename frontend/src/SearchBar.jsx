@@ -41,11 +41,13 @@ function SearchBar() {
       alert('Veuillez sélectionner des gares valides dans la liste.');
       return;
     }
+    const passengerCount = String(1 + passengers.length);
     const params = new URLSearchParams({
       departure: form.departureStation,
       arrival: form.arrivalStation,
       date: form.date,
       time: form.departureTime,
+      passengers: passengerCount,
     }).toString();
     navigate(`/trips?${params}`);
   }
