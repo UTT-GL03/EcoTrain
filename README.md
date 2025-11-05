@@ -176,7 +176,7 @@ Tab.5: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le
 
 Pour cette nouvelle version du prototype (v1.0.1), identique du point de vue fonctionnel, les données (toujours statiques) sont désormais chargées par le frontend à travers le réseau immédiatement après un premier affichage à vide. Ce comportement, plus réaliste, n'a pour effet qu'une requête supplémentaire par page affichée.
 
-Concernant l'évaluation de l'impact environnemental du scénario, par rapport au tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui est incrémenté de 1, les résultats sont strictement identiques.
+Concernant l'évaluation de l'impact environnemental du scénario, par rapport au tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente légèrement, les résultats sont identiques.
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
