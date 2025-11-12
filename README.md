@@ -182,5 +182,16 @@ Concernant l'évaluation de l'impact environnemental du scénario, par rapport a
 |---|---|---|---|---|---|
 |1. Consulter la page de recherche de trajet |A 🔵 91|1.18|81|6|146|
 |2. Consulter les trajets disponibles selon les critères renseignés|B 🟢 75|1.51|501|9|146|
-|3. Consulter les détails d'un trajet|A 🔵 93|1.14|47|9|145|
+|3. Consulter les détails d'un trajet|A 🔵 93|1.14|47|9|146|
 |4. Consulter son panier et acéder au paiement|A 🔵 93|1.14|43|10|146|
+
+## Mesures de la consommation énergétique lors du passage à l'échelle
+
+Maintenant que notre prototype est réaliste en termes de nombre de requêtes, nous pouvons simuler les effets du "passage à l'échelle". 
+
+Dans le cas des plateformes de trains et des fonctionnalités prévues (consultation des voyages, achat de billet), l'augmentation de la quantité des données à traiter pourrait provenir de la conservation de trajets passés dans la base de données, ainsi que des billets de voyages passés.
+À raison de 15.000 trains circulant sur le réseau ferré chaque jour, si chacun d'eux effectue un seul trajet, cela augmenterait notre volumes de trajets de 15.000 par jour, soit 450.000 par mois.
+
+Conserver ces données ne semble pas avoir une utilité suffisament importante pour justifier l'impact environnemental qui y serait associé. Ainsi, nous ferons le choix de supprimer automatiquement les trajets passés.
+
+De la même façon, les billets relatifs aux trajets passés ne seront pas conservés.
