@@ -65,7 +65,7 @@ Nous avons choisi de comparer l'impact des scénarios sur les plateformes de ré
 |Omio| 40  | D 🟡  | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Omio/declaration-environnementale.md)  | 
 |Eurostar| 15  | F 🔴 | [...](https://github.com/UTT-GL03/EcoTrain/blob/main/benchmark/Eurostar/declaration-environnementale.md)  | 
 
-Tab.1 : Mesure de l'EcoIndex moyen de divers services de réservation de trains.
+__Tab.1__ : Mesure de l'EcoIndex moyen de divers services de réservation de trains.
 
 Les mesures de l'impact moyen de ces services (cf. Tab.1) révèlent des classes EcoIndex très faibles pour la plupart (D à F). Seule la solution 1.2.Train, indépendante des compagnies, se démarque avec un score élevé (A). Cela peut s'expliquer par la structure très simple du site.
 
@@ -80,7 +80,7 @@ Comme nous l'avons vu dans la section précédente, parmi les choix de conceptio
 |Omio|Commissions|
 |Eurostar|Vente de billets|
 
-Tab. 2 : Offre des services de réservation de billets de train.
+__Tab.2__ : Offre des services de réservation de billets de train.
 
 Notre marché semble être structuré en oligopôle : il y a plusieurs offreurs pour acheter le même billet de train. Le billet vendu est le même sur les différentes plateformes mais ces plateformes ne sont pas entièrement identiques : fluidité, interface, expérience utilisateur. Les services de réservation sont substituables entre eux : si l'on ne souhaite pas acheter son billet de train sur SNCF Connect, on peut l'acheter sur 1.2.Train ou sur Omio.
 
@@ -103,7 +103,7 @@ Les ressources Web possédant une représentation sur notre application seront d
 <img src="./docs/mockup_search.JPG" alt="maquette de la page de recherche" height="500"/>   <img src="./docs/mockup_tripdetails.JPG" alt="maquette de la page de résultats" height="500"/>
 
 
-Fig.1: Maquette de la page de recherche // Fig.2: Maquette de la page de résultats de recherche
+__Fig.1__: Maquette de la page de recherche // __Fig.2__: Maquette de la page de résultats de recherche
 
 Dans un objectif de sobriété environnementale, les résultats de recherche se limiterons à ceux du jour sélectionné.
 
@@ -117,25 +117,28 @@ Pour cette première version du prototype :
 Ce scénario nécessite de pouvoir naviguer entre plusieurs pages : 
 - la page de recherche de voyage, où il est possible de rechercher des trajets
 - la page de résultats, où s'affichent les trajets correspondant aux critères
+- la page de détails du trajet, une fois celui-ci sélectionné
+- le panier, avant de passer au paiement du ou des billet(s)
 
 ### Page de recherche de voyage
 La page d'accueil renvoie un formulaire permettant de renseigner ses critères de recherche de voyage.
 
 <img src="./docs/searchpage_screenshot.png" alt="prototype de la page de recherche"/>
-Fig.3: Prototype de la page de recherche de voyage
+
+__Fig.3__ : Prototype de la page de recherche de voyage
 
 Pour l'instant, nous avons choisi un framework de mise en page minimaliste (PicoCSS). Dans la suite du projet, nous verrons si l'impact environnemental du passage à un framework de mise en page plus puissant (comme Bootstrap) est acceptable.
 
 Nous avons également fait le choix de ne pas inclure de photographies, celles-ci n'état pas nécessaires à la réservation d'un billet de train.
 
-Dans l'état actuel du prototype, il est possible d'avoir une première idée de l'impact environnemental du frontend. Bien entendu, il manque encore le chargement dynamique des données, mais nous pouvons déjà évaluer l'impact de l'affichage des données et du framework (au sens large : React, PicoCSS). Cette évaluation de l'impact (cf. Tab.4) est déjà encourageante en mode "développement" mais encore plus en mode "pré-production". Nous mesurons ici l'effet positif de l'adoption d'outils de développement Web intégrant la ["minification"](https://fr.wikipedia.org/wiki/Minification) (cf. Wikipédia) du code et la concaténation du code d'une part et des feuilles de style d'autre part.
+Dans l'état actuel du prototype, il est possible d'avoir une première idée de l'impact environnemental du frontend. Bien entendu, il manque encore le chargement dynamique des données, mais nous pouvons déjà évaluer l'impact de l'affichage des données et du framework (au sens large : React, PicoCSS). Cette évaluation de l'impact (cf. Tab.3) est déjà encourageante en mode "développement" mais encore plus en mode "pré-production". Nous mesurons ici l'effet positif de l'adoption d'outils de développement Web intégrant la ["minification"](https://fr.wikipedia.org/wiki/Minification) (cf. Wikipédia) du code et la concaténation du code d'une part et des feuilles de style d'autre part.
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
 |Mode "développement"|🟢 79|1.42|81|29|1873|
 |Mode "pré-production"|🔵 91|1.18|78|6|145|
 
-Tab.4 Mesure de l'EcoIndex moyen de notre prototype, dans le cadre du scénario n°1
+__Tab.3__ Mesure de l'EcoIndex moyen de notre prototype, dans le cadre du scénario n°1
 
 ### Page de résultats de recherche
 
@@ -144,7 +147,7 @@ La page de résultats de recherche a pour HTTP-URI /trips, et affiche actuelleme
 Depuis cette page, il est possible d'accéder aux détails de l'un des trajets afin de le réserver, ou bien de retourner à la page d'accueil en cliquant sur le titre de la page ("EcoTrain").
 
 <img src="./docs/tripslist_screenshot.png" alt="prototype de la page de résultats de recherche"/>
-Fig.4 Prototype de la page de résultats de recherche
+__Fig.4__ Prototype de la page de résultats de recherche
 
 ### Page de détails du trajet
 
@@ -153,24 +156,24 @@ Les pages des voyages ont pour HTTP-URI /trips/{id}. Dans notre jeu de données,
 De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fig. 4) conformément à ce que prévoyait la maquette.
 
 <img src="./docs/tripdetails_screenshot.png" alt="prototype de la page de détails sur le trajet sélectionné"/>
-Fig.5 Prototype de la page de détails sur le trajet choisi
+__Fig.5__ Prototype de la page de détails sur le trajet choisi
 
 ### Page du panier
 
 <img src="./docs/cart_screenshot.png" alt="prototype de la page du panier"/>
-Fig.6 Prototype de la page du panier
+__Fig.6__ : Prototype de la page du panier
 
 
 ### Impacts du scénario prioritaire
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
-|1. Consulter la page de recherche de trajet |A 🔵 91|1.18|78|6|145|
-|2. Consulter les trajets disponibles selon les critères renseignés|B 🟢 75|1.50|43|6|145|
-|3. Consulter les détails d'un trajet|A 🔵 94|1.12|47|6|145|
-|4. Consulter son panier et acéder au paiement|A 🔵 94|1.13|43|6|145|
+|1. Renseigner les critères de recherche pour son trajet |A 🔵 91|1.18|78|6|145|
+|2. Consulter les trajets disponibles, et sélectionner celui de son choix|B 🟢 75|1.50|43|6|145|
+|3. Consulter les détails d'un trajet et l'ajouter au panier|A 🔵 94|1.12|47|6|145|
+|4. Consulter son panier et accéder au paiement|A 🔵 94|1.13|43|6|145|
 
-Tab.5: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1.
+__Tab.4__: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1 (v1.0.0)
 
 ### Étape de prototypage : Données statiques chargées de manière dynamique
 
@@ -180,10 +183,13 @@ Concernant l'évaluation de l'impact environnemental du scénario, par rapport a
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
-|1. Consulter la page de recherche de trajet |A 🔵 91|1.18|81|6|146|
-|2. Consulter les trajets disponibles selon les critères renseignés|B 🟢 75|1.51|501|9|146|
-|3. Consulter les détails d'un trajet|A 🔵 93|1.14|47|9|146|
-|4. Consulter son panier et acéder au paiement|A 🔵 93|1.14|43|10|146|
+|1. Renseigner les critères de recherche pour son trajet |A 🔵 91|1.18|81|6|146|
+|2. Consulter les trajets disponibles, et sélectionner celui de son choix |B 🟢 75|1.51|501|9|146|
+|3. Consulter les détails d'un trajet et l'ajouter au panier|A 🔵 93|1.14|47|9|146|
+|4. Consulter son panier et accéder au paiement|A 🔵 93|1.14|43|10|146|
+
+__Tab.5__: Évaluation de l'impact du scénario "Achat d'un billet de train", dans la version 1.0.1
+
 
 ## Mesures de la consommation énergétique lors du passage à l'échelle
 
@@ -195,3 +201,20 @@ Dans le cas des plateformes de trains et des fonctionnalités prévues (consulta
 Conserver ces données ne semble pas avoir une utilité suffisament importante pour justifier l'impact environnemental qui y serait associé. Ainsi, nous ferons le choix de supprimer automatiquement les trajets passés.
 
 De la même façon, les billets relatifs aux trajets passés ne seront pas conservés.
+
+### Évolution de l'EcoIndex lors du passage à l'échelle
+
+Produites désormais de manière automatique lors de l'intégration continue, les mesures nécessaires à la production de l'EcoIndex, [avant](https://github.com/UTT-GL03/EcoTrain/actions/runs/19293859455/artifacts/4541500392) et [après](https://github.com/UTT-GL03/EcoTrain/actions/runs/19298418224/artifacts/4543202028) la simulation du passage à l'échelle retraduisent bien (cf. Tab.6) l'augmentation du poids des téléchargements, mais aussi de l'augmentation du nombre d'éléments de la page des titres.
+
+|   | EcoIndex| GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (ko)
+|---|--------:|------------:|--------------:|---------:|---------------------:
+| 1. Renseigner les critères de recherche pour son trajet | 84 A 🔵 | 1,3 | 89 | <del>7</del><br/>6 | <del>430</del><br/>418
+| 2. Consulter les trajets disponibles, et sélectionner celui de son choix | <del>87 A 🔵</del><br/>45 D 🟡 | <del>1,3</del><br/>2,1 | <del>122</del><br/>1771 | 1 | <del>10</del><br/>761
+| 3. Consulter les détails d'un trajet et l'ajouter au panier | <del>90 A 🔵</del><br/>86 A 🔵 | <del>1,2</del><br/>1,3 | 57 | 1 | <del>10</del><br/>761
+| 4. Consulter son panier et accéder au paiement | <del>91 A 🔵</del><br/>87 A 🔵 |  <del>1,2</del><br/>1,3 | 50 | 1 | <del>10</del><br/>761
+
+__Tab.6__: Effet du passage à l'échelle sur l'impact du scénario "Achat d'un billet de train" dans le prototype v1.0.1.
+
+On constate que la baisse de l'EcoIndex est la plus importante à l'affichage des résultats de recherche. Cela semble cohérent puisque c'est sur cette page qu'un grand nombre d'éléments (propositions de voyage de la base de données) va apparaître.
+
+Pour évaluer plus précisément l'impact de la consultation des détails d'un trajet, nous utiliserons un autre outil de mesure : GreenFrame.
