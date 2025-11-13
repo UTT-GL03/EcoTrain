@@ -39,7 +39,7 @@ jobs:
       - name: Wait for frontend
         uses: docker://benel/wait-for-response:1
         with:
-          args: http://localhost/ 200 30000 500
+          args: http://localhost/ 200 120000 500
       - name: Run GreenIT Analysis CLI
         run: |
           greenit analyse --format html --ci scenarios/buy_train_ticket.yml
