@@ -109,8 +109,10 @@ Dans un objectif de sobriété environnementale, les résultats de recherche se 
 
 Pour des raisons de respect des droits d'auteurs, nous utilisons des données générées (avec [dummy-json](https://dummyjson.com/)). Bien que fictives, ces données correspondent à la structure des services concurrents : les voyages comportent une gare de départ et d'arrivée, une date, une heure de départ et d'arrivée, et un ou plusieurs tarifs.
 
-## Prototype n°1 : Fonctionnalités pour le scénario prioritaire avec données chargées de manière statique
-Pour cette première version du prototype :
+## Implémentation du scénario prioritaire
+
+### Prototypage : Fonctionnalités pour le scénario prioritaire avec données chargées de manière statique
+Pour cette première version du prototype (v1.0.0):
 - l'échantillon de données est encore chargé dans le code de manière statique,
 - les fonctionnalités implémentées ne sont que celles nécessaires pour suivre le scénario prioritaire ("Acheter un billet de train").
 
@@ -123,7 +125,7 @@ Ce scénario nécessite de pouvoir naviguer entre plusieurs pages :
 ### Page de recherche de voyage
 La page d'accueil renvoie un formulaire permettant de renseigner ses critères de recherche de voyage.
 
-<img src="./docs/searchpage_screenshot.png" alt="prototype de la page de recherche"/>
+<img src="./docs/searchpage_screenshot.png" alt="prototype de la page de recherche" width="800"/>
 
 __Fig.3__ : Prototype de la page de recherche de voyage
 
@@ -146,7 +148,8 @@ La page de résultats de recherche a pour HTTP-URI /trips, et affiche actuelleme
 
 Depuis cette page, il est possible d'accéder aux détails de l'un des trajets afin de le réserver, ou bien de retourner à la page d'accueil en cliquant sur le titre de la page ("EcoTrain").
 
-<img src="./docs/tripslist_screenshot.png" alt="prototype de la page de résultats de recherche"/>
+<img src="./docs/tripslist_screenshot.png" alt="prototype de la page de résultats de recherche" width="800"/>
+
 __Fig.4__ Prototype de la page de résultats de recherche
 
 ### Page de détails du trajet
@@ -155,16 +158,19 @@ Les pages des voyages ont pour HTTP-URI /trips/{id}. Dans notre jeu de données,
 
 De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fig. 4) conformément à ce que prévoyait la maquette.
 
-<img src="./docs/tripdetails_screenshot.png" alt="prototype de la page de détails sur le trajet sélectionné"/>
+<img src="./docs/tripdetails_screenshot.png" alt="prototype de la page de détails sur le trajet sélectionné" width="800"/>
+
+
 __Fig.5__ Prototype de la page de détails sur le trajet choisi
 
 ### Page du panier
 
-<img src="./docs/cart_screenshot.png" alt="prototype de la page du panier"/>
+<img src="./docs/cart_screenshot.png" alt="prototype de la page du panier" width="800"/>
+
 __Fig.6__ : Prototype de la page du panier
 
 
-### Impacts du scénario prioritaire
+### Impacts du scénario prioritaire (v1.0.0)
 
 | |EcoIndex|GES (gCO2e)|Taille du DOM|Requêtes|Taille de la page (ko)|
 |---|---|---|---|---|---|
@@ -175,7 +181,7 @@ __Fig.6__ : Prototype de la page du panier
 
 __Tab.4__: Évaluation de l'impact du scénario "Achat d'un billet de train" dans le prototype n°1 (v1.0.0)
 
-### Étape de prototypage : Données statiques chargées de manière dynamique
+### Prototypage : Données statiques chargées de manière dynamique (v1.0.1)
 
 Pour cette nouvelle version du prototype (v1.0.1), identique du point de vue fonctionnel, les données (toujours statiques) sont désormais chargées par le frontend à travers le réseau immédiatement après un premier affichage à vide. Ce comportement, plus réaliste, n'a pour effet qu'une requête supplémentaire par page affichée.
 
@@ -202,9 +208,11 @@ Conserver ces données ne semble pas avoir une utilité suffisament importante p
 
 De la même façon, les billets relatifs aux trajets passés ne seront pas conservés.
 
-### Évolution de l'EcoIndex lors du passage à l'échelle
+#### Évolution de l'EcoIndex lors du passage à l'échelle
 
 Produites désormais de manière automatique lors de l'intégration continue, les mesures nécessaires à la production de l'EcoIndex, [avant](https://github.com/UTT-GL03/EcoTrain/actions/runs/19293859455/artifacts/4541500392) et [après](https://github.com/UTT-GL03/EcoTrain/actions/runs/19298418224/artifacts/4543202028) la simulation du passage à l'échelle retraduisent bien (cf. Tab.6) l'augmentation du poids des téléchargements, mais aussi de l'augmentation du nombre d'éléments de la page des titres.
+
+Afin que la mesure puisse être effectuée dans des délais raisonnables, nous avons fait le choix de n'augmenter le nombre de voyages que d'un facteur 100 (2500 maintenant, contre 25 auparavant et 45 000 en théorie)
 
 |   | EcoIndex| GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (ko)
 |---|--------:|------------:|--------------:|---------:|---------------------:
