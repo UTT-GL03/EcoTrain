@@ -42,7 +42,7 @@ jobs:
           args: http://localhost/ 200 120000 500
       - name: Run GreenIT Analysis CLI
         run: |
-          greenit analyse --format html --ci scenarios/buy_train_ticket.yml
+          greenit analyse --format html --ci scenarios/buy_train_ticket.yml --timeout 360000
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
