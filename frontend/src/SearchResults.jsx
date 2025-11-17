@@ -53,7 +53,7 @@ function SearchResults({}) {
   }
 
   useEffect(() => {
-    fetch('/sample_data.json')
+    fetch('http://localhost:5984/ecotrain-db/_all_docs?include_docs=true')
       .then(x => x.json())
       .then(data => {
         setResults(data.docs)

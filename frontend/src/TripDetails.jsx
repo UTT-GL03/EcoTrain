@@ -28,7 +28,7 @@ function TripDetails({ }) {
   const [selectedClass, setSelectedClass] = useState('second');
 
   useEffect(() => {
-    fetch('/sample_data.json')
+    fetch('http://localhost:5984/ecotrain-db/${id}')
     .then (x => x.json())
     .then(data => {
       setTrip(data.docs.find(x => _id === x._id))

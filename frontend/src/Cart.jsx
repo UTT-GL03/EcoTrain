@@ -11,7 +11,7 @@ function Cart() {
   const passengers = Math.max(1, parseInt(params.passengers || '1', 10));
 
   useEffect(() => {
-    fetch('/sample_data.json')
+    fetch('http://localhost:5984/ecotrain-db/_all_docs?include_docs=true')
       .then(x => x.json())
       .then(data => {
         const byId = data.docs.find(t => t._id === params._id);
