@@ -38,14 +38,8 @@ jobs:
     steps:
       - name: Download sources
         uses: actions/checkout@v5
-      - name: Get frontend build
-        uses: actions/download-artifact@v4
-        with:
-          name: frontend-build
-          path: frontend/dist
-      - name: Start frontend
-        run: |
-          docker compose up --detach
+      - name: Start application
+        uses: ./.github/actions/start
       - name: Install GreenIT Analysis CLI
         run: |
           wget https://github.com/cnumr/GreenIT-Analysis-cli/archive/refs/heads/master.zip
@@ -53,10 +47,6 @@ jobs:
           cd GreenIT-Analysis-cli-master
           npm install
           npm link
-      - name: Wait for frontend
-        uses: docker://benel/wait-for-response:1
-        with:
-          args: http://localhost/ 200 120000 500
       - name: Run GreenIT Analysis CLI
         run: |
           greenit analyse --format html --ci scenarios/buy_train_ticket.yml --timeout 360000
