@@ -1,0 +1,9 @@
+baseURL: http://localhost
+projectName: EcoTrain
+scenarios:
+  - name: Consulter la page d'accueil
+    path: ./scenarios/consult_index.js
+  - name: Consulter des résultats de recherche
+    path: ./scenarios/consult_results.js
+containers:
+  - ecotrain-static_hosting-1
