@@ -25,3 +25,12 @@ services:
         put backend:5984/_node/nonode@nohost/_config/cors/origins --data '"*"'
         put backend:5984/ecotrain-db
         put backend:5984/ecotrain-db/_security --data '{"members":{"roles":[]},"admins":{"roles":["_admin"]}}'
+
+  updated_samples:
+    image: curlimages/curl
+    entrypoint: ["/bin/sh", "-c"]
+    volumes:
+      - ./frontend/public/sample_data.json:/sample_data.json
+    command:
+      - |
+        curl -X POST http://backend:5984/ecotrain-db/_bulk_docs -H "Content-Type: application/json" -d @/sample_data.json
