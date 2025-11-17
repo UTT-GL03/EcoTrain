@@ -5,5 +5,7 @@ scenarios:
     path: ./scenarios/consult_index.js
   - name: Consulter des résultats de recherche
     path: ./scenarios/consult_results.js
+  - name: Consulter les détails d'un trajet
+    path: ./scenarios/consult_details.js
 containers:
   - ecotrain-static_hosting-1
