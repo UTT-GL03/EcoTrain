@@ -56,7 +56,7 @@ function SearchResults({}) {
     fetch('/sample_data.json')
       .then(x => x.json())
       .then(data => {
-        setResults(data.trips)
+        setResults(data.docs)
       })
   }, [])
 
@@ -127,7 +127,7 @@ function SearchResults({}) {
   )
 }
 
-function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, trip_id, passengers}) {
+function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, _id, passengers}) {
   const datetimearrival = dayjs(datetime_arrival);
   const datetimedeparture = dayjs(datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
@@ -158,7 +158,7 @@ function SearchResult({datetime_arrival, datetime_departure, station_arrival, st
             <div style={{ marginBottom: '0.25rem', fontWeight: 700, fontSize: '1.1rem' }}>
               Total pour {passengers} passager{passengers > 1 ? 's' : ''} : {totalAllPassengers}€
             </div>
-            <Link to={`${trip_id}?passengers=${(new URLSearchParams(window.location.search)).get('passengers') || '1'}`}>
+            <Link to={`${_id}?passengers=${(new URLSearchParams(window.location.search)).get('passengers') || '1'}`}>
               <button className="outline">À partir de {perPassenger}€ / passager</button>
             </Link>
           </div>

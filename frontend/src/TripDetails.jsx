@@ -20,7 +20,7 @@ export function calculateTripTimes(trip) {
 
 function TripDetails({ }) {
   const navigate = useNavigate();
-  const { trip_id } = useParams();
+  const { _id } = useParams();
   const { search } = useLocation();
   const passengers = Math.max(1, parseInt((new URLSearchParams(search)).get('passengers') || '1', 10));
 
@@ -31,9 +31,9 @@ function TripDetails({ }) {
     fetch('/sample_data.json')
     .then (x => x.json())
     .then(data => {
-      setTrip(data.trips.find(x => trip_id === x.trip_id))
+      setTrip(data.docs.find(x => _id === x._id))
     }
-  )},[trip_id])
+  )},[_id])
   
   const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
   const priceSecond = Number(trip.price_second ?? 0);
@@ -42,7 +42,7 @@ function TripDetails({ }) {
   const totalDisplayedPrice = displayedPrice * passengers;
 
   const handleAddToCart = () => {
-    const params = new URLSearchParams({ trip_id: trip_id || '', class: selectedClass, passengers: String(passengers) }).toString();
+    const params = new URLSearchParams({ _id: _id || '', class: selectedClass, passengers: String(passengers) }).toString();
     navigate(`/cart?${params}`);
   };
 

@@ -14,8 +14,8 @@ function Cart() {
     fetch('/sample_data.json')
       .then(x => x.json())
       .then(data => {
-        const byId = data.trips.find(t => t.trip_id === params.trip_id);
-        setTrip(byId || data.trips[0]);
+        const byId = data.docs.find(t => t._id === params._id);
+        setTrip(byId || data.docs[0]);
         setSelectedClass(params.class === 'first' ? 'first' : 'second');
       }
     )},[])
