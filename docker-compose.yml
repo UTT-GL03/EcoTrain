@@ -1,5 +1,4 @@
 services:
-
   static_hosting:
     image: nginx
     volumes:
@@ -15,3 +14,14 @@ services:
     environment:
       - COUCHDB_USER
       - COUCHDB_PASSWORD
+
+  accessible_backend:
+    image: curlimages/curl
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        alias put="curl -X PUT -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'"
+        put backend:5984/_node/nonode@nohost/_config/chttpd/enable_cors --data '"true"'
+        put backend:5984/_node/nonode@nohost/_config/cors/origins --data '"*"'
+        put backend:5984/ecotrain-db
+        put backend:5984/ecotrain-db/_security --data '{"members":{"roles":[]},"admins":{"roles":["_admin"]}}'
