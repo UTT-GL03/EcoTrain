@@ -3,3 +3,4 @@ dist
 node_modules
 *.html
 *.xlsx
+frontend/public/sample_data.json
