@@ -226,3 +226,41 @@ __Tab.6__: Effet du passage à l'échelle sur l'impact du scénario "Achat d'un 
 On constate que la baisse de l'EcoIndex est la plus importante à l'affichage des résultats de recherche. Cela semble cohérent puisque c'est sur cette page qu'un grand nombre d'éléments (propositions de voyage de la base de données) va apparaître.
 
 Pour évaluer plus précisément l'impact de la consultation des détails d'un trajet, nous utiliserons un autre outil de mesure : GreenFrame.
+
+### Mesure de la consommation énergétique liée à la consultation
+
+Le logiciel GreenFrame est capable d'estimer, pour les différents composants de l'architecture, la consommation énergétique :
+
+- du CPU (à partir du temps de calcul),
+- de la mémoire vive (à partir de la taille des données mémorisées),
+- du disque (à partir de la taille des données lues et écrites),
+- du réseau (à partir de la taille des données reçues et envoyées),
+- pour le navigateur uniquement, de l'écran (à partir du temps d'exécution du scénario).
+
+ (a)                 | cpu (Wh)  | mem (Wh)   | disk (Wh) | network (Wh) | screen (Wh) | total (Wh)   |
+| ------------------ | ----------| ---------- | --------- | ------------ | ----------- | ------------ | 
+| Navigateur         | 0.00094   | 0.000049  | 0.0     | 0.0021     | 0.069     | 0.072    |
+| Serveur web        | 0.0000090 | 0.0000048 | 0.0     | 0.0020     | 0.0       | 0.0020   |
+
+| (b)                | cpu (Wh)   | mem (Wh)   | disk (Wh) | network (Wh)       | screen (Wh)        | total (Wh) |
+| ------------------ | ---------- | ---------- | --------- | ------------------ | ------------------ | ---------- | 
+| Navigateur         | 0.0067    | 0.000087   | 0.0       | <mark>0.062</mark>  | <mark>0.091</mark> | 0.10       |
+| Serveur web        | 0.0000096 | 0.0000068  | 0.0       | <mark>0.063</mark>  | 0.0                | 0.0062     |
+
+| (c)                | cpu (Wh)   | mem (Wh)   | disk (Wh) | network (Wh)       | screen (Wh)        | total (Wh) |
+| ------------------ | ---------- | ---------- | --------- | ------------------ | ------------------ | ---------- | 
+| Navigateur         | 0.0010    | 0.000050  | 0.0     | <mark>0.0062</mark>    | <mark>0.069</mark>     | 0.077    |
+| Serveur web | 0.0000095 | 0.0000052 | 0.0     | <mark>0.0061</mark>     | 0.0       | 0.0062   |
+
+__Tab.7__: Estimation de la consommation énergétique de la consultation de la page d'accueil (a), de la page de résultats de recherche (b), et de la page de détails d'un trajet (c).
+
+Dans les résultats (Tab.7), on constate que pour la page d'accueil, sur laquelle les données ne sont pas chargées, la consommation est quasi exclusivement due à l'écran.
+
+Sur les deux autres pages, où les données sont chargées, la consommation due à la consultation des résultats de recherche (plusieurs centaines de trajets), est équivalente à celle des détails d'un trajet (1 seul trajets). Autrement dit, l'affichage des données en grand nombre est négligeable par rapport à la transmission de ces données sur le réseau.
+
+Par contre, l'affichage de ces données a bien un impact indirect : en augmentant le temps de lecture, il a un effet déterminant sur le temps d'éclairage de l'écran.
+De fait, les trois éléments ayant le plus d'impact (à peu près à égalité, le reste étant négligeable), sont :
+
+- l'écran du client,
+- le réseau du client,
+- le réseau du serveur.
