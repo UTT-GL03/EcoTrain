@@ -136,7 +136,6 @@ function SearchResult({datetime_arrival, datetime_departure, station_arrival, st
   const minutes = durationInMinutes % 60;
   const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
   const perPassenger = Number(price_second ?? 0);
-  const totalAllPassengers = perPassenger * Math.max(1, parseInt(passengers || 1, 10));
 
   return (
     <article>
@@ -155,9 +154,6 @@ function SearchResult({datetime_arrival, datetime_departure, station_arrival, st
             <span> {station_arrival} </span>
           </div>
           <div>
-            <div style={{ marginBottom: '0.25rem', fontWeight: 700, fontSize: '1.1rem' }}>
-              Total pour {passengers} passager{passengers > 1 ? 's' : ''} : {totalAllPassengers}€
-            </div>
             <Link to={`${_id}?passengers=${(new URLSearchParams(window.location.search)).get('passengers') || '1'}`}>
               <button className="outline">À partir de {perPassenger}€ / passager</button>
             </Link>
