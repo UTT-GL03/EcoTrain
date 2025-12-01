@@ -264,3 +264,34 @@ De fait, les trois éléments ayant le plus d'impact (à peu près à égalité,
 - l'écran du client,
 - le réseau du client,
 - le réseau du serveur.
+
+## Impact de l'introduction d'une base de données
+
+Afin de réduire l'impact énérgétique du réseau, nous stockons désormais les données de l'application (`v2.0.0`) dans une base de données (*CouchDB*).
+Cette évolution nous permet, lors de l'affichage des détails d'un trajet, de ne charger que ce trajet au lieu de plusieurs milliers.
+
+|                    | cpu (s)   | screen (s) | mem (B)   | disk (B) | network (B) |
+| ------------------ |-----------|------------|-----------|----------|-------------|
+| Navigateur Web     | 0,0725    | 17,3       | 1,22e+8   | 0,00     | 4,14e+5     |
+| Serveur Web        | 0,000178  | 0,00       | 5,56e+6   | 0,00     | 3,77e+5     |
+| Base de données    | 0,0414    | 0,00       | 8,15e+7   | 0,00     | 1,35e+3     |
+
+__Tab.8__: Effet sur l'utilisation des ressources de l'introduction d'une base de données dans l'application, lors de la consultation d'un article.
+
+---
+
+| (a)             | cpu (Wh)                         | mem (Wh)                         | disk (Wh) | network (Wh)                         | screen (Wh)            | total (Wh)                |
+| --------------- |----------------------------------|----------------------------------|-----------|---------------------------------------|-----------------------------------|------------------|
+| Navigateur      | <del>0,0067</del><br/>0,00093     | <del>0,000087</del><br/>0,000045 | 0,0       | <del>0,062</del><br/>0,0021       | <del>0,091</del><br/>0,067    | <del>0,10</del><br/>0,071         |
+| Serveur Web     | <del>0,0000096</del><br/>0,0000035| <del>0,0000068</del><br/>0,0000028| 0,0     | <del>0,063</del><br/>0,0019  | <del>0</del><br/>0                | <del>0,0062</del><br/>0,0019       |
+| Base de données | <del>0</del><br/>0,00068          | <del>0</del><br/>0,000042        | 0,0       | <del>0</del><br/>0,0000095    | <del>0</del><br/>0                | <del>0</del><br/>0,00074          |
+
+| (b)             | cpu (Wh)                         | mem (Wh)                         | disk (Wh) | network (Wh)                         | screen (Wh)          | total (Wh)                        |
+| --------------- |----------------------------------|----------------------------------|-----------|---------------------------------------|------------------------|---------------------|
+| Navigateur      | <del>0,0010</del><br/>0,00091  | <del>0,000050</del><br/>0,000045 | 0,0  | <del>0,0062</del><br/>0,0021   | <del>0,069</del><br/>0,067        | <del>0,077</del><br/>0,070         |
+| Serveur Web     | <del>0,0000095</del><br/>0,0000031| <del>0,0000052</del><br/>0,0000028| 0,0     | <del>0,0061</del><br/>0,0019  | <del>0</del><br/>0                | <del>0,0062</del><br/>0,0019       |
+| Base de données | <del>0</del><br/>0,00072          | <del>0</del><br/>0,000042        | 0,0       | <del>0</del><br/>0,0000069    | <del>0</del><br/>0                | <del>0</del><br/>0,00077          |
+
+__Tab.9__: Effet sur la consommation énergétique de l'introduction d'une base de données dans l'application, lors de la consultation des résultats de recherche (tableau 9.a) et des détails d'un trajet ( tableau 9.b).
+
+Pour la consultation des détails d'un trajet, cette forte diminution de l'utilisation des ressources se traduit par une consommation énérgétique estimée (cf. Tab.9b) quasiment minimale puisqu'à peine supérieure à celle de l'écran.
