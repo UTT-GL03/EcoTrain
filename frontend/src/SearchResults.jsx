@@ -45,7 +45,7 @@ function SearchResults() {
       departure: form.departureStation,
       arrival: form.arrivalStation,
       date: form.date,
-      time: form.departureTime,
+      time: form.departureTime.replace('h', ''),
       passengers,
     }).toString();
     navigate(`/trips?${params}`);
@@ -65,7 +65,7 @@ function SearchResults() {
     const datetimeDepartureGt = `${date} ${time}`;
     const datetimeDepartureLt = `${date} 23:59`;
 
-    fetch('http://localhost:5984/ecotrain-db/_find', {
+    fetch('http://localhost:5984/ecotrain/_find', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
