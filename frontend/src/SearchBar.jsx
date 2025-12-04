@@ -42,7 +42,7 @@ function SearchBar() {
       departure: form.departureStation,
       arrival: form.arrivalStation,
       date: form.date,
-      time: form.departureTime.replace('h', ''),
+      time: form.departureTime,
       passengers: passengerCount,
     }).toString();
     navigate(`/trips?${params}`);

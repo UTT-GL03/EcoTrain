@@ -45,7 +45,7 @@ function SearchResults() {
       departure: form.departureStation,
       arrival: form.arrivalStation,
       date: form.date,
-      time: form.departureTime.replace('h', ''),
+      time: form.departureTime,
       passengers,
     }).toString();
     navigate(`/trips?${params}`);
@@ -130,12 +130,9 @@ function SearchResults() {
       <h2>Voyages trouvés :</h2>
       {results.length === 0 && (<p>Aucun trajet ne correspond à votre recherche.</p>)}
       {results.map((x, i) => <SearchResult {...x} key={i} passengers={passengers} />)}
-
-      {nextBookmark && (
-        <button onClick={() => setRequestedBookmark(nextBookmark)}>
-          Charger plus de résultats
-        </button>
-      )}
+      <button onClick={() => setRequestedBookmark(nextBookmark)}>
+        Plus de trajets
+      </button>
     </section>
   );
 }
