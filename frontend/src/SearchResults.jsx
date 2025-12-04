@@ -10,7 +10,7 @@ function useQuery() {
   return useMemo(() => Object.fromEntries(new URLSearchParams(search)), [search]);
 }
 
-function SearchResults({}) {
+function SearchResults({ }) {
   const [results, setResults] = useState([])
   const query = useQuery();
   const navigate = useNavigate();
@@ -53,12 +53,37 @@ function SearchResults({}) {
   }
 
   useEffect(() => {
-    fetch('http://localhost:5984/ecotrain-db/_all_docs?include_docs=true')
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const stationDeparture = urlParams.get('departure');
+    const stationArrival = urlParams.get('arrival');
+    const date = urlParams.get('date');
+    const time = urlParams.get('time');
+
+    // Merge date and time into a datetime value
+    const datetimeDepartureGt = `${date}T${time.replace('h', '')}:00+02:00`;
+    const datetimeDepartureLt = `${date}T23:59:59+02:00`;
+
+    fetch('http://localhost:5984/ecotrain-db/_find', {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        selector: {
+          station_departure: { "$eq": stationDeparture },
+          station_arrival: { "$eq": stationArrival },
+          datetime_departure: { "$gt": datetimeDepartureGt, "$lt": datetimeDepartureLt }
+        },
+        sort: [{ datetime_departure: "asc" }],
+        fields: ["_id", "station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "price_second", "price_first"],
+        limit: 50
+      })
+    })
       .then(x => x.json())
       .then(data => {
-        setResults(data.docs)
+        setResults(data.docs || []);
       })
-  }, [])
+      .catch(error => console.error('Error fetching trips:', error));
+  }, [query.departure, query.arrival, query.date, query.time]);
 
   const filtered = useMemo(() => {
     if (!results || results.length === 0) return [];
@@ -88,7 +113,7 @@ function SearchResults({}) {
     <section className="container">
       <section className="container" style={{ paddingTop: 0, paddingBottom: '0.5rem' }}>
         <form className="search-bar" onSubmit={onSubmit}>
-          <div className="grid" style={{ gridTemplateColumns: '2fr 1fr'}}>
+          <div className="grid" style={{ gridTemplateColumns: '2fr 1fr' }}>
             <div style={{ display: 'grid', gap: '0.5rem' }}>
               <select name="departureStation" required value={form.departureStation} onChange={onChange} style={{ width: '100%' }}>
                 <option value="" disabled>Gare de départ</option>
@@ -127,7 +152,7 @@ function SearchResults({}) {
   )
 }
 
-function SearchResult({datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, _id, passengers}) {
+function SearchResult({ datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, _id, passengers }) {
   const datetimearrival = dayjs(datetime_arrival);
   const datetimedeparture = dayjs(datetime_departure);
   const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');

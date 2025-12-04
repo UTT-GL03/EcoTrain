@@ -24,17 +24,20 @@ function TripDetails({ }) {
   const { search } = useLocation();
   const passengers = Math.max(1, parseInt((new URLSearchParams(search)).get('passengers') || '1', 10));
 
-  const [trip, setTrip] = useState ({})
+  const [trip, setTrip] = useState({})
   const [selectedClass, setSelectedClass] = useState('second');
 
   useEffect(() => {
-    fetch('http://localhost:5984/ecotrain-db/${id}')
-    .then (x => x.json())
-    .then(data => {
-      setTrip(data.docs.find(x => _id === x._id))
-    }
-  )},[_id])
-  
+    fetch(`http://localhost:5984/ecotrain-db/${_id}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setTrip(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching trip:', error);
+      });
+  }, [_id]);
+
   const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
   const priceSecond = Number(trip.price_second ?? 0);
   const priceFirst = Number(trip.price_first ?? 0);
@@ -97,7 +100,7 @@ function TripDetails({ }) {
           <div className="station">{trip.station_arrival}</div>
         </div>
       </div>
-      <br/>
+      <br />
       <div className="grid">
         <div>
           <button onClick={handleAddToCart}>Ajouter au panier</button>
