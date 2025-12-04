@@ -1,7 +1,7 @@
-import { Link, useLocation, useNavigate } from 'react-router'
-import { useState, useEffect, useMemo } from 'react'
-import localizedFormat from 'dayjs/plugin/localizedFormat'
-import dayjs from 'dayjs'
+import { Link, useLocation, useNavigate } from 'react-router';
+import { useState, useEffect, useMemo } from 'react';
+import localizedFormat from 'dayjs/plugin/localizedFormat';
+import dayjs from 'dayjs';
 
 dayjs.extend(localizedFormat);
 
@@ -10,8 +10,10 @@ function useQuery() {
   return useMemo(() => Object.fromEntries(new URLSearchParams(search)), [search]);
 }
 
-function SearchResults({ }) {
-  const [results, setResults] = useState([])
+function SearchResults() {
+  const [results, setResults] = useState([]);
+  const [requestedBookmark, setRequestedBookmark] = useState(''); // Current bookmark
+  const [nextBookmark, setNextBookmark] = useState(null); // Next bookmark
   const query = useQuery();
   const navigate = useNavigate();
   const passengers = Math.max(1, parseInt(query.passengers || '1', 10));
@@ -33,7 +35,7 @@ function SearchResults({ }) {
   const onChange = (e) => {
     const { name, value } = e.target;
     setForm(prev => ({ ...prev, [name]: value }));
-  }
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -50,7 +52,9 @@ function SearchResults({ }) {
       passengers,
     }).toString();
     navigate(`/trips?${params}`);
-  }
+    setResults([]); // Clear previous results
+    setRequestedBookmark(''); // Reset the bookmark for a new search
+  };
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -75,39 +79,20 @@ function SearchResults({ }) {
         },
         sort: [{ datetime_departure: "asc" }],
         fields: ["_id", "station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "price_second", "price_first"],
-        limit: 50
+        bookmark: requestedBookmark, // Use the current bookmark
+        limit: 10
       })
     })
       .then(x => x.json())
       .then(data => {
-        setResults(data.docs || []);
+        setResults(prevResults => [
+          ...prevResults,
+          ...(data.docs || []) // Append new results to the existing ones
+        ]);
+        setNextBookmark(data.bookmark); // Update the next bookmark
       })
       .catch(error => console.error('Error fetching trips:', error));
-  }, [query.departure, query.arrival, query.date, query.time]);
-
-  const filtered = useMemo(() => {
-    if (!results || results.length === 0) return [];
-    const dep = (query.departure || '').trim().toLowerCase();
-    const arr = (query.arrival || '').trim().toLowerCase();
-
-    let earliest = null;
-    if (query.date && query.time) {
-      const hour = parseInt(query.time);
-      const dt = dayjs(query.date).hour(isNaN(hour) ? 0 : hour).minute(0).second(0);
-      earliest = dt.isValid() ? dt : null;
-    }
-
-    return results.filter(t => {
-      const matchesStations = (
-        (!dep || (t.station_departure || '').toLowerCase() === dep) &&
-        (!arr || (t.station_arrival || '').toLowerCase() === arr)
-      );
-      if (!matchesStations) return false;
-      if (!earliest) return true;
-      const tDep = dayjs(t.datetime_departure);
-      return tDep.isSame(earliest) || tDep.isAfter(earliest);
-    });
-  }, [results, query]);
+  }, [query.departure, query.arrival, query.date, query.time, requestedBookmark]); // Add requestedBookmark as a dependency
 
   return (
     <section className="container">
@@ -146,10 +131,16 @@ function SearchResults({ }) {
         </form>
       </section>
       <h2>Voyages trouvés :</h2>
-      {filtered.length === 0 && (<p>Aucun trajet ne correspond à votre recherche.</p>)}
-      {filtered.map((x, i) => <SearchResult {...x} key={i} passengers={passengers} />)}
+      {results.length === 0 && (<p>Aucun trajet ne correspond à votre recherche.</p>)}
+      {results.map((x, i) => <SearchResult {...x} key={i} passengers={passengers} />)}
+
+      {nextBookmark && (
+        <button onClick={() => setRequestedBookmark(nextBookmark)}>
+          Charger plus de résultats
+        </button>
+      )}
     </section>
-  )
+  );
 }
 
 function SearchResult({ datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, _id, passengers }) {
@@ -186,7 +177,7 @@ function SearchResult({ datetime_arrival, datetime_departure, station_arrival, s
         </div>
       </section >
     </article >
-  )
+  );
 }
 
 export default SearchResults;
