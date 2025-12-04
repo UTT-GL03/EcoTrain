@@ -11,10 +11,10 @@ function SearchBar() {
     'Troyes',
   ]), []);
   const [form, setForm] = useState({
-    departureStation: '',
-    arrivalStation: '',
+    departureStation: 'Paris',
+    arrivalStation: 'Troyes',
     date: '2025-01-01',
-    departureTime: '00h',
+    departureTime: '00',
   });
 
   const onChange = (e) => {
@@ -75,7 +75,7 @@ function SearchBar() {
           <select name="departureTime" required value={form.departureTime} onChange={onChange}>
             <option value="">Heure de départ</option>
             {Array.from({ length: 24 }, (_, i) => (
-              <option key={i} value={`${i.toString().padStart(2, '0')}h`}>
+              <option key={i} value={`${i.toString().padStart(2, '0')}`}>
                 {i.toString().padStart(2, '0')}h
               </option>
             ))}

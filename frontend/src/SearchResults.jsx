@@ -26,7 +26,7 @@ function SearchResults() {
     departureStation: query.departure || '',
     arrivalStation: query.arrival || '',
     date: query.date || '2025-01-01',
-    departureTime: query.time || '00h',
+    departureTime: query.time || '00',
   });
 
   const onChange = (e) => {
@@ -115,7 +115,7 @@ function SearchResults() {
               <select name="departureTime" required value={form.departureTime} onChange={onChange} style={{ width: '100%' }}>
                 <option value="">Heure de départ</option>
                 {Array.from({ length: 24 }, (_, i) => (
-                  <option key={i} value={`${i.toString().padStart(2, '0')}h`}>
+                  <option key={i} value={`${i.toString().padStart(2, '0')}`}>
                     {i.toString().padStart(2, '0')}h
                   </option>
                 ))}
