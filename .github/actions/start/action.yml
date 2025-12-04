@@ -25,9 +25,9 @@ runs:
         name: samples
     - name: Upload samples
       run: |
-        curl -X POST http://localhost:5984/ecotrain-db/_bulk_docs -H "Content-Type: application/json" -d @sample_data.json
+        curl -X POST http://localhost:5984/ecotrain/_bulk_docs -H "Content-Type: application/json" -d @sample_data.json
       shell: bash
     - name: Wait for backend
       uses: docker://benel/wait-for-response:1
       with:
-        args: http://localhost:5984/ecotrain-db/_all_docs?limit=10 200 30000 500
+        args: http://localhost:5984/ecotrain/_all_docs?limit=10 200 30000 500
