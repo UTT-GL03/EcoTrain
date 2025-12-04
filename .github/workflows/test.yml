@@ -3,25 +3,21 @@ on:
   push:
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Download sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up NodeJS
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
           cache-dependency-path: frontend/package-lock.json
       - name: Install frontend dependencies
         run: |
           cd frontend
           npm install
-      - name: Generate sample
-        run: |
-          npx --yes dummy-json sample_data.hbs > frontend/public/sample_data.json
       - name: Build frontend
         run: |
           cd frontend
@@ -31,6 +27,20 @@ jobs:
         with:
           name: frontend-build
           path: frontend/dist
+
+  build_samples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download sources
+        uses: actions/checkout@v5
+      - name: Generate sample
+        run: |
+          npx --yes dummy-json sample_data.hbs > sample_data.json
+      - name: Save samples for later
+        uses: actions/upload-artifact@v4
+        with:
+          name: samples
+          path: sample_data.json
 
   measure_energy_consumption:
     needs: build
@@ -47,7 +57,7 @@ jobs:
           cd greenframe-cli-post-app
           npm install -g corepack
           yarn
-          yarn build 
+          yarn build
       - name: Run GreenFrame CLI
         run: |
           ./greenframe-cli-post-app/bin/run analyze > Consumption.txt

@@ -27,8 +27,8 @@ services:
         alias put="curl -X PUT -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'"
         put backend:5984/_node/nonode@nohost/_config/chttpd/enable_cors --data '"true"'
         put backend:5984/_node/nonode@nohost/_config/cors/origins --data '"*"'
-        put backend:5984/ecotrain-db
-        put backend:5984/ecotrain-db/_security --data '{"members":{"roles":[]},"admins":{"roles":["_admin"]}}'
+        put backend:5984/ecotrain
+        put backend:5984/ecotrain/_security --data '{"members":{"roles":[]},"admins":{"roles":["_admin"]}}'
     depends_on:
       backend:
         condition: service_healthy
@@ -40,7 +40,7 @@ services:
         - ./backend/by_date_time.json:/by_date_time.json
       command:
         - |
-          curl -X POST http://backend:5984/ecotrain-db/_index -H "Content-Type: application/json" -d @/by_date_time.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'
+          curl -X POST http://backend:5984/ecotrain/_index -H "Content-Type: application/json" -d @/by_date_time.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'
       depends_on:
         accessible_backend:
           condition: service_completed_successfully
@@ -52,7 +52,7 @@ services:
       - ./frontend/public/sample_data.json:/sample_data.json
     command:
       - |
-        curl -X POST http://backend:5984/ecotrain-db/_bulk_docs -H "Content-Type: application/json" -d @/sample_data.json
+        curl -X POST http://backend:5984/ecotrain/_bulk_docs -H "Content-Type: application/json" -d @/sample_data.json
     depends_on:
       accessible_backend:
         condition: service_completed_successfully
