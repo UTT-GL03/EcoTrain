@@ -1,9 +1,5 @@
-import localizedFormat from 'dayjs/plugin/localizedFormat'
-import dayjs from 'dayjs'
 import { useNavigate } from 'react-router'
 import { useState, useMemo } from 'react';
-
-dayjs.extend(localizedFormat);
 
 function SearchBar() {
   const navigate = useNavigate();
@@ -46,7 +42,7 @@ function SearchBar() {
       departure: form.departureStation,
       arrival: form.arrivalStation,
       date: form.date,
-      time: form.departureTime,
+      time: form.departureTime.replace('h', ''),
       passengers: passengerCount,
     }).toString();
     navigate(`/trips?${params}`);

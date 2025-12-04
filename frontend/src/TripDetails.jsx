@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router'
-import localizedFormat from 'dayjs/plugin/localizedFormat'
 import dayjs from 'dayjs'
-
-
-dayjs.extend(localizedFormat);
 
 export function calculateTripTimes(trip) {
   const datetimearrival = dayjs(trip.datetime_arrival);

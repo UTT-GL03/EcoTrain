@@ -1,9 +1,6 @@
 import { Link, useLocation, useNavigate } from 'react-router';
 import { useState, useEffect, useMemo } from 'react';
-import localizedFormat from 'dayjs/plugin/localizedFormat';
 import dayjs from 'dayjs';
-
-dayjs.extend(localizedFormat);
 
 function useQuery() {
   const { search } = useLocation();
@@ -65,8 +62,8 @@ function SearchResults() {
     const time = urlParams.get('time');
 
     // Merge date and time into a datetime value
-    const datetimeDepartureGt = `${date}T${time.replace('h', '')}:00+02:00`;
-    const datetimeDepartureLt = `${date}T23:59:59+02:00`;
+    const datetimeDepartureGt = `${date} ${time}`;
+    const datetimeDepartureLt = `${date} 23:59`;
 
     fetch('http://localhost:5984/ecotrain-db/_find', {
       method: 'POST',
