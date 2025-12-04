@@ -33,6 +33,18 @@ services:
       backend:
         condition: service_healthy
 
+  index:
+      image: curlimages/curl
+      entrypoint: ["/bin/sh","-c"]
+      volumes:
+        - ./backend/by_date_time.json:/by_date_time.json
+      command:
+        - |
+          curl -X POST http://backend:5984/ecotrain-db/_index -H "Content-Type: application/json" -d @/by_date_time.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'
+      depends_on:
+        accessible_backend:
+          condition: service_completed_successfully
+
   updated_samples:
     image: curlimages/curl
     entrypoint: ["/bin/sh", "-c"]

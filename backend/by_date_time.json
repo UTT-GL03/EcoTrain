@@ -1,0 +1,9 @@
+   {
+    "index": {
+      "fields": [
+        {"datetime_departure": "asc"}
+      ]
+    },
+    "name": "by_date_time",
+    "type": "json"
+  }
