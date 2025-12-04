@@ -296,10 +296,33 @@ __Tab.9__: Effet sur la consommation énergétique de l'introduction d'une base 
 
 Pour la consultation des détails d'un trajet, cette forte diminution de l'utilisation des ressources se traduit par une consommation énérgétique estimée (cf. Tab.9b) quasiment minimale puisqu'à peine supérieure à celle de l'écran.
 
-## Stratégie de limitation du nombre d'éléments affichés
+## Limitation du nombre d'éléments affichés
 
 Sur notre plateforme de réservation de billets de trains, il n'est pas nécessaire de faire apparaître tous les trajets à venir de la semaine sur une même page de résultats. 
 
 Ayant mis à disposition la possibilité de spécifier les gares de départ et d'arrivée, ainsi qu'une date et une heure de départ, nous ferons le choix de limiter les résultats à 10 trajets dans un premier temps, tout en laissant la possibilité de charger des trajets suivants grâce à un bouton en bas de page. À noter qu'il sera également possible de modifier les résultats en changeant l'heure de départ préalablement renseignée dans la zone de recherche.
 
 Cette stratégie permettra à l'utilisateur de visualiser des résultats correspondant d'abord à sa recherche, tout en ayant la possibilité de modifier cette vue.
+
+<img src="./docs/pagination.png" alt="Chargement progressif (à la demande) des résultats de recherche" width="800"/>
+
+__Fig.4__: Chargement progressif (à la demande) des résultats de recherche (capture d'écran).
+
+
+|             |cpu (Wh)                          |mem (Wh)                          |disk (Wh)|network (Wh)                     |screen (Wh)               |total (Wh)                    |
+|-----------------------|---------------------------|---------------------|---------|------------------|--------------------------|----------|
+|Navigateur         |<del>0,00093</del><br/>0.0020     |<del>0,000045</del><br/>0.000050  |0.0      |<del>0,0021</del><br/>0.0022     |<del>0,067</del><br/>0.069|<del>0,071</del><br/>0.074    |
+|Serveur Web|<del>0,0000035</del><br/>0.0000033|<del>0,0000028</del><br/>0.0000029|0.0      |<del>0,0019</del><br/>0.0019     |<br/>0.0      |<del>0,0019</del><br/>0.0020  |
+|Base de données|<del>0,00068</del><br/>0.00086    |<del>0,000042</del><br/>0.000051  |0.0      |<del>0,0000095</del><br/>0.000026|0.0      |<del>0,00074</del><br/>0.00094|
+
+__Tab.10__ : Effet sur la consommation énergétique du chargement progressif (à la demande) lors de la consultation des résultats de recherche.
+
+L'implémentation de la stratégie en question (`v2.0.1`, cf. Fig.4) ne semble pas avoir l'effet attendu (cf. Tab.10) : la consommation électrique n'a pas diminué avec la réduction du nombre de résultats, elle a même légèrement augmenté. Notons qu'elle reste largement négligeable face à la consommation de l'écran.
+
+On pourrait supposer que d'éventuelles modifications dans la structure des données ou sur le frontend ont pu être à l'origine de cette légère augmentation.
+
+Pour résumer, le passage à l'échelle de 25 à 2500 trajets disponibles, avait entraîné un triplement de la consommation électrique.
+Par des techniques simples de base de données (sélection du document pertinent, projection des attributs nécessaires et pagination des résultats), la consommation électrique est revenue a ses valeurs initiales.
+En l'état, la consommation électrique est constante par rapport à la volumétrie des trajets disponibles, et à un niveau si bas que la part due au CPU, à la mémoire et au réseau est négligeable par rapport à celle de l'écran.
+
+L'enjeu dans les améliorations à venir de l'application sera de veiller à conserver cette sobriété.
