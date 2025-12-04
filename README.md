@@ -295,3 +295,11 @@ __Tab.8__: Effet sur l'utilisation des ressources de l'introduction d'une base d
 __Tab.9__: Effet sur la consommation énergétique de l'introduction d'une base de données dans l'application, lors de la consultation des résultats de recherche (tableau 9.a) et des détails d'un trajet ( tableau 9.b).
 
 Pour la consultation des détails d'un trajet, cette forte diminution de l'utilisation des ressources se traduit par une consommation énérgétique estimée (cf. Tab.9b) quasiment minimale puisqu'à peine supérieure à celle de l'écran.
+
+## Stratégie de limitation du nombre d'éléments affichés
+
+Sur notre plateforme de réservation de billets de trains, il n'est pas nécessaire de faire apparaître tous les trajets à venir de la semaine sur une même page de résultats. 
+
+Ayant mis à disposition la possibilité de spécifier les gares de départ et d'arrivée, ainsi qu'une date et une heure de départ, nous ferons le choix de limiter les résultats à 10 trajets dans un premier temps, tout en laissant la possibilité de charger des trajets suivants grâce à un bouton en bas de page. À noter qu'il sera également possible de modifier les résultats en changeant l'heure de départ préalablement renseignée dans la zone de recherche.
+
+Cette stratégie permettra à l'utilisateur de visualiser des résultats correspondant d'abord à sa recherche, tout en ayant la possibilité de modifier cette vue.
