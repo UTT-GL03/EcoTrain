@@ -75,7 +75,7 @@ function SearchResults() {
           datetime_departure: { "$gt": datetimeDepartureGt, "$lt": datetimeDepartureLt }
         },
         sort: [{ datetime_departure: "asc" }],
-        fields: ["station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "price_second", "price_first", "_id"],
+        fields: ["station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "duration", "price_second", "price_first", "_id"],
         bookmark: requestedBookmark, // Use the current bookmark
         limit: 10
       })
@@ -137,14 +137,9 @@ function SearchResults() {
   );
 }
 
-function SearchResult({ datetime_arrival, datetime_departure, station_arrival, station_departure, price_second, _id, passengers }) {
+function SearchResult({ datetime_arrival, datetime_departure, station_arrival, station_departure, duration, price_second, _id, passengers }) {
   const datetimearrival = dayjs(datetime_arrival);
   const datetimedeparture = dayjs(datetime_departure);
-  const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
-
-  const hours = Math.floor(durationInMinutes / 60);
-  const minutes = durationInMinutes % 60;
-  const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
   const perPassenger = Number(price_second ?? 0);
 
   return (
@@ -156,7 +151,7 @@ function SearchResult({ datetime_arrival, datetime_departure, station_arrival, s
             <br />
             <time> {datetimearrival.format('HH:mm')} </time>
             <br />
-            <time>Durée : {formattedDuration}</time>
+            <time>Durée : {duration}</time>
           </div>
           <div>
             <span> {station_departure} </span>

@@ -2,17 +2,6 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router'
 import dayjs from 'dayjs'
 
-export function calculateTripTimes(trip) {
-  const datetimearrival = dayjs(trip.datetime_arrival);
-  const datetimedeparture = dayjs(trip.datetime_departure);
-  const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
-
-  const hours = Math.floor(durationInMinutes / 60);
-  const minutes = durationInMinutes % 60;
-  const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
-
-  return { datetimearrival, datetimedeparture, formattedDuration };
-}
 
 function TripDetails({ }) {
   const navigate = useNavigate();
@@ -34,7 +23,9 @@ function TripDetails({ }) {
       });
   }, [_id]);
 
-  const { datetimearrival, datetimedeparture, formattedDuration } = calculateTripTimes(trip);
+  const datetimearrival = dayjs(trip.datetime_arrival);
+  const datetimedeparture = dayjs(trip.datetime_departure);
+  const duration = trip.duration;
   const priceSecond = Number(trip.price_second ?? 0);
   const priceFirst = Number(trip.price_first ?? 0);
   const displayedPrice = selectedClass === 'first' ? priceFirst : priceSecond;
@@ -60,7 +51,7 @@ function TripDetails({ }) {
           <div><strong>Départ:</strong> {datetimedeparture.format('HH:mm')}</div>
           <div><strong>Arrivée:</strong> {datetimearrival.format('HH:mm')}</div>
           <br />
-          <div><strong>Durée : </strong>{formattedDuration}
+          <div><strong>Durée : </strong>{duration}
             <br />
             <div>
               <label><strong>Classe :</strong></label>
