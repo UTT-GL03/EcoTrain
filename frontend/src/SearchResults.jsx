@@ -75,7 +75,7 @@ function SearchResults() {
           datetime_departure: { "$gt": datetimeDepartureGt, "$lt": datetimeDepartureLt }
         },
         sort: [{ datetime_departure: "asc" }],
-        fields: ["_id", "station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "price_second", "price_first"],
+        fields: ["station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "price_second", "price_first", "_id"],
         bookmark: requestedBookmark, // Use the current bookmark
         limit: 10
       })

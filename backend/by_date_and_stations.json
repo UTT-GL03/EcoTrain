@@ -1,9 +1,11 @@
    {
     "index": {
       "fields": [
+        {"station_departure": "asc"},
+        {"station_arrival": "asc"},
         {"datetime_departure": "asc"}
       ]
     },
-    "name": "by_date_time",
+    "name": "by_date_and_stations",
     "type": "json"
   }
