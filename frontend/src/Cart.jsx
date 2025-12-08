@@ -23,10 +23,7 @@ function Cart() {
 
 const datetimedeparture = dayjs(trip.datetime_departure);
 const datetimearrival = dayjs(trip.datetime_arrival);
-const durationInMinutes = datetimearrival.diff(datetimedeparture, 'minute');
-const hours = Math.floor(durationInMinutes / 60);
-const minutes = durationInMinutes % 60;
-const formattedDuration = `${hours}h${minutes.toString().padStart(2, '0')}`;
+const duration = trip.duration;
 const priceSecond = Number(trip.price_second ?? 0);
 const priceFirst = Number(trip.price_first ?? 0);
 const selectedPrice = selectedClass === 'first' ? priceFirst : priceSecond;
@@ -44,7 +41,7 @@ const totalPrice = selectedPrice * passengers;
                 <br />
                 <time>{datetimearrival.format('HH:mm')}</time>
                 <br />
-                <time>Durée : {formattedDuration}</time>
+                <time>Durée : {duration}</time>
               </div>
               <div>
                 <span>{trip.station_departure}</span>
