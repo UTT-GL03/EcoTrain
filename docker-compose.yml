@@ -37,11 +37,9 @@ services:
       image: curlimages/curl
       entrypoint: ["/bin/sh","-c"]
       volumes:
-        - ./backend/by_date_time.json:/by_date_time.json
         - ./backend/by_date_and_stations.json:/by_date_and_stations.json
       command:
         - |
-          curl -X POST http://backend:5984/ecotrain/_index -H "Content-Type: application/json" -d @/by_date_time.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'
           curl -X POST http://backend:5984/ecotrain/_index -H "Content-Type: application/json" -d @/by_date_and_stations.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'     
       depends_on:
         accessible_backend:
