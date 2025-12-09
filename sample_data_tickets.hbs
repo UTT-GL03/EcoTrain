@@ -1,0 +1,16 @@
+{
+  "tickets": [
+    {{#repeat 2500}}
+      {
+        "_id":"{{@index}}",
+        "trip_id": "{{int 1 2000}}",
+        "user_id": "{{int 1 2000}}",
+        "firstname": "{{firstName}}",
+        "lastname": "{{lastName}}",
+        "class":"{{random "Second" "First"}}",
+        "seat":"{{int 10 150}}",
+        "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+      }
+    {{/repeat}}
+  ]
+  }
