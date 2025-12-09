@@ -4,12 +4,12 @@ import { useState, useMemo } from 'react';
 function SearchBar() {
   const navigate = useNavigate();
   const [passengers, setPassengers] = useState([]);
-  const stations = useMemo(() => ([
+  const stations = [
     'Paris',
     'Nogent-sur-Seine',
     'Romilly-sur-Seine',
     'Troyes',
-  ]), []);
+  ]
   const [form, setForm] = useState({
     departureStation: 'Paris',
     arrivalStation: 'Troyes',

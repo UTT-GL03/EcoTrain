@@ -15,12 +15,12 @@ function SearchResults() {
   const navigate = useNavigate();
   const passengers = Math.max(1, parseInt(query.passengers || '1', 10));
 
-  const stations = useMemo(() => ([
+  const STATIONS = [
     'Paris',
     'Nogent-sur-Seine',
     'Romilly-sur-Seine',
     'Troyes',
-  ]), []);
+  ]
 
   const [form, setForm] = useState({
     departureStation: query.departure || '',
@@ -36,7 +36,7 @@ function SearchResults() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (!stations.includes(form.departureStation) || !stations.includes(form.arrivalStation)) {
+    if (!STATIONS.includes(form.departureStation) || !STATIONS.includes(form.arrivalStation)) {
       alert('Veuillez sélectionner des gares valides dans la liste.');
       return;
     }
@@ -98,13 +98,13 @@ function SearchResults() {
             <div style={{ display: 'grid', gap: '0.5rem' }}>
               <select name="departureStation" required value={form.departureStation} onChange={onChange} style={{ width: '100%' }}>
                 <option value="" disabled>Gare de départ</option>
-                {stations.map((s) => (
+                {STATIONS.map((s) => (
                   <option key={s} value={s}>{s}</option>
                 ))}
               </select>
               <select name="arrivalStation" required value={form.arrivalStation} onChange={onChange} style={{ width: '100%' }}>
                 <option value="" disabled>Gare d'arrivée</option>
-                {stations.map((s) => (
+                {STATIONS.map((s) => (
                   <option key={s} value={s}>{s}</option>
                 ))}
               </select>
