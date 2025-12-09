@@ -9,8 +9,8 @@ function useQuery() {
 
 function SearchResults() {
   const [results, setResults] = useState([]);
-  const [requestedBookmark, setRequestedBookmark] = useState(''); // Current bookmark
-  const [nextBookmark, setNextBookmark] = useState(null); // Next bookmark
+  const [requestedBookmark, setRequestedBookmark] = useState('');
+  const [nextBookmark, setNextBookmark] = useState(null);
   const query = useQuery();
   const navigate = useNavigate();
   const passengers = Math.max(1, parseInt(query.passengers || '1', 10));
@@ -65,31 +65,30 @@ function SearchResults() {
     const datetimeDepartureGt = `${date} ${time}`;
     const datetimeDepartureLt = `${date} 23:59`;
 
-    fetch('http://localhost:5984/ecotrain/_find', {
+    fetch(`http://localhost:5984/ecotrain/_design/api/_view/by_date_and_stations?include_docs=true&inclusive_end=true&start_key=%5B%20"${stationDeparture}"%2C%20"${stationArrival}"%5D&end_key=%5B%20"${stationDeparture}"%2C%20"${stationArrival}"%2C%20%7B%7D%5D`, {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         selector: {
-          station_departure: { "$eq": stationDeparture },
-          station_arrival: { "$eq": stationArrival },
           datetime_departure: { "$gt": datetimeDepartureGt, "$lt": datetimeDepartureLt }
         },
-        sort: [{ datetime_departure: "asc" }],
         fields: ["station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "duration", "price_second", "price_first", "_id"],
-        bookmark: requestedBookmark, // Use the current bookmark
+        bookmark: requestedBookmark,
         limit: 10
       })
     })
       .then(x => x.json())
       .then(data => {
+        const trips = data.rows.map(row => row.doc);
+
         setResults(prevResults => [
           ...prevResults,
-          ...(data.docs || []) // Append new results to the existing ones
+          ...trips
         ]);
-        setNextBookmark(data.bookmark); // Update the next bookmark
+        setNextBookmark(data.bookmark);
       })
       .catch(error => console.error('Error fetching trips:', error));
-  }, [query.departure, query.arrival, query.date, query.time, requestedBookmark]); // Add requestedBookmark as a dependency
+  }, [query.departure, query.arrival, query.date, query.time, requestedBookmark]);
 
   return (
     <section className="container">
