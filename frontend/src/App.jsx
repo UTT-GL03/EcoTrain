@@ -5,6 +5,7 @@ import TripDetails from './TripDetails'
 import Trips from './SearchResults'
 import HomePage from './HomePage'
 import Cart from './Cart';
+import Account from './Account';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/trips" element={<Trips />} />
             <Route path="/trips/:_id" element={<TripDetails />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/account" element={<div><Account /></div>} />
           </Routes>
         </main>
 
@@ -40,6 +42,11 @@ function App() {
             <div>
               <Link to="/cart" className="cart-link">
                 Voir le panier
+              </Link>
+            </div>
+            <div>
+              <Link to="/account" className="account-link">
+                Voir mes billets
               </Link>
             </div>
           </div>
