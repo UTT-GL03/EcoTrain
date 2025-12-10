@@ -1,49 +1,39 @@
 import dayjs from 'dayjs';
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router';
 
 function Account() {
-    const [tickets, setTickets] = useState([]); // Stocker les tickets liés à l'user_id 1
-    const [selectedClass, setSelectedClass] = useState('second');
-    let params = useParams();
-    const passengers = Math.max(1, parseInt(params.passengers || '1', 10));
+    const [tickets, setTickets] = useState([]);
+    const [user_firstname, setUserFirstname] = useState('');
 
     useEffect(() => {
         fetch('../public/sample_data_tickets.json')
             .then(x => x.json())
-            .then(data => {
-                // Filtrer les tickets pour ne garder que ceux liés à l'user_id 1
-                const userTickets = data.tickets.filter(ticket => ticket.user_id === "1");
-                setTickets(userTickets);
-                setSelectedClass(params.class === 'first' ? 'first' : 'second');
+            .then((data) => {
+                const user = data.users.find((user) => user.user_id === "0");
+                setUserFirstname(user.firstname);
+                setTickets(user.tickets);
             })
-            .catch(error => console.error('Erreur lors du chargement des tickets:', error));
+            .catch((error) => console.error('Erreur lors du chargement des tickets:', error));
     }, []);
 
     return (
         <section className="container">
-            <h2>Mes billets</h2>
+            <h2>Bonjour {user_firstname} !</h2>
+            <h2>Mes voyages à venir</h2>
             {tickets.length === 0 ? (
-                <p>Aucun billet trouvé pour cet utilisateur.</p>
+                <p>Aucun voyage à venir.</p>
             ) : (
                 tickets.map((ticket, i) => {
-                    const datetimedeparture = dayjs(ticket.datetime_departure);
-                    const datetimearrival = dayjs(ticket.datetime_arrival);
-                    const duration = ticket.duration;
-                    const priceSecond = Number(ticket.price_second ?? 0);
-                    const priceFirst = Number(ticket.price_first ?? 0);
-                    const selectedPrice = selectedClass === 'first' ? priceFirst : priceSecond;
-
                     return (
                         <article key={i}>
                             <section className="container">
                                 <div className="grid">
                                     <div>
-                                        <time>{datetimedeparture.format('HH:mm')}</time>
+                                        <time>{ticket.datetime_departure}</time>
                                         <br />
-                                        <time>{datetimearrival.format('HH:mm')}</time>
+                                        <time>{ticket.datetime_arrival}</time>
                                         <br />
-                                        <time>Durée : {duration}</time>
+                                        <time>Durée : {ticket.duration}</time>
                                     </div>
                                     <div>
                                         <span>{ticket.station_departure}</span>
@@ -51,9 +41,7 @@ function Account() {
                                         <span>{ticket.station_arrival}</span>
                                     </div>
                                     <div>
-                                        <div><strong>{selectedPrice}€</strong></div>
-                                        <div style={{ opacity: 0.7 }}>Classe: {selectedClass === 'first' ? '1ère' : '2nde'}</div>
-                                        <div style={{ opacity: 0.7 }}>Passagers: {passengers}</div>
+                                        <div><strong>{ticket.total_price}€</strong></div>
                                     </div>
                                     <div>
                                         <a href={ticket.ticket_url} target="_blank" rel="noopener noreferrer">

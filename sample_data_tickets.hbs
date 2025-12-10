@@ -1,22 +1,37 @@
 {
-  "tickets": [
-    {{#repeat 2500}}
+  "users": [
+    {{#repeat 20}}
       {
-        "_id":"{{@index}}",
-        "trip_id": "{{int 1 2000}}",
-        "user_id": "{{int 1 2000}}",
+        "user_id": "{{@index}}",
         "firstname": "{{firstName}}",
         "lastname": "{{lastName}}",
-        "class":"{{random "Second" "First"}}",
-        "seat":"{{int 10 150}}",
-        "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf",
-        "station_departure": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Nogent-sur-Seine'}}",
-        "station_arrival": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Nogent-sur-Seine'}}",
-        "datetime_departure": "{{date '2025-01-01T00:00+00:00' '2025-01-01T11:59+00:00' 'YYYY-MM-DD HH:mm'}}",
-        "datetime_arrival": "{{date '2025-01-01T12:00+00:00' '2025-01-01T23:59+00:00' 'YYYY-MM-DD HH:mm'}}",
-        "duration": "{{time '00:30' '03:04'}}",
-        "price_second":"{{int 10 150}}",
-        "price_first":"{{int 150 300}}"
+        "tickets": [
+          {{#repeat (int 2 5)}}
+            {
+              "trip_id": "{{int 1 2000}}",
+              "station_departure": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Nogent-sur-Seine'}}",
+              "station_arrival": "{{random 'Paris' 'Troyes' 'Romilly-sur-Seine' 'Nogent-sur-Seine'}}",
+              "datetime_departure": "{{date '2025-01-01T00:00+00:00' '2025-01-01T11:59+00:00' 'YYYY-MM-DD HH:mm'}}",
+              "datetime_arrival": "{{date '2025-01-01T12:00+00:00' '2025-01-01T23:59+00:00' 'YYYY-MM-DD HH:mm'}}",
+              "duration": "{{time '00:30' '03:04'}}",
+              "total_price":"{{int 10 500}}",
+              "passengers": [
+                {{#repeat (int 1 4)}}
+                  {
+                    "passenger_id": "{{@index}}",
+                    "firstname": "{{firstName}}",
+                    "lastname": "{{lastName}}",
+                    "age": "{{int 1 90}}",
+                    "class":"{{random "Second" "First"}}",
+                    "ticket_price":"{{int 10 150}}",
+                    "seat":"{{int 10 150}}",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  {{/repeat}}
+                  ]
+            }
+          {{/repeat}}
+        ]
       }
     {{/repeat}}
   ]
