@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router'
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 
 function SearchBar() {
   const navigate = useNavigate();
