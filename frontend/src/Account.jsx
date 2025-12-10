@@ -1,7 +1,6 @@
 import dayjs from 'dayjs';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
-
 function Account() {
     const [tickets, setTickets] = useState([]);
     const [user_firstname, setUserFirstname] = useState('');
@@ -25,23 +24,24 @@ function Account() {
                 <p>Aucun voyage à venir.</p>
             ) : (
                 tickets.map((ticket, i) => {
+                    const datetimedeparture = dayjs(ticket.datetime_departure);
+                    const datetimearrival = dayjs(ticket.datetime_arrival);
                     return (
                         <article key={i}>
                             <section className="container">
                                 <div className="grid">
                                     <div>
-                                        <time>{ticket.datetime_departure}</time>
+                                        <date>Le {datetimedeparture.format('DD/MM/YYYY')}</date>
                                         <br />
-                                        <time>{ticket.datetime_arrival}</time>
+                                        <time>Départ : {datetimedeparture.format('HH:mm')}</time>
                                         <br />
-                                        <time>Durée : {ticket.duration}</time>
+                                        <time>Arrivée : {datetimearrival.format('HH:mm')}</time>
                                     </div>
                                     <div>
                                         <span>{ticket.station_departure}</span>
                                         <br />
                                         <span>{ticket.station_arrival}</span>
-                                    </div>
-                                    <div>
+                                        <br />
                                         <span>{ticket.passengers.length} passagers</span>
                                     </div>
                                     <div>
