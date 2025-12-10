@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
+import { useNavigate } from 'react-router'
 
 function TicketDetails({ }) {
+    const navigate = useNavigate();
     const [ticket, setTicket] = useState([]);
     useEffect(() => {
         fetch('../public/sample_data_tickets.json')
@@ -43,7 +45,7 @@ function TicketDetails({ }) {
             <br />
             <div className="grid">
                 <div>
-                    <button className="outline" onClick={() => navigate(-1)}>Retour à la page précédente</button>
+                    <button className="outline" onClick={() => navigate("../account/")}>Retour à la page précédente</button>
                 </div>
             </div>
         </div>
