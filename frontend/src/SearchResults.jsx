@@ -65,27 +65,34 @@ function SearchResults() {
     const datetimeDepartureGt = `${date} ${time}`;
     const datetimeDepartureLt = `${date} 23:59`;
 
-    fetch(`http://localhost:5984/ecotrain/_design/api/_view/by_date_and_stations?include_docs=true&inclusive_end=true&start_key=%5B%20"${stationDeparture}"%2C%20"${stationArrival}"%5D&end_key=%5B%20"${stationDeparture}"%2C%20"${stationArrival}"%2C%20%7B%7D%5D`, {
+    fetch(`http://localhost:5984/ecotrain/_design/api/_view/by_date_and_stations?include_docs=true&inclusive_end=true`, {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        selector: {
-          datetime_departure: { "$gt": datetimeDepartureGt, "$lt": datetimeDepartureLt }
-        },
-        fields: ["station_departure", "station_arrival", "datetime_departure", "datetime_arrival", "duration", "price_second", "price_first", "_id"],
-        bookmark: requestedBookmark,
-        limit: 10
+        startkey: [stationDeparture, stationArrival, datetimeDepartureGt],
+        startkey_docid: requestedBookmark?.doc_id || undefined,
+        endkey: [stationDeparture, stationArrival, {}],
+        limit: 10,
+        skip: requestedBookmark ? 1 : 0
       })
     })
       .then(x => x.json())
       .then(data => {
+        console.log('Pagination data:', data);
         const trips = data.rows.map(row => row.doc);
 
         setResults(prevResults => [
           ...prevResults,
           ...trips
         ]);
-        setNextBookmark(data.bookmark);
+
+        if (data.rows.length > 0) {
+          const lastRow = data.rows[data.rows.length - 1];
+          setNextBookmark({
+            key: lastRow.key,
+            doc_id: lastRow.id
+          });
+        }
       })
       .catch(error => console.error('Error fetching trips:', error));
   }, [query.departure, query.arrival, query.date, query.time, requestedBookmark]);
@@ -129,9 +136,7 @@ function SearchResults() {
       <h2>Voyages trouvés :</h2>
       {results.length === 0 && (<p>Aucun trajet ne correspond à votre recherche.</p>)}
       {results.map((x, i) => <SearchResult {...x} key={i} passengers={passengers} />)}
-      <button onClick={() => setRequestedBookmark(nextBookmark)}>
-        Plus de trajets
-      </button>
+      <div role="button" onClick={() => setRequestedBookmark(nextBookmark)}>Plus de trajets</div>
     </section>
   );
 }
@@ -159,7 +164,7 @@ function SearchResult({ datetime_arrival, datetime_departure, station_arrival, s
           </div>
           <div>
             <Link to={`${_id}?passengers=${(new URLSearchParams(window.location.search)).get('passengers') || '1'}`}>
-              <button className="outline">À partir de {perPassenger}€ / passager</button>
+              <button className="secondary">À partir de {perPassenger}€ / passager</button>
             </Link>
           </div>
         </div>
