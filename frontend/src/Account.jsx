@@ -1,5 +1,6 @@
 import dayjs from 'dayjs';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 
 function Account() {
     const [tickets, setTickets] = useState([]);
@@ -41,12 +42,12 @@ function Account() {
                                         <span>{ticket.station_arrival}</span>
                                     </div>
                                     <div>
-                                        <div><strong>{ticket.total_price}€</strong></div>
+                                        <span>{ticket.passengers.length} passagers</span>
                                     </div>
                                     <div>
-                                        <a href={ticket.ticket_url} target="_blank" rel="noopener noreferrer">
-                                            <button className="outline">Télécharger le billet</button>
-                                        </a>
+                                        <Link to={`${ticket.trip_id}`}>
+                                            <button className="outline">Voir le détail</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </section>

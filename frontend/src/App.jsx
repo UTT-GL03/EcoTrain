@@ -6,6 +6,7 @@ import Trips from './SearchResults'
 import HomePage from './HomePage'
 import Cart from './Cart';
 import Account from './Account';
+import TicketDetails from './TicketDetails';
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
             <Route path="/trips" element={<Trips />} />
             <Route path="/trips/:_id" element={<TripDetails />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/account" element={<div><Account /></div>} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/account/:trip_id" element={<TicketDetails />} />
           </Routes>
         </main>
 
