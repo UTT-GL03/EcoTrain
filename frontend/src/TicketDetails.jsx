@@ -15,38 +15,66 @@ function TicketDetails({ }) {
             })
             .catch((error) => console.error('Erreur lors du chargement des tickets:', error));
     }, []);
+    const datetimedeparture = dayjs(ticket.datetime_departure);
+    const datetimearrival = dayjs(ticket.datetime_arrival);
 
     return (
         <div>
             <div className="trip-header">
-                <h2>Votre voyage du {ticket.datetime_departure}</h2>
+                <h2>Votre voyage du {datetimedeparture.format('DD/MM/YYYY')}</h2>
             </div>
             <div>
                 <h3>{ticket.station_departure} → {ticket.station_arrival}</h3>
-                <div className="trip-date">
-                </div>
             </div>
-            <div className="grid trip-details">
-                <div>
-                    <div><strong>Départ:</strong> {ticket.datetime_departure}</div>
-                    <div><strong>Arrivée:</strong> {ticket.datetime_arrival}</div>
-                    <br />
-                    <div><strong>Durée : </strong>{ticket.duration}
-                        <div>
-                            <strong>Prix total :</strong> {ticket.total_price}€
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="station">{ticket.station_departure}</div>
-                    <div className="station">{ticket.station_arrival}</div>
+            <div>
+                <ul>
+                    <li>Départ de {ticket.station_departure} à {datetimedeparture.format('HH:mm')}</li>
+                    <li>Arrivée à {ticket.station_arrival} à {datetimearrival.format('HH:mm')}</li>
+                    <li>Durée : {ticket.duration}</li>
+                    <li>Prix total : {ticket.total_price}€</li>
+                </ul>
+            </div>
+            <br />
+            <div>
+                <div className="overflow-auto">
+                    <h3>Passagers :</h3>
+                    {ticket.passengers && ticket.passengers.length === 0 ? (
+                        <p>Aucun passager pour ce billet.</p>
+                    ) : (
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Prénom</th>
+                                    <th>Classe</th>
+                                    <th>Siège</th>
+                                    <th>Billet PDF</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {ticket.passengers?.map((passenger, j) => (
+                                    <tr key={j}>
+                                        <td>{passenger.lastname}</td>
+                                        <td>{passenger.firstname}</td>
+                                        <td>{passenger.class}</td>
+                                        <td>{passenger.seat}</td>
+                                        <td>
+                                            {passenger.ticket_url ? (
+                                                <a href={passenger.ticket_url} target="_blank" rel="noopener noreferrer">Télécharger</a>
+                                            ) : (
+                                                'Non disponible'
+                                            )}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    )}
                 </div>
             </div>
             <br />
-            <div className="grid">
-                <div>
-                    <button className="outline" onClick={() => navigate("../account/")}>Retour à la page précédente</button>
-                </div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <button className="outline" onClick={() => navigate("../account/")}>Retour à mes voyages à venir</button>
             </div>
         </div>
     );
