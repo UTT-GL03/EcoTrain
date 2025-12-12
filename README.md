@@ -197,7 +197,7 @@ Concernant l'évaluation de l'impact environnemental du scénario, par rapport a
 __Tab.5__: Évaluation de l'impact du scénario "Achat d'un billet de train", dans la version 1.0.1
 
 
-## Mesures de la consommation énergétique lors du passage à l'échelle
+### Mesures de la consommation énergétique lors du passage à l'échelle
 
 Maintenant que notre prototype est réaliste en termes de nombre de requêtes, nous pouvons simuler les effets du "passage à l'échelle". 
 
@@ -265,7 +265,7 @@ De fait, les trois éléments ayant le plus d'impact (à peu près à égalité,
 - le réseau du client,
 - le réseau du serveur.
 
-## Impact de l'introduction d'une base de données
+### Impact de l'introduction d'une base de données
 
 Afin de réduire l'impact énérgétique du réseau, nous stockons désormais les données de l'application (`v2.0.0`) dans une base de données (*CouchDB*).
 Cette évolution nous permet, lors de l'affichage des détails d'un trajet, de ne charger que ce trajet au lieu de plusieurs milliers.
@@ -296,7 +296,7 @@ __Tab.9__: Effet sur la consommation énergétique de l'introduction d'une base 
 
 Pour la consultation des détails d'un trajet, cette forte diminution de l'utilisation des ressources se traduit par une consommation énérgétique estimée (cf. Tab.9b) quasiment minimale puisqu'à peine supérieure à celle de l'écran.
 
-## Limitation du nombre d'éléments affichés
+### Limitation du nombre d'éléments affichés
 
 Sur notre plateforme de réservation de billets de trains, il n'est pas nécessaire de faire apparaître tous les trajets à venir de la semaine sur une même page de résultats. 
 
@@ -306,7 +306,7 @@ Cette stratégie permettra à l'utilisateur de visualiser des résultats corresp
 
 <img src="./docs/pagination.png" alt="Chargement progressif (à la demande) des résultats de recherche" width="800"/>
 
-__Fig.4__: Chargement progressif (à la demande) des résultats de recherche (capture d'écran).
+__Fig.7__: Chargement progressif (à la demande) des résultats de recherche (capture d'écran).
 
 
 |             |cpu (Wh)                          |mem (Wh)                          |disk (Wh)|network (Wh)                     |screen (Wh)               |total (Wh)                    |
@@ -326,3 +326,52 @@ Par des techniques simples de base de données (sélection du document pertinent
 En l'état, la consommation électrique est constante par rapport à la volumétrie des trajets disponibles, et à un niveau si bas que la part due au CPU, à la mémoire et au réseau est négligeable par rapport à celle de l'écran.
 
 L'enjeu dans les améliorations à venir de l'application sera de veiller à conserver cette sobriété.
+
+## Implémentation du scénario secondaire : Consultation de billets de train
+
+Dans cette phase d'amélioration de notre projet, nous souhaitons mettre en oeuvre notre second scénario, qui consiste à permettre aux utilisateurs d'accéder et de télécharger les billets de trains qu'ils auront acheté au préalable.
+
+### Prototypage : Fonctionnalités pour le scénario secondaire (v2.1.0)
+
+Pour ce nouveau prototype de notre application web (v2.1.0):
+- l'échantillon de données statiques du scénario secondaire sera chargé de manière statique,
+- les nouvelles fonctionnalités implémentées ne sont que celles nécessaires pour suivre le scénario secondaire ("Consultation de billets de train").
+
+Ce scénario nécessite de pouvoir naviguer entre plusieurs pages : 
+- la page d'accueil
+- la page "mes voyages à venir"
+- la page de détails d'un voyage prévu, une fois celui-ci sélectionné
+
+### Jeu de données utilisé
+
+<img src="./docs/v2_1_0_sample_tickets.png" alt="Jeu de données utilisé pour les billets des utilisateurs'" width="800"/>
+
+__Fig.8__: Jeu de données utilisé pour les billets des utilisateurs (capture d'écran). Pour faciliter l'implémentation de la fonctionnalité, les informations des voyages en questions (stations, date, ...) ont également été générées dans ce fichier. À terme, ces informations seront directement récupérées depuis l'autre base de données, et ne figureront plus ici.
+
+### Page d'accueil
+
+La page d'accueil reste quasiment identique à son état précédent. L'unique différence est l'ajout d'un bouton "Mes billets" en bas de page, permettant de se rendre vers les détails de son compte.
+
+<img src="./docs/v2_1_0_homepage.png" alt="Page d'accueil avec le nouveau bouton 'Voir mes billets'" width="800"/>
+
+__Fig.9__: Page d'accueil avec le nouveau bouton "Voir mes billets" (capture d'écran)
+
+### Page "mes voyages à venir"
+
+La page des voyages à venir a pour HTTP-URI /account, et affiche l'ensemble des données factices liées aux voyages à venir d'un utilisateur. Les voyages affichés sont ceux liés au compte de l'utilisateur connecté. Ici, n'ayant pas encore implémenté de système de connexion ou de sélection de compte, nous affichons uniquement les voyages du premier utilisateur de notre jeu de données.
+
+<img src="./docs/v2_1_0_account.png" alt="Page des voyages à venir" width="800"/>
+
+__Fig.10__: Page des voyages à venir (capture d'écran)
+
+### Page "détails d'un voyage prévu" 
+
+Depuis la page des détails d'un voyage (HTTP-URI /account/:trip_id). Il est possible de recueillir toutes les informations relatives au voyage, ainsi que les informations des passagers concernés (classe, siège, billet). Un bouton permet d'ouvrir le billet de l'utilisateur au format PDF, ce qui permet d'en disposer hors-ligne.
+
+<img src="./docs/v2_1_0_ticketdetails.png" alt="Page des détails d'un voyage prévu" width="800"/>
+
+__Fig.11__: Page des détails d'un voyage prévu (capture d'écran)
+
+<img src="./docs/v2_1_0_placeholderpdf.png" alt="Accès à un billet PDF" width="800"/>
+
+__Fig.12__: Billet PDF (placeholder)
