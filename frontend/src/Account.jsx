@@ -1,12 +1,13 @@
 import dayjs from 'dayjs';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
+
 function Account() {
     const [tickets, setTickets] = useState([]);
     const [user_firstname, setUserFirstname] = useState('');
 
     useEffect(() => {
-        fetch('../public/sample_data_tickets.json')
+        fetch('/sample_data_tickets.json')
             .then(x => x.json())
             .then((data) => {
                 const user = data.users.find((user) => user.user_id === "0");

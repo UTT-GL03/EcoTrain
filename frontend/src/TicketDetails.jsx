@@ -6,7 +6,7 @@ function TicketDetails({ }) {
     const navigate = useNavigate();
     const [ticket, setTicket] = useState([]);
     useEffect(() => {
-        fetch('../public/sample_data_tickets.json')
+        fetch('/sample_data_tickets.json')
             .then(x => x.json())
             .then((data) => {
                 const user = data.users.find((user) => user.user_id === "0");
