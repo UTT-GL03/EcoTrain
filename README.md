@@ -327,6 +327,14 @@ En l'état, la consommation électrique est constante par rapport à la volumét
 
 L'enjeu dans les améliorations à venir de l'application sera de veiller à conserver cette sobriété.
 
+### Mesure des impacts du scénario prioritaire complet
+
+Pour améliorer la qualité de la mesure de l'impact énergétique de ce scénario, nous avons modifié le fichier lié à Greenframe afin d'obtenir un tableau unique pour le parcours utilisateur complet (accueil > résultats de recherche > détails d'un trajet > panier).
+
+Voici donc la mesure finale, qui ne peut malheureuselent pas être comparée aux mesures précédentes, mais que nous pourrons additionner à la consommation énergétique du scénario secondaire que nous allons prochainement implémenter. 
+
+
+
 ## Implémentation du scénario secondaire : Consultation de billets de train
 
 Dans cette phase d'amélioration de notre projet, nous souhaitons mettre en oeuvre notre second scénario, qui consiste à permettre aux utilisateurs d'accéder et de télécharger les billets de trains qu'ils auront acheté au préalable.
@@ -334,7 +342,7 @@ Dans cette phase d'amélioration de notre projet, nous souhaitons mettre en oeuv
 ### Prototypage : Fonctionnalités pour le scénario secondaire (v2.1.0)
 
 Pour ce nouveau prototype de notre application web (v2.1.0):
-- l'échantillon de données statiques du scénario secondaire sera chargé de manière statique,
+- l'échantillon de données statiques du scénario secondaire sera chargé au travers d'une base de données (CouchDB),
 - les nouvelles fonctionnalités implémentées ne sont que celles nécessaires pour suivre le scénario secondaire ("Consultation de billets de train").
 
 Ce scénario nécessite de pouvoir naviguer entre plusieurs pages : 
@@ -346,7 +354,7 @@ Ce scénario nécessite de pouvoir naviguer entre plusieurs pages :
 
 <img src="./docs/v2_1_0_sample_tickets.png" alt="Jeu de données utilisé pour les billets des utilisateurs'" width="800"/>
 
-__Fig.8__: Jeu de données utilisé pour les billets des utilisateurs (capture d'écran). Pour faciliter l'implémentation de la fonctionnalité, les informations des voyages en questions (stations, date, ...) ont également été générées dans ce fichier. À terme, ces informations seront directement récupérées depuis l'autre base de données, et ne figureront plus ici.
+__Fig.8__: Jeu de données utilisé pour les billets des utilisateurs (capture d'écran). Pour faciliter l'implémentation de la fonctionnalité, les informations des voyages en questions (stations, date, ...) ont également été générées dans ce fichier. À terme, ces informations seront directement récupérées depuis la base de données des voyages qui a été créée pour la scénario prioritaire. Elles ne figureront donc plus ici.
 
 ### Page d'accueil
 
@@ -375,3 +383,9 @@ __Fig.11__: Page des détails d'un voyage prévu (capture d'écran)
 <img src="./docs/v2_1_0_placeholderpdf.png" alt="Accès à un billet PDF" width="800"/>
 
 __Fig.12__: Billet PDF (placeholder)
+
+### Évolution des impacts suite à l'implémentation du scénario secondaire (v2.1.0)
+
+#### Scénario : Acheter un billet de train
+
+#### Scénario : Consulter ses billets de train
