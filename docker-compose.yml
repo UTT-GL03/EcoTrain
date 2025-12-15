@@ -29,6 +29,8 @@ services:
         put backend:5984/_node/nonode@nohost/_config/cors/origins --data '"*"'
         put backend:5984/ecotrain
         put backend:5984/ecotrain/_security --data '{"members":{"roles":[]},"admins":{"roles":["_admin"]}}'
+        put backend:5984/users
+        put backend:5984/users/_security --data '{"members":{"roles":[]},"admins":{"roles":["_admin"]}}'
     depends_on:
       backend:
         condition: service_healthy
@@ -53,6 +55,18 @@ services:
     command:
       - |
         curl -X POST http://backend:5984/ecotrain/_bulk_docs -H "Content-Type: application/json" -d @/sample_data.json
+    depends_on:
+      accessible_backend:
+        condition: service_completed_successfully
+
+  updated_samples_tickets:
+    image: curlimages/curl
+    entrypoint: ["/bin/sh", "-c"]
+    volumes:
+      - ./frontend/public/sample_data_tickets.json:/sample_data_tickets.json
+    command:
+      - |
+        curl -X POST http://backend:5984/users/_bulk_docs -H "Content-Type: application/json" -d @/sample_data_tickets.json
     depends_on:
       accessible_backend:
         condition: service_completed_successfully

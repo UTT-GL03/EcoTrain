@@ -42,11 +42,27 @@ jobs:
           name: samples
           path: sample_data.json
 
+  build_samples_tickets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download sources
+        uses: actions/checkout@v5
+      - name: Generate sample
+        run: |
+          npx --yes dummy-json sample_data_tickets.hbs > sample_data_tickets.json
+      - name: Save samples for later
+        uses: actions/upload-artifact@v4
+        with:
+          name: samples_tickets
+          path: sample_data_tickets.json
+
+
 
   measure_ecoindex:
     needs:
       - build
       - build_samples
+      - build_samples_tickets
     runs-on: ubuntu-latest
     steps:
       - name: Download sources
@@ -73,6 +89,7 @@ jobs:
     needs: 
       - build
       - build_samples
+      - build_samples_tickets
     runs-on: ubuntu-latest
     steps:
       - name: Download sources
