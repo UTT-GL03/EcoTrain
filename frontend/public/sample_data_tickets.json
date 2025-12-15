@@ -1,0 +1,2473 @@
+{
+  "users": [
+      {
+        "user_id": "0",
+        "firstname": "Jamie",
+        "lastname": "Paquette",
+        "tickets": [
+            {
+              "trip_id": "1235",
+              "station_departure": "Troyes",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 10:22",
+              "datetime_arrival": "2025-01-01 18:58",
+              "duration": "01:19",
+              "total_price":"75",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Chloe",
+                    "lastname": "Woodrum",
+                    "age": "26",
+                    "class":"First",
+                    "ticket_price":"146",
+                    "seat":"65",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Theo",
+                    "lastname": "Dunham",
+                    "age": "46",
+                    "class":"First",
+                    "ticket_price":"134",
+                    "seat":"92",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Rikki",
+                    "lastname": "Drolet",
+                    "age": "48",
+                    "class":"Second",
+                    "ticket_price":"58",
+                    "seat":"36",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Neida",
+                    "lastname": "Brier",
+                    "age": "42",
+                    "class":"First",
+                    "ticket_price":"123",
+                    "seat":"28",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "217",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 01:53",
+              "datetime_arrival": "2025-01-01 19:35",
+              "duration": "23:56",
+              "total_price":"158",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Jetta",
+                    "lastname": "Rebelo",
+                    "age": "35",
+                    "class":"First",
+                    "ticket_price":"146",
+                    "seat":"66",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Janett",
+                    "lastname": "Hancock",
+                    "age": "23",
+                    "class":"First",
+                    "ticket_price":"26",
+                    "seat":"29",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "106",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 06:05",
+              "datetime_arrival": "2025-01-01 17:02",
+              "duration": "00:40",
+              "total_price":"168",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Juliana",
+                    "lastname": "Chapman",
+                    "age": "76",
+                    "class":"First",
+                    "ticket_price":"60",
+                    "seat":"73",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Vernon",
+                    "lastname": "Rikard",
+                    "age": "56",
+                    "class":"First",
+                    "ticket_price":"126",
+                    "seat":"143",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Raisa",
+                    "lastname": "Tindel",
+                    "age": "20",
+                    "class":"Second",
+                    "ticket_price":"83",
+                    "seat":"125",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "238",
+              "station_departure": "Troyes",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 05:13",
+              "datetime_arrival": "2025-01-01 20:15",
+              "duration": "23:39",
+              "total_price":"93",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Kurt",
+                    "lastname": "Sprowl",
+                    "age": "47",
+                    "class":"Second",
+                    "ticket_price":"107",
+                    "seat":"58",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Olivia",
+                    "lastname": "Mercer",
+                    "age": "58",
+                    "class":"Second",
+                    "ticket_price":"57",
+                    "seat":"128",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Austin",
+                    "lastname": "Matzen",
+                    "age": "44",
+                    "class":"First",
+                    "ticket_price":"89",
+                    "seat":"125",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "77",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 06:26",
+              "datetime_arrival": "2025-01-01 21:02",
+              "duration": "00:04",
+              "total_price":"235",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Olivia",
+                    "lastname": "Young",
+                    "age": "49",
+                    "class":"First",
+                    "ticket_price":"110",
+                    "seat":"75",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "1",
+        "firstname": "Joslyn",
+        "lastname": "Finn",
+        "tickets": [
+            {
+              "trip_id": "649",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 04:25",
+              "datetime_arrival": "2025-01-01 22:43",
+              "duration": "23:33",
+              "total_price":"206",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Dori",
+                    "lastname": "Brier",
+                    "age": "16",
+                    "class":"Second",
+                    "ticket_price":"90",
+                    "seat":"146",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Madelyn",
+                    "lastname": "Seabury",
+                    "age": "47",
+                    "class":"Second",
+                    "ticket_price":"108",
+                    "seat":"63",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "84",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 04:44",
+              "datetime_arrival": "2025-01-01 12:53",
+              "duration": "00:33",
+              "total_price":"485",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lloyd",
+                    "lastname": "Pace",
+                    "age": "29",
+                    "class":"First",
+                    "ticket_price":"11",
+                    "seat":"124",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "2",
+        "firstname": "Marcus",
+        "lastname": "Chapman",
+        "tickets": [
+            {
+              "trip_id": "430",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 06:00",
+              "datetime_arrival": "2025-01-01 18:28",
+              "duration": "23:51",
+              "total_price":"54",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Rosanne",
+                    "lastname": "Rikard",
+                    "age": "21",
+                    "class":"First",
+                    "ticket_price":"94",
+                    "seat":"64",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Darrell",
+                    "lastname": "Neal",
+                    "age": "6",
+                    "class":"First",
+                    "ticket_price":"148",
+                    "seat":"58",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "17",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 03:37",
+              "datetime_arrival": "2025-01-01 23:58",
+              "duration": "01:44",
+              "total_price":"316",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Chloe",
+                    "lastname": "Wallis",
+                    "age": "48",
+                    "class":"Second",
+                    "ticket_price":"124",
+                    "seat":"47",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Travis",
+                    "lastname": "Miers",
+                    "age": "60",
+                    "class":"First",
+                    "ticket_price":"108",
+                    "seat":"100",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "129",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 00:11",
+              "datetime_arrival": "2025-01-01 19:16",
+              "duration": "01:35",
+              "total_price":"399",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Marcus",
+                    "lastname": "Pleiman",
+                    "age": "58",
+                    "class":"First",
+                    "ticket_price":"91",
+                    "seat":"108",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Cedric",
+                    "lastname": "Schaefer",
+                    "age": "18",
+                    "class":"Second",
+                    "ticket_price":"95",
+                    "seat":"73",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Heath",
+                    "lastname": "Turner",
+                    "age": "40",
+                    "class":"First",
+                    "ticket_price":"111",
+                    "seat":"96",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "3",
+        "firstname": "Michelle",
+        "lastname": "Winter",
+        "tickets": [
+            {
+              "trip_id": "746",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 04:27",
+              "datetime_arrival": "2025-01-01 23:43",
+              "duration": "00:18",
+              "total_price":"161",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Chloe",
+                    "lastname": "Finn",
+                    "age": "64",
+                    "class":"Second",
+                    "ticket_price":"142",
+                    "seat":"53",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Myong",
+                    "lastname": "Helland",
+                    "age": "12",
+                    "class":"First",
+                    "ticket_price":"91",
+                    "seat":"25",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "540",
+              "station_departure": "Paris",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 10:47",
+              "datetime_arrival": "2025-01-01 18:43",
+              "duration": "00:06",
+              "total_price":"406",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Jocelyn",
+                    "lastname": "Bourquin",
+                    "age": "60",
+                    "class":"First",
+                    "ticket_price":"99",
+                    "seat":"126",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "419",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 10:17",
+              "datetime_arrival": "2025-01-01 15:50",
+              "duration": "01:36",
+              "total_price":"380",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Isabelle",
+                    "lastname": "Webster",
+                    "age": "2",
+                    "class":"Second",
+                    "ticket_price":"71",
+                    "seat":"94",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Dori",
+                    "lastname": "Charley",
+                    "age": "22",
+                    "class":"First",
+                    "ticket_price":"116",
+                    "seat":"83",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "4",
+        "firstname": "Jenna",
+        "lastname": "Luck",
+        "tickets": [
+            {
+              "trip_id": "26",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 11:02",
+              "datetime_arrival": "2025-01-01 17:48",
+              "duration": "00:14",
+              "total_price":"294",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Grace",
+                    "lastname": "Miers",
+                    "age": "76",
+                    "class":"Second",
+                    "ticket_price":"122",
+                    "seat":"96",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Vernon",
+                    "lastname": "Oldman",
+                    "age": "19",
+                    "class":"First",
+                    "ticket_price":"62",
+                    "seat":"104",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "591",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 02:13",
+              "datetime_arrival": "2025-01-01 13:21",
+              "duration": "01:39",
+              "total_price":"435",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Rufus",
+                    "lastname": "Gilmore",
+                    "age": "79",
+                    "class":"Second",
+                    "ticket_price":"147",
+                    "seat":"14",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Andy",
+                    "lastname": "White",
+                    "age": "77",
+                    "class":"Second",
+                    "ticket_price":"122",
+                    "seat":"129",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1125",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 03:15",
+              "datetime_arrival": "2025-01-01 20:55",
+              "duration": "00:42",
+              "total_price":"296",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Leanne",
+                    "lastname": "Turner",
+                    "age": "78",
+                    "class":"First",
+                    "ticket_price":"67",
+                    "seat":"102",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Juliana",
+                    "lastname": "Risley",
+                    "age": "80",
+                    "class":"First",
+                    "ticket_price":"29",
+                    "seat":"111",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1624",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 03:44",
+              "datetime_arrival": "2025-01-01 14:34",
+              "duration": "00:34",
+              "total_price":"76",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Raylene",
+                    "lastname": "Sager",
+                    "age": "81",
+                    "class":"First",
+                    "ticket_price":"82",
+                    "seat":"114",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "5",
+        "firstname": "Emma",
+        "lastname": "Cappel",
+        "tickets": [
+            {
+              "trip_id": "859",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 10:51",
+              "datetime_arrival": "2025-01-01 20:45",
+              "duration": "00:33",
+              "total_price":"442",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lance",
+                    "lastname": "Bourquin",
+                    "age": "48",
+                    "class":"First",
+                    "ticket_price":"29",
+                    "seat":"45",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Ivan",
+                    "lastname": "Gamble",
+                    "age": "66",
+                    "class":"First",
+                    "ticket_price":"97",
+                    "seat":"54",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Grace",
+                    "lastname": "Connor",
+                    "age": "31",
+                    "class":"Second",
+                    "ticket_price":"142",
+                    "seat":"135",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1335",
+              "station_departure": "Paris",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 11:05",
+              "datetime_arrival": "2025-01-01 22:58",
+              "duration": "00:16",
+              "total_price":"334",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Travis",
+                    "lastname": "Cumbie",
+                    "age": "82",
+                    "class":"First",
+                    "ticket_price":"53",
+                    "seat":"34",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Selma",
+                    "lastname": "Latshaw",
+                    "age": "54",
+                    "class":"Second",
+                    "ticket_price":"97",
+                    "seat":"49",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Dannielle",
+                    "lastname": "Dunham",
+                    "age": "73",
+                    "class":"First",
+                    "ticket_price":"94",
+                    "seat":"55",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Russell",
+                    "lastname": "Rikard",
+                    "age": "28",
+                    "class":"First",
+                    "ticket_price":"134",
+                    "seat":"88",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "398",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 11:00",
+              "datetime_arrival": "2025-01-01 23:55",
+              "duration": "00:19",
+              "total_price":"488",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Cyrus",
+                    "lastname": "Mercer",
+                    "age": "60",
+                    "class":"First",
+                    "ticket_price":"23",
+                    "seat":"146",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "38",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 02:23",
+              "datetime_arrival": "2025-01-01 17:48",
+              "duration": "01:21",
+              "total_price":"172",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Michael",
+                    "lastname": "Durrett",
+                    "age": "73",
+                    "class":"Second",
+                    "ticket_price":"106",
+                    "seat":"119",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Curtis",
+                    "lastname": "Hundt",
+                    "age": "45",
+                    "class":"Second",
+                    "ticket_price":"42",
+                    "seat":"55",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Jenette",
+                    "lastname": "Rohloff",
+                    "age": "19",
+                    "class":"First",
+                    "ticket_price":"81",
+                    "seat":"85",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "6",
+        "firstname": "Edward",
+        "lastname": "Gamble",
+        "tickets": [
+            {
+              "trip_id": "651",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 01:00",
+              "datetime_arrival": "2025-01-01 21:20",
+              "duration": "23:54",
+              "total_price":"87",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lyle",
+                    "lastname": "Pleiman",
+                    "age": "80",
+                    "class":"Second",
+                    "ticket_price":"126",
+                    "seat":"11",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Alejandro",
+                    "lastname": "Pendergast",
+                    "age": "34",
+                    "class":"First",
+                    "ticket_price":"66",
+                    "seat":"106",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Haley",
+                    "lastname": "Pace",
+                    "age": "44",
+                    "class":"First",
+                    "ticket_price":"68",
+                    "seat":"135",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Max",
+                    "lastname": "Matzen",
+                    "age": "22",
+                    "class":"First",
+                    "ticket_price":"119",
+                    "seat":"12",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "522",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 07:14",
+              "datetime_arrival": "2025-01-01 18:13",
+              "duration": "02:00",
+              "total_price":"474",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Rene",
+                    "lastname": "Rikard",
+                    "age": "17",
+                    "class":"First",
+                    "ticket_price":"59",
+                    "seat":"24",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Jenna",
+                    "lastname": "Hyder",
+                    "age": "52",
+                    "class":"Second",
+                    "ticket_price":"51",
+                    "seat":"56",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "236",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 06:54",
+              "datetime_arrival": "2025-01-01 18:15",
+              "duration": "00:52",
+              "total_price":"217",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Curtis",
+                    "lastname": "Starck",
+                    "age": "35",
+                    "class":"First",
+                    "ticket_price":"145",
+                    "seat":"10",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1309",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 03:11",
+              "datetime_arrival": "2025-01-01 12:52",
+              "duration": "01:44",
+              "total_price":"124",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Shea",
+                    "lastname": "Verde",
+                    "age": "14",
+                    "class":"Second",
+                    "ticket_price":"29",
+                    "seat":"94",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "684",
+              "station_departure": "Paris",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 03:38",
+              "datetime_arrival": "2025-01-01 20:34",
+              "duration": "01:18",
+              "total_price":"341",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Elaine",
+                    "lastname": "Bradbury",
+                    "age": "28",
+                    "class":"First",
+                    "ticket_price":"99",
+                    "seat":"79",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "7",
+        "firstname": "Drew",
+        "lastname": "Carroll",
+        "tickets": [
+            {
+              "trip_id": "838",
+              "station_departure": "Paris",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 04:34",
+              "datetime_arrival": "2025-01-01 17:56",
+              "duration": "00:56",
+              "total_price":"107",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Austin",
+                    "lastname": "Milling",
+                    "age": "31",
+                    "class":"Second",
+                    "ticket_price":"105",
+                    "seat":"41",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1675",
+              "station_departure": "Paris",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 07:23",
+              "datetime_arrival": "2025-01-01 18:14",
+              "duration": "01:20",
+              "total_price":"74",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Maisha",
+                    "lastname": "Starck",
+                    "age": "69",
+                    "class":"First",
+                    "ticket_price":"113",
+                    "seat":"79",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Lynetta",
+                    "lastname": "Dampier",
+                    "age": "87",
+                    "class":"First",
+                    "ticket_price":"117",
+                    "seat":"117",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Roselyn",
+                    "lastname": "Bourquin",
+                    "age": "31",
+                    "class":"First",
+                    "ticket_price":"111",
+                    "seat":"69",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Haley",
+                    "lastname": "Tuck",
+                    "age": "81",
+                    "class":"Second",
+                    "ticket_price":"148",
+                    "seat":"96",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "8",
+        "firstname": "Craig",
+        "lastname": "Garling",
+        "tickets": [
+            {
+              "trip_id": "1134",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 07:44",
+              "datetime_arrival": "2025-01-01 23:21",
+              "duration": "01:48",
+              "total_price":"365",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Marcus",
+                    "lastname": "Latshaw",
+                    "age": "21",
+                    "class":"Second",
+                    "ticket_price":"59",
+                    "seat":"80",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Jetta",
+                    "lastname": "Mercer",
+                    "age": "60",
+                    "class":"Second",
+                    "ticket_price":"56",
+                    "seat":"11",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "774",
+              "station_departure": "Troyes",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 06:37",
+              "datetime_arrival": "2025-01-01 21:48",
+              "duration": "00:40",
+              "total_price":"457",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Michelle",
+                    "lastname": "Hollis",
+                    "age": "30",
+                    "class":"Second",
+                    "ticket_price":"114",
+                    "seat":"99",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Dori",
+                    "lastname": "Starck",
+                    "age": "57",
+                    "class":"First",
+                    "ticket_price":"106",
+                    "seat":"79",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Brian",
+                    "lastname": "Tindel",
+                    "age": "23",
+                    "class":"Second",
+                    "ticket_price":"69",
+                    "seat":"61",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1622",
+              "station_departure": "Paris",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 02:39",
+              "datetime_arrival": "2025-01-01 16:09",
+              "duration": "00:58",
+              "total_price":"364",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Raylene",
+                    "lastname": "Jensen",
+                    "age": "80",
+                    "class":"First",
+                    "ticket_price":"82",
+                    "seat":"131",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "946",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 09:12",
+              "datetime_arrival": "2025-01-01 15:38",
+              "duration": "00:06",
+              "total_price":"390",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Isabelle",
+                    "lastname": "Charley",
+                    "age": "70",
+                    "class":"First",
+                    "ticket_price":"56",
+                    "seat":"138",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Liza",
+                    "lastname": "Tindel",
+                    "age": "23",
+                    "class":"First",
+                    "ticket_price":"30",
+                    "seat":"65",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Mitch",
+                    "lastname": "Drolet",
+                    "age": "13",
+                    "class":"First",
+                    "ticket_price":"23",
+                    "seat":"108",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Stan",
+                    "lastname": "Hundt",
+                    "age": "33",
+                    "class":"First",
+                    "ticket_price":"86",
+                    "seat":"87",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "9",
+        "firstname": "Alexa",
+        "lastname": "Seal",
+        "tickets": [
+            {
+              "trip_id": "1527",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 11:43",
+              "datetime_arrival": "2025-01-01 13:53",
+              "duration": "00:52",
+              "total_price":"88",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Mitch",
+                    "lastname": "Muldoon",
+                    "age": "42",
+                    "class":"First",
+                    "ticket_price":"142",
+                    "seat":"72",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Lyn",
+                    "lastname": "Hyder",
+                    "age": "53",
+                    "class":"Second",
+                    "ticket_price":"105",
+                    "seat":"104",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1185",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 09:07",
+              "datetime_arrival": "2025-01-01 14:10",
+              "duration": "00:49",
+              "total_price":"38",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lyle",
+                    "lastname": "Young",
+                    "age": "2",
+                    "class":"First",
+                    "ticket_price":"109",
+                    "seat":"76",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Stephen",
+                    "lastname": "Krumm",
+                    "age": "35",
+                    "class":"First",
+                    "ticket_price":"81",
+                    "seat":"97",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1452",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 01:21",
+              "datetime_arrival": "2025-01-01 12:56",
+              "duration": "00:28",
+              "total_price":"165",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Curtis",
+                    "lastname": "Woodrum",
+                    "age": "33",
+                    "class":"First",
+                    "ticket_price":"103",
+                    "seat":"39",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "10",
+        "firstname": "Juliana",
+        "lastname": "Starck",
+        "tickets": [
+            {
+              "trip_id": "971",
+              "station_departure": "Paris",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 10:27",
+              "datetime_arrival": "2025-01-01 14:13",
+              "duration": "23:46",
+              "total_price":"337",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Madelyn",
+                    "lastname": "Miers",
+                    "age": "41",
+                    "class":"First",
+                    "ticket_price":"142",
+                    "seat":"104",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Victoria",
+                    "lastname": "Bourquin",
+                    "age": "8",
+                    "class":"Second",
+                    "ticket_price":"16",
+                    "seat":"51",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "450",
+              "station_departure": "Paris",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 10:56",
+              "datetime_arrival": "2025-01-01 16:39",
+              "duration": "01:49",
+              "total_price":"348",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Victoria",
+                    "lastname": "Castleman",
+                    "age": "33",
+                    "class":"Second",
+                    "ticket_price":"116",
+                    "seat":"123",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "11",
+        "firstname": "Lorelei",
+        "lastname": "Helland",
+        "tickets": [
+            {
+              "trip_id": "979",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 02:46",
+              "datetime_arrival": "2025-01-01 20:01",
+              "duration": "23:56",
+              "total_price":"97",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Erik",
+                    "lastname": "Karst",
+                    "age": "70",
+                    "class":"Second",
+                    "ticket_price":"26",
+                    "seat":"111",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Alexa",
+                    "lastname": "Krumm",
+                    "age": "28",
+                    "class":"Second",
+                    "ticket_price":"131",
+                    "seat":"88",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Kurt",
+                    "lastname": "Whitson",
+                    "age": "68",
+                    "class":"Second",
+                    "ticket_price":"37",
+                    "seat":"89",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Madeleine",
+                    "lastname": "Sprowl",
+                    "age": "53",
+                    "class":"Second",
+                    "ticket_price":"27",
+                    "seat":"38",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "140",
+              "station_departure": "Paris",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 10:40",
+              "datetime_arrival": "2025-01-01 22:09",
+              "duration": "01:18",
+              "total_price":"371",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Layla",
+                    "lastname": "Shelly",
+                    "age": "23",
+                    "class":"Second",
+                    "ticket_price":"84",
+                    "seat":"53",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Kirstie",
+                    "lastname": "Drolet",
+                    "age": "8",
+                    "class":"Second",
+                    "ticket_price":"143",
+                    "seat":"139",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Theo",
+                    "lastname": "Keesee",
+                    "age": "75",
+                    "class":"First",
+                    "ticket_price":"62",
+                    "seat":"148",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "12",
+        "firstname": "Kathy",
+        "lastname": "Bradbury",
+        "tickets": [
+            {
+              "trip_id": "1381",
+              "station_departure": "Paris",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 04:56",
+              "datetime_arrival": "2025-01-01 13:02",
+              "duration": "23:48",
+              "total_price":"333",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Isabelle",
+                    "lastname": "Chapman",
+                    "age": "4",
+                    "class":"Second",
+                    "ticket_price":"132",
+                    "seat":"83",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Rene",
+                    "lastname": "Freeman",
+                    "age": "31",
+                    "class":"First",
+                    "ticket_price":"131",
+                    "seat":"96",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Rosie",
+                    "lastname": "Hundt",
+                    "age": "76",
+                    "class":"Second",
+                    "ticket_price":"52",
+                    "seat":"147",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1847",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 01:44",
+              "datetime_arrival": "2025-01-01 22:41",
+              "duration": "23:37",
+              "total_price":"165",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Austin",
+                    "lastname": "Remus",
+                    "age": "28",
+                    "class":"First",
+                    "ticket_price":"116",
+                    "seat":"103",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "699",
+              "station_departure": "Troyes",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 02:06",
+              "datetime_arrival": "2025-01-01 17:03",
+              "duration": "01:29",
+              "total_price":"199",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Selma",
+                    "lastname": "Caffey",
+                    "age": "60",
+                    "class":"First",
+                    "ticket_price":"89",
+                    "seat":"58",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Ian",
+                    "lastname": "Rebelo",
+                    "age": "38",
+                    "class":"Second",
+                    "ticket_price":"61",
+                    "seat":"41",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1983",
+              "station_departure": "Paris",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 08:57",
+              "datetime_arrival": "2025-01-01 19:53",
+              "duration": "01:02",
+              "total_price":"137",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Roselyn",
+                    "lastname": "Garling",
+                    "age": "38",
+                    "class":"First",
+                    "ticket_price":"108",
+                    "seat":"11",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Jenette",
+                    "lastname": "Brandt",
+                    "age": "1",
+                    "class":"First",
+                    "ticket_price":"46",
+                    "seat":"77",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Vaughn",
+                    "lastname": "Pickering",
+                    "age": "70",
+                    "class":"Second",
+                    "ticket_price":"45",
+                    "seat":"52",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Layla",
+                    "lastname": "Higgins",
+                    "age": "51",
+                    "class":"First",
+                    "ticket_price":"110",
+                    "seat":"79",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "13",
+        "firstname": "Anton",
+        "lastname": "Latshaw",
+        "tickets": [
+            {
+              "trip_id": "1503",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 05:28",
+              "datetime_arrival": "2025-01-01 14:54",
+              "duration": "23:49",
+              "total_price":"299",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Grace",
+                    "lastname": "Oldman",
+                    "age": "82",
+                    "class":"Second",
+                    "ticket_price":"95",
+                    "seat":"90",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Victoria",
+                    "lastname": "Stine",
+                    "age": "86",
+                    "class":"First",
+                    "ticket_price":"72",
+                    "seat":"60",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Neida",
+                    "lastname": "Pendergast",
+                    "age": "10",
+                    "class":"Second",
+                    "ticket_price":"127",
+                    "seat":"109",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Michael",
+                    "lastname": "Tindel",
+                    "age": "50",
+                    "class":"Second",
+                    "ticket_price":"50",
+                    "seat":"58",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "971",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 05:56",
+              "datetime_arrival": "2025-01-01 13:10",
+              "duration": "23:34",
+              "total_price":"332",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lloyd",
+                    "lastname": "Risley",
+                    "age": "74",
+                    "class":"Second",
+                    "ticket_price":"89",
+                    "seat":"60",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Maisha",
+                    "lastname": "Higgins",
+                    "age": "85",
+                    "class":"First",
+                    "ticket_price":"83",
+                    "seat":"38",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Aiden",
+                    "lastname": "Bickers",
+                    "age": "55",
+                    "class":"Second",
+                    "ticket_price":"125",
+                    "seat":"69",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "815",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 04:52",
+              "datetime_arrival": "2025-01-01 16:13",
+              "duration": "00:45",
+              "total_price":"66",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Kirstie",
+                    "lastname": "Kilmer",
+                    "age": "57",
+                    "class":"Second",
+                    "ticket_price":"59",
+                    "seat":"123",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1708",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 11:19",
+              "datetime_arrival": "2025-01-01 20:31",
+              "duration": "01:39",
+              "total_price":"460",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Liza",
+                    "lastname": "Hottle",
+                    "age": "17",
+                    "class":"First",
+                    "ticket_price":"99",
+                    "seat":"124",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "14",
+        "firstname": "Roselyn",
+        "lastname": "Rohloff",
+        "tickets": [
+            {
+              "trip_id": "1071",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 04:58",
+              "datetime_arrival": "2025-01-01 16:53",
+              "duration": "23:56",
+              "total_price":"56",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Stephen",
+                    "lastname": "Smit",
+                    "age": "70",
+                    "class":"Second",
+                    "ticket_price":"60",
+                    "seat":"28",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Jenna",
+                    "lastname": "White",
+                    "age": "39",
+                    "class":"Second",
+                    "ticket_price":"97",
+                    "seat":"129",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Rickey",
+                    "lastname": "Sager",
+                    "age": "20",
+                    "class":"Second",
+                    "ticket_price":"46",
+                    "seat":"22",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1685",
+              "station_departure": "Troyes",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 08:22",
+              "datetime_arrival": "2025-01-01 17:33",
+              "duration": "01:43",
+              "total_price":"173",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Hannah",
+                    "lastname": "Paquette",
+                    "age": "46",
+                    "class":"Second",
+                    "ticket_price":"54",
+                    "seat":"149",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Rosanne",
+                    "lastname": "Cadena",
+                    "age": "42",
+                    "class":"Second",
+                    "ticket_price":"134",
+                    "seat":"57",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Warren",
+                    "lastname": "Webster",
+                    "age": "7",
+                    "class":"First",
+                    "ticket_price":"103",
+                    "seat":"113",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1457",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 08:46",
+              "datetime_arrival": "2025-01-01 16:29",
+              "duration": "00:01",
+              "total_price":"252",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Rene",
+                    "lastname": "Pace",
+                    "age": "87",
+                    "class":"First",
+                    "ticket_price":"112",
+                    "seat":"128",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "513",
+              "station_departure": "Paris",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 01:04",
+              "datetime_arrival": "2025-01-01 23:31",
+              "duration": "23:30",
+              "total_price":"76",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lance",
+                    "lastname": "Paquette",
+                    "age": "69",
+                    "class":"Second",
+                    "ticket_price":"139",
+                    "seat":"62",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "15",
+        "firstname": "Neida",
+        "lastname": "Muldoon",
+        "tickets": [
+            {
+              "trip_id": "166",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 00:13",
+              "datetime_arrival": "2025-01-01 17:10",
+              "duration": "00:43",
+              "total_price":"266",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Francis",
+                    "lastname": "Carroll",
+                    "age": "71",
+                    "class":"First",
+                    "ticket_price":"60",
+                    "seat":"129",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Raylene",
+                    "lastname": "Cadena",
+                    "age": "11",
+                    "class":"First",
+                    "ticket_price":"43",
+                    "seat":"123",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "279",
+              "station_departure": "Troyes",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 08:08",
+              "datetime_arrival": "2025-01-01 22:25",
+              "duration": "00:55",
+              "total_price":"400",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Janett",
+                    "lastname": "Castleman",
+                    "age": "68",
+                    "class":"First",
+                    "ticket_price":"49",
+                    "seat":"132",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "16",
+        "firstname": "Jamie",
+        "lastname": "Garling",
+        "tickets": [
+            {
+              "trip_id": "427",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 03:15",
+              "datetime_arrival": "2025-01-01 14:20",
+              "duration": "02:02",
+              "total_price":"296",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Cory",
+                    "lastname": "Krumm",
+                    "age": "55",
+                    "class":"First",
+                    "ticket_price":"33",
+                    "seat":"17",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Katelin",
+                    "lastname": "Pace",
+                    "age": "72",
+                    "class":"First",
+                    "ticket_price":"72",
+                    "seat":"50",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Haydee",
+                    "lastname": "Kilmer",
+                    "age": "27",
+                    "class":"First",
+                    "ticket_price":"71",
+                    "seat":"27",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Kirstie",
+                    "lastname": "Luck",
+                    "age": "42",
+                    "class":"Second",
+                    "ticket_price":"28",
+                    "seat":"74",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "968",
+              "station_departure": "Troyes",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 03:56",
+              "datetime_arrival": "2025-01-01 18:45",
+              "duration": "00:33",
+              "total_price":"340",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Haydee",
+                    "lastname": "Mercer",
+                    "age": "24",
+                    "class":"Second",
+                    "ticket_price":"95",
+                    "seat":"69",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Jenna",
+                    "lastname": "Smit",
+                    "age": "11",
+                    "class":"Second",
+                    "ticket_price":"55",
+                    "seat":"30",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Francis",
+                    "lastname": "Gamble",
+                    "age": "86",
+                    "class":"Second",
+                    "ticket_price":"109",
+                    "seat":"34",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Neida",
+                    "lastname": "Raymond",
+                    "age": "19",
+                    "class":"First",
+                    "ticket_price":"68",
+                    "seat":"79",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1639",
+              "station_departure": "Troyes",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 07:54",
+              "datetime_arrival": "2025-01-01 20:31",
+              "duration": "00:24",
+              "total_price":"443",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lorelei",
+                    "lastname": "Caffey",
+                    "age": "86",
+                    "class":"First",
+                    "ticket_price":"141",
+                    "seat":"84",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Lynetta",
+                    "lastname": "Hyder",
+                    "age": "87",
+                    "class":"First",
+                    "ticket_price":"31",
+                    "seat":"119",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Madelyn",
+                    "lastname": "Pullman",
+                    "age": "63",
+                    "class":"First",
+                    "ticket_price":"80",
+                    "seat":"84",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "335",
+              "station_departure": "Paris",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 03:02",
+              "datetime_arrival": "2025-01-01 16:35",
+              "duration": "00:57",
+              "total_price":"313",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Benito",
+                    "lastname": "Castleman",
+                    "age": "52",
+                    "class":"First",
+                    "ticket_price":"141",
+                    "seat":"115",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Andy",
+                    "lastname": "Raymond",
+                    "age": "68",
+                    "class":"Second",
+                    "ticket_price":"82",
+                    "seat":"97",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "1916",
+              "station_departure": "Paris",
+              "station_arrival": "Romilly-sur-Seine",
+              "datetime_departure": "2025-01-01 10:32",
+              "datetime_arrival": "2025-01-01 18:15",
+              "duration": "02:01",
+              "total_price":"383",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Vaughn",
+                    "lastname": "Dampier",
+                    "age": "39",
+                    "class":"Second",
+                    "ticket_price":"128",
+                    "seat":"125",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Maisha",
+                    "lastname": "Keesee",
+                    "age": "10",
+                    "class":"First",
+                    "ticket_price":"56",
+                    "seat":"59",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Jocelyn",
+                    "lastname": "Wallis",
+                    "age": "68",
+                    "class":"First",
+                    "ticket_price":"117",
+                    "seat":"60",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "17",
+        "firstname": "Jenna",
+        "lastname": "Caffey",
+        "tickets": [
+            {
+              "trip_id": "1936",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 00:42",
+              "datetime_arrival": "2025-01-01 18:02",
+              "duration": "00:04",
+              "total_price":"100",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Alexa",
+                    "lastname": "Tuck",
+                    "age": "77",
+                    "class":"Second",
+                    "ticket_price":"69",
+                    "seat":"146",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Haley",
+                    "lastname": "Bourquin",
+                    "age": "33",
+                    "class":"Second",
+                    "ticket_price":"28",
+                    "seat":"49",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Neida",
+                    "lastname": "Pettey",
+                    "age": "51",
+                    "class":"First",
+                    "ticket_price":"89",
+                    "seat":"92",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Kirstie",
+                    "lastname": "Bickers",
+                    "age": "19",
+                    "class":"First",
+                    "ticket_price":"135",
+                    "seat":"63",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "588",
+              "station_departure": "Troyes",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 08:47",
+              "datetime_arrival": "2025-01-01 14:04",
+              "duration": "01:40",
+              "total_price":"442",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Travis",
+                    "lastname": "Whitson",
+                    "age": "36",
+                    "class":"First",
+                    "ticket_price":"40",
+                    "seat":"80",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "240",
+              "station_departure": "Troyes",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 06:17",
+              "datetime_arrival": "2025-01-01 14:24",
+              "duration": "00:52",
+              "total_price":"331",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Yuri",
+                    "lastname": "Young",
+                    "age": "60",
+                    "class":"Second",
+                    "ticket_price":"100",
+                    "seat":"112",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "953",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 02:20",
+              "datetime_arrival": "2025-01-01 20:35",
+              "duration": "01:28",
+              "total_price":"272",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Mitch",
+                    "lastname": "Woodrum",
+                    "age": "6",
+                    "class":"First",
+                    "ticket_price":"126",
+                    "seat":"116",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "18",
+        "firstname": "Roman",
+        "lastname": "Raymond",
+        "tickets": [
+            {
+              "trip_id": "1345",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 01:56",
+              "datetime_arrival": "2025-01-01 23:49",
+              "duration": "00:56",
+              "total_price":"131",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Max",
+                    "lastname": "Turner",
+                    "age": "66",
+                    "class":"Second",
+                    "ticket_price":"47",
+                    "seat":"48",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Cecilia",
+                    "lastname": "Raymond",
+                    "age": "13",
+                    "class":"First",
+                    "ticket_price":"17",
+                    "seat":"145",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Elaine",
+                    "lastname": "Mercer",
+                    "age": "40",
+                    "class":"Second",
+                    "ticket_price":"136",
+                    "seat":"20",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Cory",
+                    "lastname": "Milling",
+                    "age": "66",
+                    "class":"Second",
+                    "ticket_price":"131",
+                    "seat":"123",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "447",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 05:04",
+              "datetime_arrival": "2025-01-01 16:12",
+              "duration": "01:32",
+              "total_price":"407",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Aiden",
+                    "lastname": "Hottle",
+                    "age": "55",
+                    "class":"First",
+                    "ticket_price":"20",
+                    "seat":"86",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Eleanore",
+                    "lastname": "Friedrich",
+                    "age": "13",
+                    "class":"Second",
+                    "ticket_price":"62",
+                    "seat":"34",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Rolf",
+                    "lastname": "Cappel",
+                    "age": "32",
+                    "class":"Second",
+                    "ticket_price":"80",
+                    "seat":"74",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "3",
+                    "firstname": "Rene",
+                    "lastname": "Jensen",
+                    "age": "50",
+                    "class":"First",
+                    "ticket_price":"45",
+                    "seat":"127",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "16",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Nogent-sur-Seine",
+              "datetime_departure": "2025-01-01 11:49",
+              "datetime_arrival": "2025-01-01 16:50",
+              "duration": "23:42",
+              "total_price":"29",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lloyd",
+                    "lastname": "Oldman",
+                    "age": "6",
+                    "class":"Second",
+                    "ticket_price":"34",
+                    "seat":"56",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Chloe",
+                    "lastname": "Bourne",
+                    "age": "50",
+                    "class":"First",
+                    "ticket_price":"100",
+                    "seat":"114",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Lloyd",
+                    "lastname": "Connor",
+                    "age": "69",
+                    "class":"Second",
+                    "ticket_price":"113",
+                    "seat":"46",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      },
+      {
+        "user_id": "19",
+        "firstname": "Jason",
+        "lastname": "Friedrich",
+        "tickets": [
+            {
+              "trip_id": "1061",
+              "station_departure": "Romilly-sur-Seine",
+              "station_arrival": "Paris",
+              "datetime_departure": "2025-01-01 04:15",
+              "datetime_arrival": "2025-01-01 20:29",
+              "duration": "01:23",
+              "total_price":"95",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Lloyd",
+                    "lastname": "Sprowl",
+                    "age": "16",
+                    "class":"First",
+                    "ticket_price":"60",
+                    "seat":"84",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Andy",
+                    "lastname": "Starck",
+                    "age": "43",
+                    "class":"First",
+                    "ticket_price":"113",
+                    "seat":"96",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "246",
+              "station_departure": "Nogent-sur-Seine",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 00:34",
+              "datetime_arrival": "2025-01-01 21:42",
+              "duration": "01:22",
+              "total_price":"141",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Susana",
+                    "lastname": "Muldoon",
+                    "age": "62",
+                    "class":"Second",
+                    "ticket_price":"23",
+                    "seat":"45",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "593",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 11:20",
+              "datetime_arrival": "2025-01-01 20:57",
+              "duration": "00:41",
+              "total_price":"255",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Juliana",
+                    "lastname": "Leath",
+                    "age": "42",
+                    "class":"Second",
+                    "ticket_price":"39",
+                    "seat":"10",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Austin",
+                    "lastname": "Hollis",
+                    "age": "58",
+                    "class":"Second",
+                    "ticket_price":"142",
+                    "seat":"98",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "2",
+                    "firstname": "Juliana",
+                    "lastname": "Hollis",
+                    "age": "49",
+                    "class":"Second",
+                    "ticket_price":"27",
+                    "seat":"15",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            },
+            {
+              "trip_id": "998",
+              "station_departure": "Troyes",
+              "station_arrival": "Troyes",
+              "datetime_departure": "2025-01-01 02:40",
+              "datetime_arrival": "2025-01-01 16:20",
+              "duration": "01:12",
+              "total_price":"424",
+              "passengers": [
+                  {
+                    "passenger_id": "0",
+                    "firstname": "Russell",
+                    "lastname": "Paquette",
+                    "age": "48",
+                    "class":"Second",
+                    "ticket_price":"19",
+                    "seat":"90",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  },
+                  {
+                    "passenger_id": "1",
+                    "firstname": "Cedric",
+                    "lastname": "Kelsey",
+                    "age": "53",
+                    "class":"Second",
+                    "ticket_price":"48",
+                    "seat":"30",
+                    "ticket_url":"https://github.com/UTT-GL03/EcoTrain/blob/billets/frontend/public/placeholder_ticket.pdf"
+                  }
+                  ]
+            }
+        ]
+      }
+  ]
+  }

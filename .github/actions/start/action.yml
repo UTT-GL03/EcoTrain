@@ -31,3 +31,15 @@ runs:
       uses: docker://benel/wait-for-response:1
       with:
         args: http://localhost:5984/ecotrain/_all_docs?limit=10 200 30000 500
+    - name: Get tickets samples
+      uses: actions/download-artifact@v4
+      with:
+        name: samples_tickets
+    - name: Upload tickets samples
+      run: |
+        curl -X POST http://localhost:5984/users/_bulk_docs -H "Content-Type: application/json" -d @sample_data_tickets.json
+      shell: bash
+    - name: Wait for backend
+      uses: docker://benel/wait-for-response:1
+      with:
+        args: http://localhost:5984/users/_all_docs?limit=10 200 30000 500
