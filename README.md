@@ -400,7 +400,7 @@ __Fig.12__: Billet PDF (placeholder)
 |Serveur web|<del>0.0000073</del><br/>0.0000070|0.0000079|0.0      |0.0020      |0.0        |0.0020    |
 |Base de données       |<del>0.0032</del><br>0.0031   |<del>0.00015</del><br>0.00038  |0.0      |0.0053      |0.0        |<del>0.0086</del><br/>0.0088    |
 
-Empreinte carbone estimée : <del>94.74</del>94.743 mg eq. co2 ± 0.3% (214.351 mWh).
+Empreinte carbone estimée : <del>94.74</del> 94.743 mg eq. co2 ± 0.3% (214.351 mWh).
 
 #### Scénario : Consulter ses billets de train
 
