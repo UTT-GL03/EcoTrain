@@ -5,16 +5,30 @@ import { useNavigate } from 'react-router'
 function TicketDetails({ }) {
     const navigate = useNavigate();
     const [ticket, setTicket] = useState([]);
+    
     useEffect(() => {
         fetch('/sample_data_tickets.json')
             .then(x => x.json())
             .then((data) => {
-                const user = data.users.find((user) => user.user_id === "0");
+                const user = data.docs.find((user) => user._id === "0");
                 const ticket = user.tickets.find((ticket) => ticket.trip_id[0]);
                 setTicket(ticket);
             })
             .catch((error) => console.error('Erreur lors du chargement des tickets:', error));
     }, []);
+
+
+    useEffect(() => {
+        fetch(`http://localhost:5984/users/0`)
+          .then((response) => response.json())
+          .then((data) => {
+            setTrip(data);
+          })
+          .catch((error) => {
+            console.error('Error fetching trip:', error);
+          });
+      }, [_id]);
+
     const datetimedeparture = dayjs(ticket.datetime_departure);
     const datetimearrival = dayjs(ticket.datetime_arrival);
 

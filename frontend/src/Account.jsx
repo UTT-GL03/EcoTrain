@@ -7,12 +7,11 @@ function Account() {
     const [user_firstname, setUserFirstname] = useState('');
 
     useEffect(() => {
-        fetch('/sample_data_tickets.json')
+        fetch('http://localhost:5984/users/0')
             .then(x => x.json())
             .then((data) => {
-                const user = data.users.find((user) => user.user_id === "0");
-                setUserFirstname(user.firstname);
-                setTickets(user.tickets);
+                setTickets(data.doc.tickets);
+                setUserFirstname(data.doc.firstname);
             })
             .catch((error) => console.error('Erreur lors du chargement des tickets:', error));
     }, []);
