@@ -1,14 +1,10 @@
 baseURL: http://localhost
 projectName: EcoTrain
 scenarios:
-  - name: Consulter des résultats de recherche
-    path: ./scenarios/consult_results.js
-  - name: Consulter les détails d'un trajet
-    path: ./scenarios/consult_details.js
-  - name: Consulter ses billets
-    path: ./scenarios/consult_tickets.js
-  - name: Consulter les détauls d'un billet
-    path: ./scenarios/consult_ticket_details.js
+  - name: Acheter un billet de train
+    path: ./scenarios/buy_train_ticket.js
+  - name: Accéder à ses billets
+    path: ./scenarios/find_my_tickets.js
 
 containers:
   - ecotrain-static_hosting-1
