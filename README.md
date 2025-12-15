@@ -341,6 +341,8 @@ Voici donc la mesure finale, qui ne peut malheureuselent pas être comparée aux
 
 Empreinte carbone estimée : 94.74 mg eq. co2 ± 0.3% (214.344 mWh).
 
+__Tab.11__ : Consommation énergétique totale du scénario prioritaire.
+
 ## Implémentation du scénario secondaire : Consultation de billets de train
 
 Dans cette phase d'amélioration de notre projet, nous souhaitons mettre en oeuvre notre second scénario, qui consiste à permettre aux utilisateurs d'accéder et de télécharger les billets de trains qu'ils auront acheté au préalable.
@@ -402,6 +404,9 @@ __Fig.12__: Billet PDF (placeholder)
 
 Empreinte carbone estimée : <del>94.74</del> 94.743 mg eq. co2 ± 0.3% (214.351 mWh).
 
+__Tab.12__ : Consommation énergétique totale du scénario prioritaire suite à l'implémentation du second scénario.
+
+
 #### Scénario : Consulter ses billets de train
 
 |                |cpu (Wh) |mem (Wh) |disk (Wh)|network (Wh)|screen (Wh)|total (Wh)|
@@ -412,6 +417,8 @@ Empreinte carbone estimée : <del>94.74</del> 94.743 mg eq. co2 ± 0.3% (214.351
 
 Empreinte estimée: 69.335 mg eq. CO₂ ± 0.4% (156.866 mWh).
 
-=> Somme des empreintes estimées des deux scénarios: 164.078 mg eq. CO₂ ± 0.4% (371.216 mWh).
+__Tab.13__ : Consommation énergétique totale du scénario secondaire.
 
-L'implémentation de ce second scénario a provoqué une augmentation parfaitement négligeable de la consommation énergétique du premier scénario. Ceux-si étant majoritairement liés à des pages différentes, cela fait sens. En revanche, on pourrait imaginer que la consommation globale par utilisateur augmente dans les cas où les deux scénarios s'enchaînent (achat du billet puis consultation). Cependant, il fait entièrement sens de proposer un moyen pour les utilisateurs de consulter leurs trajets à venir, et de télécharger leur billets. On pourrait même considérer que cela est une fonctionnalité prioritaire. Pour cette raison, nous conserverons ces nouvelles fonctionnalités dans notre produit final.
+**=> Somme des empreintes estimées des deux scénarios: 164.078 mg eq. CO₂ ± 0.4% (371.216 mWh).**
+
+L'implémentation de ce second scénario a provoqué une augmentation parfaitement négligeable de la consommation énergétique du premier scénario (cf. Tab.12). Ceux-si étant majoritairement liés à des pages différentes, cela fait sens. En revanche, on pourrait imaginer que la consommation globale par utilisateur augmente dans les cas où les deux scénarios s'enchaînent (achat du billet puis consultation). Cependant, il fait entièrement sens de proposer un moyen pour les utilisateurs de consulter leurs trajets à venir, et de télécharger leur billets. On pourrait même considérer que cela est une fonctionnalité prioritaire. Pour cette raison, nous conserverons ces nouvelles fonctionnalités dans notre produit final.
