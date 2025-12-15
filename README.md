@@ -388,4 +388,22 @@ __Fig.12__: Billet PDF (placeholder)
 
 #### Scénario : Acheter un billet de train
 
+|                 |cpu (Wh) |mem (Wh) |disk (Wh)|network (Wh)|screen (Wh)|total (Wh)|
+|-------------------------|---------|---------|---------|------------|-----------|----------|
+|Navigateur        |0.0031   |0.00013  |0.0      |0.0075      |0.19       |0.20      |
+|Serveur web|0.0000070|0.0000079|0.0      |0.0020      |0.0        |0.0020    |
+|Base de données       |0.0031   |0.00038  |0.0      |0.0053      |0.0        |0.0088    |
+
+Empreinte estimée: 94.743 mg eq. CO₂ ± 0.3% (214.351 mWh).
+
 #### Scénario : Consulter ses billets de train
+
+|                |cpu (Wh) |mem (Wh) |disk (Wh)|network (Wh)|screen (Wh)|total (Wh)|
+|-------------------------|---------|---------|---------|------------|-----------|----------|
+|Navigateur        |0.0015   |0.00010  |0.0      |0.0022      |0.15       |0.15      |
+|Serveur web|0.0000048|0.0000061|0.0      |0.0020      |0.0        |0.0020    |
+|Base de données  |0.0014   |0.00030  |0.0      |0.000026    |0.0        |0.0017    |
+
+Empreinte estimée: 69.335 mg eq. CO₂ ± 0.4% (156.866 mWh).
+
+=> Somme des empreintes estimées des deux scénarios: 164.078 mg eq. CO₂ ± 0.4% (371.216 mWh).
