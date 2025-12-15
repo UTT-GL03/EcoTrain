@@ -413,3 +413,5 @@ Empreinte carbone estimée : <del>94.74</del>94.743 mg eq. co2 ± 0.3% (214.351 
 Empreinte estimée: 69.335 mg eq. CO₂ ± 0.4% (156.866 mWh).
 
 => Somme des empreintes estimées des deux scénarios: 164.078 mg eq. CO₂ ± 0.4% (371.216 mWh).
+
+L'implémentation de ce second scénario a provoqué une augmentation parfaitement négligeable de la consommation énergétique du premier scénario. Ceux-si étant majoritairement liés à des pages différentes, cela fait sens. En revanche, on pourrait imaginer que la consommation globale par utilisateur augmente dans les cas où les deux scénarios s'enchaînent (achat du billet puis consultation). Cependant, il fait entièrement sens de proposer un moyen pour les utilisateurs de consulter leurs trajets à venir, et de télécharger leur billets. On pourrait même considérer que cela est une fonctionnalité prioritaire. Pour cette raison, nous conserverons ces nouvelles fonctionnalités dans notre produit final.
