@@ -55,35 +55,6 @@ jobs:
         with:
           name: samples_tickets
           path: sample_data_tickets.json
-
-
-
-  measure_ecoindex:
-    needs:
-      - build
-      - build_samples
-      - build_samples_tickets
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download sources
-        uses: actions/checkout@v5
-      - name: Start application
-        uses: ./.github/actions/start
-      - name: Install GreenIT Analysis CLI
-        run: |
-          wget https://github.com/cnumr/GreenIT-Analysis-cli/archive/refs/heads/master.zip
-          unzip master.zip
-          cd GreenIT-Analysis-cli-master
-          npm install
-          npm link
-      - name: Run GreenIT Analysis CLI
-        run: |
-          greenit analyse --format html --ci scenarios/buy_train_ticket.yml
-      - name: Save results
-        uses: actions/upload-artifact@v4
-        with:
-          name: EcoIndex
-          path: BuyTrainTicket.html
   
   measure_energy_consumption:
     needs: 
