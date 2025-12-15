@@ -2,7 +2,7 @@ baseURL: http://localhost
 projectName: EcoTrain
 scenarios:
   - name: Acheter un billet de train
-    path: ./scenarios/buy_train_ticket.js
+    path: ./scenarios/buy_train_tickets.js
 containers:
   - ecotrain-static_hosting-1
   - ecotrain-backend-1
