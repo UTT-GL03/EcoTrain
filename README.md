@@ -333,7 +333,13 @@ Pour améliorer la qualité de la mesure de l'impact énergétique de ce scénar
 
 Voici donc la mesure finale, qui ne peut malheureuselent pas être comparée aux mesures précédentes, mais que nous pourrons additionner à la consommation énergétique du scénario secondaire que nous allons prochainement implémenter. 
 
+| (index)                   | cpu (Wh)    | mem (Wh)    | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+|--------------------------|-------------|-------------|-----------|--------------|-------------|------------|
+| Navigateur        | 0.0033      | 0.00013     | 0.0       | 0.0075       | 0.19        | 0.20       |
+| Serveur web| 0.0000073   | 0.0000079   | 0.0       | 0.0020       | 0.0         | 0.0020     |
+| Base de données    | 0.0032      | 0.00015     | 0.0       | 0.0053       | 0.0         | 0.0086     |
 
+Empreinte carbone estimée : 94.74 mg eq. co2 ± 0.3% (214.344 mWh).
 
 ## Implémentation du scénario secondaire : Consultation de billets de train
 
