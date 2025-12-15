@@ -7,6 +7,8 @@ scenarios:
     path: ./scenarios/consult_details.js
   - name: Consulter ses billets
     path: ./scenarios/consult_tickets.js
+  - name: Consulter les détauls d'un billet
+    path: ./scenatios/consult_ticket_details.js
 
 containers:
   - ecotrain-static_hosting-1
